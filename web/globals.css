@@ -518,6 +518,22 @@ button:disabled {
   line-height: 1.8;
 }
 
+.pp-doc-foot {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+  text-align: center;
+  font-size: var(--fs-xs);
+}
+
+.pp-doc-foot a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.pp-doc-foot a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 640px) {
   .pp-doc {
     padding: var(--space-lg) var(--space-sm) var(--space-xl);

@@ -120,6 +120,12 @@ export function PromptsPage() {
           <PromptEntrySection key={entry.id} entry={entry} />
         ))}
       </main>
+
+      <footer className="pp-doc-foot">
+        <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">
+          鲁ICP备2024099705号
+        </a>
+      </footer>
     </div>
   );
 }
