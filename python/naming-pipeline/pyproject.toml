@@ -1,0 +1,16 @@
+[project]
+name = "naming-pipeline"
+version = "0.1.0"
+description = "中国品牌命名案例持续学习管道：采集 -> 清洗 -> 去重 -> 特征提取 -> 统计 -> 反哺推荐引擎权重"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "pypinyin>=0.50",
+    "opencc-python-reimplemented>=0.1.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

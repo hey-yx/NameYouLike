@@ -1,0 +1,248 @@
+{
+  "scope": "目的性小样本，非随机抽样；只推断表面构词，不推断创始人意图或成功因果。",
+  "cases": [
+    {
+      "id": "c1",
+      "name": "淘宝",
+      "group": "zh-products",
+      "source_url": "https://taobao.com",
+      "source_type": "official-page",
+      "evidence": "淘宝 Taobao | 淘宝 淘宝网是 阿里巴巴 集团旗下的国际化网络购物平台， 淘宝网 为消费者提供互动化、个性化的购物体验。消费者能够从 天猫 品牌旗舰店、 淘宝直播 间实物展示、 网红 主播 评论 区真实的买家秀获取相关度高的 商品 信息，也能通过 淘宝百科 学习 生活知识 ，畅享美好 购物生活 。 淘宝网页 通过提供多样化的 男装 空调 女鞋 等 企业品牌 商品和服务，为消费者及 采购商 提供各类 newbalance 、 高尔夫手套 、 adidas 、 nike 等 运动鞋 与 篮球鞋 购物体验。其中 oppo 、 vivo 、 电脑 、 按摩椅 、 iphone17 手机 等 热门商品 更是赢得了用户口碑和良好的 评价 。在满足了广大消费者的不同需求，同时也为 淘宝卖家 和 淘宝店铺 提供了一个广阔的 商品 销售渠道。 手机淘宝 不定期推出各种活动，并在 服装 、 美妆 、 数码 、 游戏 等行业为您进行定制化推荐，提供担保交易(先收货后付款)等安全交易保障服务，并由商家提供退货承诺、破损补寄来保障消费者权益，也可以通过 淘宝客户端 安心购物的同时还能畅享 Tao 商城的 购物乐趣 。 除了购物以外，淘宝网贴心的为您提供了 产品翻译 / 阅读 / DingTalk 等生",
+      "origin_evidence": null
+    },
+    {
+      "id": "c2",
+      "name": "转转",
+      "group": "zh-products",
+      "source_url": "https://zhuanzhuan.com",
+      "source_type": "official-page",
+      "evidence": "转转_转转二手官方验，买卖二手不一样 You need to enable JavaScript to run this app.",
+      "origin_evidence": null
+    },
+    {
+      "id": "c3",
+      "name": "闲鱼",
+      "group": "zh-products",
+      "source_url": "https://goofish.com",
+      "source_type": "official-page",
+      "evidence": "闲鱼 - 闲不住？上闲鱼！ 登录 搜索 消息 手机 数码 电脑 服饰 箱包 运动 技能 卡券 潮玩 母婴 美妆 个护 家具 家电 家装 文玩 珠宝 礼品 食品 宠物 花卉 图书 游戏 音像 汽车 电动车 租房 五金 设备 农牧 Banner横幅 衣橱捡漏 二次元 手机数码 省钱卡券 猜你喜欢 BJD娃娃 垂钓 吉他乐器 台球 摄影摄像 钱币收藏 女装穿搭 居家好物 大牌美妆 机车",
+      "origin_evidence": null
+    },
+    {
+      "id": "c4",
+      "name": "知乎",
+      "group": "zh-products",
+      "source_url": "https://zhihu.com",
+      "source_type": "official-page",
+      "evidence": "知乎 - 有问题，就会有答案 打开知乎App 在「我的页」右上角打开扫一扫 其他扫码方式：微信 下载知乎App 无障碍模式 验证码登录 密码登录 开通机构号 获取短信验证码 忘记密码 登录/注册 其他方式登录 未注册手机验证后自动登录，注册即代表同意 《知乎协议》 《隐私保护指引》 北京智者天下科技有限公司 知乎专栏 圆桌 发现 移动应用 联系我们 来知乎工作 注册机构号 Investor Relations © 2026 知乎 京ICP证110745号 京ICP备13052560号-1 京公网安备 11010802020088 号 互联网新闻信息服务许可证：11220250001 京网文[2025]0422-132 号 出版物经营许可证 药品医疗器械网络信息服务备案（京）网药械信息备字（2022）第00334号 广播电视节目制作经营许可证:（京）字第06591号 互联网宗教信息服务许可证：京（2022）0000078 侵权举报 网上有害信息举报专区 儿童色情信息举报专区 互联网算法推荐举报专区 违法和不良信息举报：010-82716601 举报邮箱：jubao@zhihu.com",
+      "origin_evidence": null
+    },
+    {
+      "id": "c5",
+      "name": "小红书",
+      "group": "zh-products",
+      "source_url": "https://xiaohongshu.com",
+      "source_type": "official-page",
+      "evidence": "小红书 - 你的生活兴趣社区",
+      "origin_evidence": null
+    },
+    {
+      "id": "c6",
+      "name": "百度",
+      "group": "zh-products",
+      "source_url": "https://baidu.com",
+      "source_type": "official-page",
+      "evidence": "百度一下，你就知道 新闻 hao123 地图 视频 贴吧 登录 更多产品 关于百度 About Baidu ©2017 Baidu 使用百度前必读 意见反馈 京ICP证030173号",
+      "origin_evidence": null
+    },
+    {
+      "id": "c7",
+      "name": "去哪儿",
+      "group": "zh-products",
+      "source_url": "https://qunar.com",
+      "source_type": "official-page",
+      "evidence": "【去哪儿网】机票查询预订，酒店预订，旅游团购，度假搜索，门票预订-去哪儿网Qunar.com",
+      "origin_evidence": null
+    },
+    {
+      "id": "c8",
+      "name": "滴滴",
+      "group": "zh-products",
+      "source_url": "https://didiglobal.com",
+      "source_type": "official-page",
+      "evidence": "首页-滴滴官网 滴滴官网地址 滴滴打车官网 滴滴快车官网 滴滴出行官网",
+      "origin_evidence": null
+    },
+    {
+      "id": "c9",
+      "name": "小米",
+      "group": "zh-products",
+      "source_url": "https://xiaomi.com",
+      "source_type": "official-page",
+      "evidence": "Xiaomi官方网站 | 以人为中心，构建“人车家全生态” 小米官网 小米商城 小米澎湃OS 小米汽车 小米影像 云服务 IoT 有品 小爱开放平台 Location 登录 | 注册 了解小米 © mi.com 京公网安备11010802020134号 京B2-20180851 京ICP证110507号 京ICP备10046444号-7",
+      "origin_evidence": null
+    },
+    {
+      "id": "c10",
+      "name": "用友",
+      "group": "zh-products",
+      "source_url": "https://yonyou.com",
+      "source_type": "official-page",
+      "evidence": "企业数智化 用友BIP,用友集团官网 产品&服务 用友 BIP YonBIP（大型企业） YonSuite（成长型企业） 畅捷通云（小微企业） iuap平台 用友BIP超级版 U9 Cloud FDE 企业AI原生产品 YonWork YonData YonCode YonOnto YonAIG YonKnow 企业数据云 用友BIP 穿透式监管 业务领域 财务 人力 供应链 营销 采购 制造 研发 项目 资产 协同 iuap平台 智能平台 数据平台 开发平台 云技术平台 应用平台 连接平台 企业AI盒子 YonWork一体机 开发测试环境一体机 生态产品融合一体机 企业AI业务运营服务 AI BaaS 查看所有产品 > 解决方案 行业解决方案 消费品行业 服务 国资 农业 医药 医疗 交通公用 建筑 地产 制造 金融 教育 政务 烟草 广信 热点解决方案 用友BIP 6 智能场景新体验 用友BIP 端到端整体解决方案 用友BIP全球化数智运营解决方案 用友BIP国产化升级替代解决方案 用友BIP发布时刻 服务支持 社区 用户社区 开发者社区 会计家园 摩天 iKM 客户支持 大型企业客户成功 成长型企业客户成功 帮助中心 友户通 产品安全中心 算法备案中心 领先实践 伙伴与开发者 ",
+      "origin_evidence": null
+    },
+    {
+      "id": "c11",
+      "name": "金蝶",
+      "group": "zh-products",
+      "source_url": "https://kingdee.com",
+      "source_type": "official-page",
+      "evidence": "金蝶AI-金蝶云官网-金蝶集团官方网站-金蝶软件官网 登录 | 注册 我的工作台 | 退出 产品 企业管理AI 金蝶AI星瀚（央国企等大型企业） 金蝶AI套件（大、中型企业） 金蝶AI星空（中型企业） 金蝶AI星辰（小微企业） 金蝶AI HR（人力资源） 企业智能体操作系统 金蝶灵基 技术平台 金蝶AI苍穹（企业级AI平台） 业务领域 财务管理 税务管理 人力资源管理 供应链管理 研发管理（PLM） 制造管理 采购管理（SRM） 全渠道管理 协同办公 查看所有产品 > 解决方案 行业方案 热点方案 装备制造 建筑行业 医药流通 汽车及零部件 钢铁冶金 制药行业 流程制造 日化日用品 批发与零售 现代农牧 电子半导体 房地产行业 能源与资源 食品饮料 餐饮行业 企业出海数字化方案 央国企数字化解决方案 专精特新企业数字化方案 小微企业业财税一体化方案 企业IPO解决方案 标杆案例 资源中心 博客文章 行业应用 客户实践 趋势见解 产品动态 视频播客 知识问答 全部资源 干货下载 PPT干货 客户案例 白皮书 解决方案 全部干货 服务支持 客户成功 客户成功介绍 服务产品体系 标准成功服务 高级成功服务 专项服务 用户成长 用户成长计划 金蝶认证 数字化人才赋能 金蝶云社区 服务与通知 ",
+      "origin_evidence": null
+    },
+    {
+      "id": "c12",
+      "name": "飞书",
+      "group": "zh-products",
+      "source_url": "https://feishu.cn",
+      "source_type": "official-page",
+      "evidence": "飞书｜字节跳动旗下AI工作平台 - 飞书官网",
+      "origin_evidence": null
+    },
+    {
+      "id": "c13",
+      "name": "Notion",
+      "group": "en-products",
+      "source_url": "https://www.notion.com/product/notion",
+      "source_type": "official-page",
+      "evidence": "Notion is a connected workspace that brings docs , wikis , projects , and databases together in one place. With Notion AI and custom agents built in, it also helps teams automate repetitive work,like weekly reporting, meeting follow-ups, and onboarding. Is Notion free to use? Yes. Notion's free plan includes unlimited pages, Notion AI, and core features like docs, wikis, and databases. Paid plans start at $10 per member per month (billed annually) for teams that need more advanced features, custom agents, and deeper integrations. How is Notion ",
+      "origin_evidence": null
+    },
+    {
+      "id": "c14",
+      "name": "Figma",
+      "group": "en-products",
+      "source_url": "https://www.figma.com/design/",
+      "source_type": "official-page",
+      "evidence": "Free Design Tool for Websites, Product Design & More | Figma Skip to main content Products What you can do in figma Design and explore Build and ship products Explore all products Figma Design Design and prototype in one place Figma Make Prompt to code anything you can imagine Figma Weave AI workflows for imagery, video, audio, and more Dev Mode Translate designs into code Figma Motion New Animate your designs Figma Specs Beta Capture intent and share context FigJam Collaborate with a digital whiteboard Figma Slides Co-create presentations Figm",
+      "origin_evidence": null
+    },
+    {
+      "id": "c15",
+      "name": "react",
+      "group": "developer-projects",
+      "source_url": "https://github.com/react/react",
+      "source_type": "maintainer-repository",
+      "evidence": "The library for web and native user interfaces.",
+      "origin_evidence": null
+    },
+    {
+      "id": "c16",
+      "name": "next.js",
+      "group": "developer-projects",
+      "source_url": "https://github.com/vercel/next.js",
+      "source_type": "maintainer-repository",
+      "evidence": "The React Framework",
+      "origin_evidence": null
+    },
+    {
+      "id": "c17",
+      "name": "tailwindcss",
+      "group": "developer-projects",
+      "source_url": "https://github.com/tailwindlabs/tailwindcss",
+      "source_type": "maintainer-repository",
+      "evidence": "A utility-first CSS framework for rapid UI development.",
+      "origin_evidence": null
+    },
+    {
+      "id": "c18",
+      "name": "vite",
+      "group": "developer-projects",
+      "source_url": "https://github.com/vitejs/vite",
+      "source_type": "maintainer-repository",
+      "evidence": "Next generation frontend tooling. It's fast!",
+      "origin_evidence": null
+    },
+    {
+      "id": "c19",
+      "name": "astro",
+      "group": "developer-projects",
+      "source_url": "https://github.com/withastro/astro",
+      "source_type": "maintainer-repository",
+      "evidence": "The web framework for content-driven websites.",
+      "origin_evidence": null
+    },
+    {
+      "id": "c20",
+      "name": "bun",
+      "group": "developer-projects",
+      "source_url": "https://github.com/oven-sh/bun",
+      "source_type": "maintainer-repository",
+      "evidence": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager - all in one",
+      "origin_evidence": null
+    },
+    {
+      "id": "c21",
+      "name": "deno",
+      "group": "developer-projects",
+      "source_url": "https://github.com/denoland/deno",
+      "source_type": "maintainer-repository",
+      "evidence": "A modern runtime for JavaScript and TypeScript.",
+      "origin_evidence": null
+    },
+    {
+      "id": "c22",
+      "name": "zed",
+      "group": "developer-projects",
+      "source_url": "https://github.com/zed-industries/zed",
+      "source_type": "maintainer-repository",
+      "evidence": "Code at the speed of thought - Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "origin_evidence": null
+    },
+    {
+      "id": "c23",
+      "name": "rustdesk",
+      "group": "developer-projects",
+      "source_url": "https://github.com/rustdesk/rustdesk",
+      "source_type": "maintainer-repository",
+      "evidence": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
+      "origin_evidence": null
+    },
+    {
+      "id": "c24",
+      "name": "bruno",
+      "group": "developer-projects",
+      "source_url": "https://github.com/usebruno/bruno",
+      "source_type": "maintainer-repository",
+      "evidence": "Opensource IDE For Exploring and Testing API's (lightweight alternative to Postman/Insomnia)",
+      "origin_evidence": null
+    },
+    {
+      "id": "c25",
+      "name": "AFFiNE",
+      "group": "developer-projects",
+      "source_url": "https://github.com/toeverything/AFFiNE",
+      "source_type": "maintainer-repository",
+      "evidence": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. ",
+      "origin_evidence": null
+    },
+    {
+      "id": "c26",
+      "name": "nocodb",
+      "group": "developer-projects",
+      "source_url": "https://github.com/nocodb/nocodb",
+      "source_type": "maintainer-repository",
+      "evidence": "🔥 🔥 🔥 A Free & Self-hostable Airtable Alternative",
+      "origin_evidence": null
+    },
+    {
+      "id": "c27",
+      "name": "NameYouLike",
+      "group": "user-preference",
+      "source_url": null,
+      "source_type": "user-message",
+      "evidence": "用户明确喜欢 NameYouLike 这种类型，可作为项目名称，不希望全转小写。",
+      "origin_evidence": null
+    }
+  ]
+}

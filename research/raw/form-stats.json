@@ -1,0 +1,95 @@
+{
+ "npm_top400": {
+  "n": 400,
+  "len_avg": 12.32,
+  "len_p50": 11,
+  "len_p25": 8,
+  "len_p75": 15,
+  "len_le8_pct": 31.5,
+  "len_le6_pct": 17.5,
+  "len_ge12_pct": 45.2,
+  "syl_avg": 3.18,
+  "syl_p50": 3,
+  "syl_le3_pct": 63.5,
+  "tech_suffix_pct": 3.2,
+  "scope_pct": 16.2,
+  "multiword_pct": 67.5,
+  "hyphen_pct": 60.0,
+  "digit_pct": 3.5,
+  "contentword_pct": 97.2,
+  "single_word_n": 164,
+  "single_word_syl_avg": 2.65,
+  "single_word_syl_le2_pct": 52
+ },
+ "pypi_top200": {
+  "n": 200,
+  "len_avg": 9.74,
+  "len_p50": 9,
+  "len_p25": 6,
+  "len_p75": 12,
+  "len_le8_pct": 49.5,
+  "len_le6_pct": 30.5,
+  "len_ge12_pct": 26.0,
+  "syl_avg": 2.98,
+  "syl_p50": 3,
+  "syl_le3_pct": 72.5,
+  "tech_suffix_pct": 5.5,
+  "scope_pct": 0.0,
+  "multiword_pct": 27.0,
+  "hyphen_pct": 27.0,
+  "digit_pct": 6.5,
+  "contentword_pct": 96.5,
+  "single_word_n": 146,
+  "single_word_syl_avg": 2.2,
+  "single_word_syl_le2_pct": 64
+ },
+ "saas_brands_100": {
+  "n": 100,
+  "len_avg": 6.62,
+  "len_p50": 7,
+  "len_p25": 5,
+  "len_p75": 8,
+  "len_p90": 9,
+  "len_le8_pct": 83.0,
+  "len_le6_pct": 50.0,
+  "len_ge12_pct": 1.0,
+  "syl_avg": 2.18,
+  "syl_p50": 2,
+  "syl_le2_pct": 69,
+  "syl_le3_pct": 94.0,
+  "syl_ge4_pct": 6.0,
+  "tech_suffix_pct": 0.0,
+  "scope_pct": 0.0,
+  "multiword_pct": 11.0,
+  "hyphen_pct": 0.0,
+  "digit_pct": 1.0,
+  "contentword_pct": 92.0,
+  "single_word_pct": 98,
+  "brand_composition": {
+   "real-word": 28,
+   "coined": 20,
+   "coined/compound": 33,
+   "compound": 13,
+   "suffix-derivation": 6
+  }
+ },
+ "pairing": {
+  "saas_with_official_pkg": 13,
+  "brand_eq_pkg": 10,
+  "brand_ne_pkg": 3,
+  "examples_ne": [
+   {
+    "brand": "Notion",
+    "pkg": "@notionhq/client"
+   },
+   {
+    "brand": "Cal.com",
+    "pkg": "@calcom/embed-snippet"
+   },
+   {
+    "brand": "Databricks",
+    "pkg": "databricks-sdk"
+   }
+  ]
+ }
+}

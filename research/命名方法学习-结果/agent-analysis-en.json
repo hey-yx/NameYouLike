@@ -1,0 +1,155 @@
+{
+  "observations": [
+    {
+      "case_id": "c15",
+      "name": "react",
+      "mechanism": "推断：英语动作词整体作名，保留小写。",
+      "analysis": "表面可读为反应、回应这个动作词。官方描述只确认它是界面库，动作与界面交互可以形成联想，但材料没有说明响应机制，更不能据此认定命名动机。名字没有直接写出 library 或 UI，类别由描述补足。",
+      "evidence_quote": "The library for web and native user interfaces.",
+      "origin_status": "unknown"
+    },
+    {
+      "case_id": "c16",
+      "name": "next.js",
+      "mechanism": "推断：常用方向词 next 加技术后缀 .js。",
+      "analysis": "next 表面表达下一步或接下来，.js 提供技术语境。官方描述确认 React 框架，并未解释 next 具体指什么，不能把它认定为技术代际或升级承诺。可以借鉴常用词作主体、类别由短后缀或描述说明的结构。",
+      "evidence_quote": "The React Framework",
+      "origin_status": "unknown"
+    },
+    {
+      "case_id": "c17",
+      "name": "tailwindcss",
+      "mechanism": "推断：tailwind 与 css 连写，联想主体加类别标记。",
+      "analysis": "按表面词形可分成 tailwind 和 css，css 与描述中的 CSS framework 直接对应。tailwind 可作顺风的普通语义联想，描述又强调 rapid UI development，两者可以并置理解，但没有证据证明作者以顺风比喻开发提速。",
+      "evidence_quote": "A utility-first CSS framework for rapid UI development.",
+      "origin_status": "unknown"
+    },
+    {
+      "case_id": "c18",
+      "name": "vite",
+      "mechanism": "推断：四字母整体短名，不强拆词根。",
+      "analysis": "名字本身未写 frontend 或 tooling，官方描述补足前端工具类别，并明确强调快。材料没有解释 vite 的语言来源、读音或词义，不能仅因描述有 fast 就补出外语词源；可借鉴短名与简洁定位句分工。",
+      "evidence_quote": "Next generation frontend tooling. It's fast!",
+      "origin_status": "unknown"
+    },
+    {
+      "case_id": "c19",
+      "name": "astro",
+      "mechanism": "推断：可产生天文语义联想的整体短名。",
+      "analysis": "表面字形可产生天文相关联想，官方描述则把产品限定为内容驱动网站的 Web 框架，两者没有直接字面对应。可观察到名字承担识别、描述承担用途说明的分工，不能据此编造星空隐喻、作者意图或性能含义。",
+      "evidence_quote": "The web framework for content-driven websites.",
+      "origin_status": "unknown"
+    },
+    {
+      "case_id": "c20",
+      "name": "bun",
+      "mechanism": "推断：普通短词作整体名，未在名字内枚举功能。",
+      "analysis": "表面可按英语食物词理解，描述却列出 JavaScript 运行时、打包、测试和包管理多个用途。名字与类别没有直接字面对应，短名能够在表面上容纳多个功能，但材料不支持食物意象的来源或它带来传播优势的结论。",
+      "evidence_quote": "JavaScript runtime, bundler, test runner, and package manager - all in one",
+      "origin_status": "unknown"
+    },
+    {
+      "case_id": "c21",
+      "name": "deno",
+      "mechanism": "推断：四字母整体品牌词，构词来源不可判定。",
+      "analysis": "表面是紧凑的字母整体，名字本身没有写出 JavaScript、TypeScript 或 runtime。官方描述补足类别和技术范围。仅凭这份材料无法判定它是造词、缩写、拼写变换还是已有词，生成方法应学习整体可读性，而非倒推词根故事。",
+      "evidence_quote": "A modern runtime for JavaScript and TypeScript.",
+      "origin_status": "unknown"
+    },
+    {
+      "case_id": "c22",
+      "name": "zed",
+      "mechanism": "推断：三字母短词整体作名。",
+      "analysis": "表面可产生字母名称的联想，名字并未直写 editor。官方描述明确代码编辑器、高性能和多人协作，功能说明可以独立于名字存在。材料没有把 zed 与速度、协作或既有作品联系起来，不能将这些功能倒推成词义。",
+      "evidence_quote": "Zed is a high-performance, multiplayer code editor",
+      "origin_status": "unknown"
+    },
+    {
+      "case_id": "c23",
+      "name": "rustdesk",
+      "mechanism": "推断：rust 与 desk 的双部件连写，后半部提示使用场景。",
+      "analysis": "按表面可拆为 rust 和 desk，desk 与描述中的 desktop 有词形和场景联系。描述确认可自托管的远程桌面应用，但没有交代实现语言，不能仅凭 rust 就宣称以 Rust 编写或据此解释命名来源。可借鉴可识别部件加场景词的紧凑组合。",
+      "evidence_quote": "An open-source remote desktop application designed for self-hosting",
+      "origin_status": "unknown"
+    },
+    {
+      "case_id": "c24",
+      "name": "bruno",
+      "mechanism": "推断：具有常见人名外观的整体名字。",
+      "analysis": "表面可以按人名风格理解，官方描述将它定位为探索和测试 API 的 IDE，二者没有直接字面对应。它支持考虑人名式品牌方向，但不证明 bruno 是作者姓名、真实人物、宠物名或纪念对象，也不足以归纳作者品牌的有效性。",
+      "evidence_quote": "Opensource IDE For Exploring and Testing API's",
+      "origin_status": "unknown"
+    },
+    {
+      "case_id": "c25",
+      "name": "AFFiNE",
+      "mechanism": "推断：整体字母词保留非统一大小写，读音由描述另行说明。",
+      "analysis": "AFFiNE 的大小写是可见书写特征，描述明确提供读音，并说明知识库整合规划、整理和创作。材料不解释字母词与这些功能的词义联系，也未证明它是缩写或数学术语隐喻。可以保留有辨识度的拼写，但不能从一个案例推断混合大小写更易记。",
+      "evidence_quote": "AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base",
+      "origin_status": "unknown"
+    },
+    {
+      "case_id": "c26",
+      "name": "nocodb",
+      "mechanism": "推断：可按 noco 与 db 分段的连写名字，末尾具有技术缩写外观。",
+      "analysis": "db 可被读成数据库类技术提示，但描述仅确认它是免费、可自托管的 Airtable 替代品，没有展开 db，也没有给出 noco 的含义。不能认定 noco 必然来自 no-code，或把猜测当词源事实；该案例只支持尝试简短主体与类别提示的组合。",
+      "evidence_quote": "A Free & Self-hostable Airtable Alternative",
+      "origin_status": "unknown"
+    },
+    {
+      "case_id": "c27",
+      "name": "NameYouLike",
+      "mechanism": "推断：自然短语 Name You Like 连写，并以驼峰保留词界。",
+      "analysis": "表面可以读成你喜欢的名字，用户材料明确支持把这类名字作为项目名并保留大小写。这是偏好证据，不是官方产品说明，无法据此验证项目具体功能。它提示短语也可作名称，不应把单词长度、全小写或两个词件当通用门槛；自然短语可以比功能清单更像对用户说话。",
+      "evidence_quote": "用户明确喜欢 NameYouLike 这种类型，可作为项目名称，不希望全转小写。",
+      "origin_status": "unknown"
+    }
+  ],
+  "patterns": [
+    {
+      "method": "名字与定位句分工",
+      "case_ids": ["c18", "c19", "c20", "c21", "c22", "c24"],
+      "instruction": "先生成能独立作为名字的整体短词，再用一句产品描述交代类别；名字不必直接复述功能，也不必指向旧物件。",
+      "limit": "这些案例只能显示名字没有完整写出用途，不能证明非直连名称更易传播或更成功；仍需结合目标受众评判。"
+    },
+    {
+      "method": "常用词的动作或方向感",
+      "case_ids": ["c15", "c16"],
+      "instruction": "从受众会使用的动作、方向和状态词寻找整体名字，允许与体验形成轻度联想，不把功能准确对应当必要条件。",
+      "limit": "react 与 next 的表面词义可以分析，但现有描述不能确认作者为何选词，也不能证明产品具有词义暗示的具体特性。"
+    },
+    {
+      "method": "可识别主体加类别或场景提示",
+      "case_ids": ["c16", "c17", "c23", "c26"],
+      "instruction": "仅在命名对象需要技术或场景辨认时，尝试简短主体加一个后缀或场景部件；组合要顺口，主体不能全靠通用功能词成立。",
+      "limit": ".js、css、desk、db 的结构联系属于表面推断，尤其 noco 的展开未知；技术项目写法不能直接当消费产品名的默认模板。"
+    },
+    {
+      "method": "整体可读性优先于拆词根",
+      "case_ids": ["c18", "c21", "c24", "c25"],
+      "instruction": "合理短词、人名式词形和适度造词都可进入候选池，先判断读写和整体自然程度；没有来源证据时不为字母拼写补造词源。",
+      "limit": "不能把所有短名归为造词，也不能把人名式名称认定为作者品牌；这里没有直接的拼音或作者品牌证据。"
+    },
+    {
+      "method": "书写形式服从具体名称",
+      "case_ids": ["c16", "c25", "c27"],
+      "instruction": "根据命名对象保留有意义的点号、大小写和驼峰词界，不在生成后统一全小写；自然短语连写时检查是否仍能直接读懂。",
+      "limit": "三例采用不同写法，不能据此规定混合大小写越多越好；NameYouLike 仅提供一条明确用户偏好，不代表普遍市场偏好。"
+    },
+    {
+      "method": "并列尝试有词义与非功能直连方向",
+      "case_ids": ["c15", "c17", "c19", "c20", "c24", "c27"],
+      "instruction": "同一简报同时尝试动作词、轻度联想、整体短词和用户语言短语，不让候选全部挤入工具物件或功能词拼接方向；最后隐藏解释比较名字本身。",
+      "limit": "这是从案例差异提炼的生成实验方法，不是成功规律；自然短语在本批仅有 c27，不能冒充已由多个短语案例验证。"
+    }
+  ],
+  "limitations": [
+    "本批为目的性小样本，只覆盖 c15 至 c27，不能估算开发者项目的命名分布、市场偏好或最佳长度。",
+    "所有 origin_evidence 都为空，因此所有 origin_status 为 unknown；任何词形拆分、语义联想和方法归纳均属于推断。",
+    "c15 至 c26 的短描述来自提供的维护者仓库材料，本轮未外部复核，也未读取完整文档；不能补写实现细节或创始人意图。",
+    "c27 是用户偏好而非官方产品描述，它支持自然短语及保留驼峰这一偏好，但不能证明 NameYouLike 的产品用途或市场表现。",
+    "没有拼音名称或已确认作者品牌案例；提示词允许这些方向是为避免无证据排除，不是宣称它们已在本批得到验证。",
+    "没有失败对照、用户盲评、碰撞查询、商标查询或域名核验，不能从项目知名度推导名字质量，也不能声称名称可注册。",
+    "生成提示词包含内部评审步骤，但本轮未调用外部模型试跑，提示词有效性仍待真实简报对照与用户评审。"
+  ]
+}

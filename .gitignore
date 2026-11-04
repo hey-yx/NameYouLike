@@ -1,0 +1,48 @@
+node_modules/
+.next/
+.next-dev/
+out/
+web/dist/
+.env
+.env.*
+!.env.local.example
+*.tsbuildinfo
+.DS_Store
+coverage/
+
+# Kanban worker 工作树
+.worktrees/
+
+# Python 引擎侧（python/）
+python/.venv/
+python/naming-pipeline/.venv/
+__pycache__/
+.pytest_cache/
+
+# naming-pipeline 可再生中间物：每次抓取的原始记录、互斥锁、定时任务日志、运行记录
+python/naming-pipeline/data/raw/
+python/naming-pipeline/data/.lock
+python/naming-pipeline/cron.log
+python/naming-pipeline/launchd.log
+python/naming-pipeline/runs/
+python/naming-pipeline/*.log
+
+# IANA TLD 表快照：可重新生成
+research/iana-tlds-latest.txt
+
+# 注意：python/naming-pipeline/data/corpus.jsonl、data/state.json、output/naming_patterns.v1.json
+# 是增量事实源，由管道每日运行重写，必须入库，不要加进忽略列表。
+# 例外：output/history/ 是每次运行的完整快照，只落盘不入库。管道每日跑 2–4 次，
+# 每份约 400KB，入库会让仓库按天膨胀（约 +400MB/年）；磁盘仍保留最近 30 份供本地对比。
+python/naming-pipeline/output/history/
+
+# 一次性与可再生内容
+python/demo/
+.hallmark/
+.zcode/
+
+# 模型横评与本地脚本：密钥与一次性产物
+/scripts/bench-config.local.json
+/scripts/bench-results.local.json
+/scripts/*.local.*
+.coverage

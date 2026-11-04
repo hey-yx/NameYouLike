@@ -1,0 +1,542 @@
+/* Hallmark · pre-emit critique: P4 H5 E4 S5 R4 V4
+ * Hallmark · macrostructure: Conversation Column（ChatGPT 式对话主面）· theme: Cobalt（hallmark 目录）
+ * 设计系统：DESIGN.md（2026-10-31 全量重定，不复刻任何外部站点）
+ * 身份纪律：细线划分表面——层级 = 细线描边 / 字重 / 间距 / 灰阶；主按钮钴蓝填充；钴蓝仅微信号
+ * 焦点结构：石墨终端卡是页面唯一暗色块；mono 元数据语言；真实数据与诚实状态
+ * states: default · hover · focus · active · disabled · loading · error · success
+ */
+
+:root {
+  --paper: #f8fafd;
+  --paper-2: #f1f4f7;
+  --hover: #eaedf1;
+  --ink: #192029;
+  --ink-2: #323841;
+  --muted: #585e66;
+  --faint: #6a6f76;
+  --accent: #005fd4;
+  --accent-2: #0046b4;
+  --on-accent: #ffffff;
+  --selection: #d8eaff;
+  --rule: #dde0e3;
+  --rule-2: #c8cdd2;
+  --graphite: #161b22;
+  --on-graphite: #e1e5ea;
+  --on-graphite-2: #8e949c;
+  --shadow-lift: 0 1px 2px rgba(25, 32, 41, 0.05);
+
+  /* 语义色：只服务域名状态 */
+  --ok: #1d783c;
+  --ok-soft: #e5f4e8;
+  --warn: #955e00;
+  --warn-soft: #f7eedf;
+  --info: #275287;
+  --info-soft: #e6eef7;
+
+  --font-display: "Space Grotesk", "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", sans-serif;
+  /* 中文正文用宋体：文档站读长中文更稳，跟等宽的英文代码块也能分开层次。 */
+  --font-body: "Inter", "Songti SC", "Noto Serif SC", "Source Han Serif SC",
+    "SimSun", "PingFang SC", serif;
+  --font-mono: "JetBrains Mono", "SF Mono", Menlo, Consolas, "PingFang SC",
+    monospace;
+
+  --fs-2xs: 11px;
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs-md: 15px;
+  --fs-base: 16px;
+  --fs-lg: 20px;
+  --fs-xl: 24px;
+  --fs-2xl: 32px;
+  --fs-display: clamp(30px, 3.6vw, 44px);
+
+  --space-3xs: 2px;
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+
+  --radius-control: 6px;
+  --radius-card: 10px;
+  --radius-pill: 999px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-1: 120ms;
+  --dur-2: 200ms;
+  --dur-3: 300ms;
+
+  --z-base: 1;
+}
+
+html.dark {
+  --paper: #0c1016;
+  --paper-2: #14191f;
+  --hover: #1f242c;
+  --ink: #e5e8ec;
+  --ink-2: #c7cbd0;
+  --muted: #979ca2;
+  --faint: #898e95;
+  --accent: #59aaf8;
+  --accent-2: #80c3ff;
+  --on-accent: #0c1016;
+  --selection: #172a41;
+  --rule: #252930;
+  --rule-2: #383e46;
+  --graphite: #10141a;
+  --on-graphite: #dde2e6;
+  --on-graphite-2: #8a9098;
+  --shadow-lift: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --ok: #73c385;
+  --ok-soft: #233226;
+  --warn: #dcaf61;
+  --warn-soft: #362c1c;
+  --info: #83b4e7;
+  --info-soft: #202a35;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  scrollbar-color: var(--faint) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--hover);
+  border: 3px solid var(--paper);
+  border-radius: var(--radius-pill);
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: var(--faint);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body {
+  margin: 0;
+  overflow-x: clip;
+  /* 方案3：右上角钴蓝冷调极淡径向晕，纯 CSS，不抢正文 */
+  background:
+    radial-gradient(120% 92% at 88% -12%, rgba(0, 95, 212, 0.09), rgba(0, 95, 212, 0) 58%),
+    var(--paper);
+  color: var(--ink-2);
+  font-family: var(--font-body);
+  font-size: var(--fs-md);
+  line-height: 1.8;
+}
+
+::selection {
+  background: var(--selection);
+  color: var(--ink);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: var(--space-lg);
+}
+
+a {
+  color: var(--accent);
+  text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--accent-2);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* ── 动效 ─────────────────────────────────────────── */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ── 提示词主页：单栏文档规格书 ───────────────────── */
+
+.pp-doc {
+  max-width: 46em;
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--space-md) var(--space-2xl);
+}
+
+.pp-doc-head {
+  margin-bottom: var(--space-2xl);
+}
+
+.pp-doc-head h1 {
+  margin-top: var(--space-lg);
+  font-size: var(--fs-2xl);
+  line-height: 1.35;
+}
+
+.pp-doc-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pp-gh {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-control);
+  color: var(--muted);
+  transition: background var(--dur-2) var(--ease-out), color var(--dur-2) var(--ease-out);
+}
+
+.pp-gh:hover {
+  background: var(--hover);
+  color: var(--ink);
+}
+
+.pp-gh svg {
+  width: 18px;
+  height: 18px;
+}
+
+.pp-doc-lede {
+  max-width: 36em;
+  margin-top: var(--space-sm);
+  color: var(--ink-2);
+  font-size: var(--fs-base);
+  line-height: 1.8;
+}
+
+.pp-doc-sub {
+  max-width: 36em;
+  margin-top: var(--space-xs);
+  color: var(--muted);
+  font-size: var(--fs-sm);
+  line-height: 1.9;
+}
+
+.pp-entry {
+  margin-bottom: var(--space-4xl);
+  scroll-margin-top: var(--space-lg);
+}
+
+.pp-entry-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: var(--space-md);
+}
+
+.pp-entry-scene {
+  margin-top: var(--space-2xs);
+  color: var(--muted);
+  font-size: var(--fs-sm);
+  line-height: 1.9;
+}
+
+.pp-copy {
+  flex-shrink: 0;
+  padding: var(--space-3xs) var(--space-xs);
+  background: none;
+  border-radius: var(--radius-control);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  transition: background var(--dur-1) var(--ease-out);
+}
+
+.pp-copy:hover {
+  background: var(--hover);
+}
+
+.pp-copy-done {
+  color: var(--ok);
+}
+
+/* 提示词卡片：石墨代码卡，展开/收起按钮固定在卡片底部 */
+.pp-prompt-card {
+  position: relative;
+  margin-top: var(--space-sm);
+  background: var(--graphite);
+  border: 1px solid var(--rule-2);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-lift);
+  /* 内部 pre 是直角深色块，不裁切会把卡片四角顶成直角 */
+  overflow: hidden;
+}
+
+.pp-fold-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2xs);
+  width: 100%;
+  padding: var(--space-2xs) var(--space-xs);
+  background: var(--graphite);
+  border: 0;
+  border-top: 1px solid var(--rule-2);
+  border-radius: 0 0 var(--radius-card) var(--radius-card);
+  color: var(--on-graphite-2);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.04em;
+  transition: color var(--dur-1) var(--ease-out);
+}
+
+.pp-fold-toggle:hover {
+  color: var(--on-graphite);
+}
+
+.pp-fold-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.pp-fold-icon {
+  color: var(--accent);
+}
+
+/* 提示词正文：全文直出，卡片内石墨底色 */
+.pp-prompt {
+  margin-top: 0;
+}
+
+.pp-prompt pre {
+  margin: 0;
+  padding: var(--space-md);
+  background: var(--graphite);
+  color: var(--on-graphite);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  line-height: 1.9;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.pp-prompt pre:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* 输入段示例：与案例列表同结构，靠一条细线分隔 */
+.pp-case-input {
+  margin-top: var(--space-sm);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--rule);
+}
+
+.pp-case-input .pp-case-row strong {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.pp-case-input .pp-case-src {
+  color: var(--ink-2);
+}
+
+/* 未展开时只露几行，底部渐隐提示还有内容 */
+.pp-prompt-clamp pre {
+  max-height: 11em;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, #000 62%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 62%, transparent 100%);
+}
+
+/* 输入段：一段完整描述 */
+.pp-input-text {
+  color: var(--ink-2);
+  font-size: var(--fs-sm);
+  line-height: 1.9;
+}
+
+/* 案例：一行一条的列表，`·` 钴蓝标记 */
+.pp-case {
+  margin-top: var(--space-md);
+}
+
+.pp-case ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: 0;
+  list-style: none;
+}
+
+.pp-case-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xs);
+}
+
+.pp-case-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-xs);
+  font-size: var(--fs-sm);
+  line-height: 1.8;
+}
+
+.pp-case-row::before {
+  content: "·";
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.pp-case-row strong {
+  font-weight: 600;
+}
+
+.pp-case-pinyin {
+  color: var(--faint);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+}
+
+.pp-case-verdict {
+  color: var(--faint);
+  font-family: var(--font-mono);
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.04em;
+}
+
+.pp-case-src-label {
+  color: var(--faint);
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.04em;
+}
+
+.pp-case-src {
+  color: var(--muted);
+}
+
+/* 候选域名：mono 小字，逗号分隔 */
+.pp-case-domains {
+  color: var(--faint);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+}
+
+.pp-case-domains-label {
+  color: var(--faint);
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.04em;
+}
+
+/* 评审判词：挂在名字下面一行 */
+.pp-case-note-line {
+  padding-left: var(--space-sm);
+  color: var(--faint);
+  font-size: var(--fs-xs);
+  line-height: 1.8;
+}
+
+.pp-case-outcome {
+  margin-top: var(--space-xs);
+  color: var(--faint);
+  font-size: var(--fs-xs);
+  line-height: 1.8;
+}
+
+.pp-case-domains-note {
+  margin-bottom: 0;
+  margin-top: var(--space-xs);
+  color: var(--faint);
+}
+
+.pp-case-note {
+  margin-bottom: var(--space-xs);
+  color: var(--muted);
+  font-size: var(--fs-xs);
+  line-height: 1.8;
+}
+
+@media (max-width: 640px) {
+  .pp-doc {
+    padding: var(--space-lg) var(--space-sm) var(--space-xl);
+  }
+
+  .pp-entry-head {
+    justify-content: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+

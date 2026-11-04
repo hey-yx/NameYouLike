@@ -1,0 +1,251 @@
+{
+  "meta": {
+    "date": "2026-11-03",
+    "model": "Hermes 会话内按合并提示词执行",
+    "prompt_source": "research/prompts.md 合并版唯一 text 块",
+    "scenario": "allparse 简报，多批候选合并后按域名可用性筛出 8 个展示",
+    "names_count": 8,
+    "candidatePool": 23
+  },
+  "response": {
+    "analysis": {
+      "factsGaps": [],
+      "topUp": {
+        "rounds": 2,
+        "added": 7
+      },
+      "reviewed": {
+        "kept": 8,
+        "rejected": [
+          {
+            "name": "nostore",
+            "reason": "造词成立，但与同批实词组合 no-store 指向同一产品事实（只解析不存储、零带宽），属同一主体变体，重复。",
+            "suggestion": "改从 HTTP 主通道/降级兜底取词，如 linklane 一路。"
+          },
+          {
+            "name": "watermarkless",
+            "reason": "英文非自然拼法，念出来是水印-less 的机械拼接，读起来像功能描述而非名字；12 字符也偏长。",
+            "suggestion": "保留去水印语义但换成动作型造词，如 dewatermark。"
+          },
+          {
+            "name": "nineway",
+            "reason": "造词，但读者看不出是解析服务还是九条通道方案，与产品动作无关，违反「名字要落在产品真实关注点上」。",
+            "suggestion": "把九平台折成一套适配层这一事实写进名字，如 ninefold。"
+          },
+          {
+            "name": "http-first",
+            "reason": "两个通用词的规格化标签组合，属于只复述工序/状态的标签名，不是品牌名。",
+            "suggestion": "从通道语义造词，如 linklane。"
+          },
+          {
+            "name": "parse-nine",
+            "reason": "与 hey-parse、parse-link 同属 parse 词根族，同批挤在一个结构族里。",
+            "suggestion": "换一个动作或输出形态词根，如 directnine。"
+          },
+          {
+            "name": "json-envelope",
+            "reason": "与 one-envelope 同词，重复使用信封输出形态。",
+            "suggestion": "信封只留一处，另一处改用直链或零带宽语义。"
+          },
+          {
+            "name": "ninefold",
+            "reason": "fold 是把九条平台折叠成一体的方向暗示，容易读成汇聚/合并，与已否 manifold 同族；而本产品是每条链接独立解析后套同一层信封",
+            "suggestion": "回到「同一输出信封」或「加平台等于加目录」这两条事实取材"
+          },
+          {
+            "name": "omniparse",
+            "reason": "omni 属通用前缀、parse 属最通用的动作词，组合后不指向短视频去水印解析这一具体业务，且 omni 撞名量极高",
+            "suggestion": "改取「同一适配层」「纯 HTTP 主通道」等具体结构词"
+          },
+          {
+            "name": "resolve",
+            "reason": "裸通用短词，且在开发者语境里第一联想是 DNS 解析，读者猜不到是分享链接取直链",
+            "suggestion": "取直链相关的动作+对象组合，而不是通用解析词"
+          },
+          {
+            "name": "unfold",
+            "reason": "与输入已否名单里的 unfurl 属同一主体的同义变体，重复生成",
+            "suggestion": "换用输出形态与边界约束方向"
+          },
+          {
+            "name": "nocopy",
+            "reason": "与已否 no-cache 同族，只是把被否的约束换了后缀，违反「不靠换字仿写补齐」",
+            "suggestion": "取零带宽、不落本地这类更贴近事实的边界词"
+          },
+          {
+            "name": "anyfeed",
+            "reason": "与同批 ninefeed、polystream 同属 feed 族，三条挤在同一结构上，违反同批检查的多样性要求",
+            "suggestion": "从直链、零本地、JSON 信封这些方向各取一个独立主体"
+          },
+          {
+            "name": "watermarklift",
+            "reason": "把产品输入原词水印直接写进名字，属于复述输入而非命名，且偏长不够好打",
+            "suggestion": "用「无水印直链」的结果形态词，如干净直链、原始直链"
+          }
+        ],
+        "candidatePool": 23,
+        "eligibleWithFreeDomain": 9,
+        "pickedRule": "复审保留且至少一个域名实测可注册，前缀名与造词优先"
+      }
+    },
+    "names": [
+      {
+        "name": "Hey Parse",
+        "packageName": "hey-parse",
+        "source": "亲切互动前缀 hey- 加产品自己的动作词 parse",
+        "associations": [
+          "短促的招呼节奏，像喊一声「嘿，帮我解析一下」",
+          "指向把分享链接直接递进来、拿结果走人的用法"
+        ],
+        "productFact": "解析分享链接返回无水印直链",
+        "rationale": "hey- 只是搭话的招呼，parse 直接对应「解析分享链接」这个核心动作，读者看到就知道是个解析接口。",
+        "pronunciation": "hey parse",
+        "domains": [
+          "hey-parse.dev（可注册·rdap）",
+          "hey-parse.io（可注册·whois）",
+          "hey-parse.app（可注册·rdap）"
+        ],
+        "riskNotes": "hey- 前缀在 npm 上占用较高；域名与商标未联网核验，待核验",
+        "primaryDomain": "hey-parse.dev"
+      },
+      {
+        "name": "Hey Rawlink",
+        "packageName": "hey-rawlink",
+        "source": "亲切互动前缀 hey + 主体 rawlink（原始直链）",
+        "associations": [
+          "hey 一声招呼，像朋友递来一条链接",
+          "raw 指不加工的原始直链",
+          "口语节奏，落地感强"
+        ],
+        "productFact": "解析分享链接返回无水印直链，客户端不带 Referer 就能下",
+        "rationale": "rawlink 对应返回的原始无水印直链，hey 只做搭话不改含义，名字仍然落在直链这条事实上",
+        "pronunciation": "嘿·罗林克",
+        "domains": [
+          "hey-rawlink.dev（可注册·rdap）",
+          "hey-rawlink.io（可注册·whois）",
+          "hey-rawlink.app（可注册·rdap）"
+        ],
+        "riskNotes": "raw- 词族有已否的 raw-pick、rawkit，需查重；域名与商标待核验",
+        "primaryDomain": "hey-rawlink.dev"
+      },
+      {
+        "name": "No Store",
+        "packageName": "no-store",
+        "source": "两个真实词组合：边界约束 no-store，照 HTTP 缓存指令的说法",
+        "associations": [
+          "物件：一个不存东西的抽屉",
+          "场景：解析完就丢掉，服务器不留副本",
+          "日常：缓存头里那条 no-store，写代码的人一眼认得"
+        ],
+        "productFact": "只做解析不存储不转存任何内容，服务器零带宽",
+        "rationale": "no-store 就是产品不存储的边界约束本身，且是开发者天天见的短语，读写都自然。",
+        "pronunciation": "no store",
+        "domains": [
+          "no-store.dev（可注册·rdap）",
+          "no-store.io（可注册·whois）",
+          "no-store.app（可注册·rdap）"
+        ],
+        "riskNotes": "no-store 是 HTTP 缓存指令用词，可能与缓存中间件项目混淆；域名与商标待核验",
+        "primaryDomain": "no-store.dev"
+      },
+      {
+        "name": "One Envelope",
+        "packageName": "one-envelope",
+        "source": "归属感前缀 one- 加产品输出形态 envelope（JSON 信封）",
+        "associations": [
+          "一次调用只吐出一个信封的干净画面",
+          "九条平台最后归一成同一个外包装"
+        ],
+        "productFact": "九条短视频平台统一输出同一种 JSON 信封",
+        "rationale": "one- 点出唯一性，envelope 就是产品统一输出的 JSON 信封，名字直接落在输出形态上。",
+        "pronunciation": "one envelope",
+        "domains": [
+          "one-envelope.dev（可注册·rdap）",
+          "one-envelope.io（可注册·whois）",
+          "one-envelope.app（可注册·rdap）"
+        ],
+        "riskNotes": "envelope 一词通用，搜索区分度低；域名与商标待核验",
+        "primaryDomain": "one-envelope.dev"
+      },
+      {
+        "name": "Parsedirect",
+        "packageName": "parsedirect",
+        "source": "造词：parse 与 direct 咬合的自然造词",
+        "associations": [
+          "两个词挤在一起的口语重音，读起来干脆",
+          "指向解析完直接给直链、不中转"
+        ],
+        "productFact": "解析分享链接返回无水印直链",
+        "rationale": "造词把「解析」和「直链」两个产品自己的词合成一词，读音通顺且能猜到业务。",
+        "pronunciation": "parse-direct",
+        "domains": [
+          "parsedirect.dev（可注册·rdap）",
+          "parsedirect.io（可注册·whois）",
+          "parsedirect.app（可注册·rdap）"
+        ],
+        "riskNotes": "非字典词，拼写需在文档里固定；域名与商标待核验",
+        "primaryDomain": "parsedirect.dev"
+      },
+      {
+        "name": "Poly Stream",
+        "packageName": "poly-stream",
+        "source": "前缀 poly（多）+ stream（流），自然造词",
+        "associations": [
+          "多路并成一条流",
+          "poly 在开发工具里读作「多实例、多格式」",
+          "读音三音节，节奏偏技术"
+        ],
+        "productFact": "九条短视频平台统一输出同一种 JSON 信封",
+        "rationale": "poly 对应多平台，stream 对应被统一成一条输出流的内容，指向多平台归一这一核心事实",
+        "pronunciation": "波利·斯追姆",
+        "domains": [
+          "poly-stream.dev（可注册·rdap）",
+          "poly-stream.io（可注册·whois）",
+          "poly-stream.app（可注册·rdap）"
+        ],
+        "riskNotes": "poly- 前缀在基础设施领域较常见，需查重；域名与商标待核验",
+        "primaryDomain": "poly-stream.dev"
+      },
+      {
+        "name": "Zero Flux",
+        "packageName": "zero-flux",
+        "source": "zero + flux（流量），自然造词，指零带宽",
+        "associations": [
+          "flux 读作流量、流向",
+          "零流量零搬运",
+          "带一点能量场的技术感"
+        ],
+        "productFact": "只做解析不存储不转存任何内容，服务器零带宽",
+        "rationale": "flux 指经手的字节流量，zero 精确对应服务器零带宽这条事实，名字把「只解析不搬运」说清楚",
+        "pronunciation": "泽罗·弗拉克斯",
+        "domains": [
+          "zero-flux.dev（可注册·rdap）",
+          "zero-flux.io（可注册·whois）",
+          "zero-flux.app（可注册·rdap）"
+        ],
+        "riskNotes": "flux 在物理与数据流语境通用，需查重；域名与商标待核验",
+        "primaryDomain": "zero-flux.dev"
+      },
+      {
+        "name": "Direct Link",
+        "packageName": "direct-link",
+        "source": "两个真实词组合：产品输出物直链",
+        "associations": [
+          "物件：一条不加 Referer 也能直接下载的链接",
+          "场景：客户端拿到就存，不中转",
+          "日常：把链接甩给同事，对方点开就是文件"
+        ],
+        "productFact": "解析分享链接返回无水印直链，客户端不带 Referer 就能下",
+        "rationale": "两个词都是产品自己的词汇：处理对象是链接，输出物是直链，读者看到即知业务。",
+        "pronunciation": "direct link",
+        "domains": [
+          "direct-link.dev（可注册·rdap）",
+          "direct-link.io（已注册·whois）",
+          "direct-link.com（已注册·rdap）"
+        ],
+        "riskNotes": "实词组合易撞名，.dev/.io 大多已被占；域名与商标待核验",
+        "primaryDomain": "direct-link.dev"
+      }
+    ]
+  }
+}

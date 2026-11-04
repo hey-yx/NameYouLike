@@ -1,0 +1,240 @@
+{
+ "schema": 1,
+ "version_seq": 30,
+ "runs": [
+  {
+   "run_id": "run_20261022_131327",
+   "version": "2026.10.22-001",
+   "new_records": 6664,
+   "corpus_total": 6664,
+   "at": "2026-10-22T05:23:28Z"
+  },
+  {
+   "run_id": "run_20261022_132948",
+   "version": "2026.10.22-002",
+   "new_records": 0,
+   "corpus_total": 6664,
+   "at": "2026-10-22T05:29:48Z"
+  },
+  {
+   "run_id": "run_20261022_133123",
+   "version": "2026.10.22-003",
+   "new_records": 0,
+   "corpus_total": 6606,
+   "at": "2026-10-22T05:31:23Z"
+  },
+  {
+   "run_id": "run_20261022_133314",
+   "version": "2026.10.22-004",
+   "new_records": 0,
+   "corpus_total": 6604,
+   "at": "2026-10-22T05:33:14Z"
+  },
+  {
+   "run_id": "run_20261022_133345",
+   "version": "2026.10.22-005",
+   "new_records": 1,
+   "corpus_total": 6605,
+   "at": "2026-10-22T05:33:48Z"
+  },
+  {
+   "run_id": "run_20261022_133502",
+   "version": "2026.10.22-006",
+   "new_records": 0,
+   "corpus_total": 6604,
+   "at": "2026-10-22T05:35:03Z"
+  },
+  {
+   "run_id": "run_20261022_133503",
+   "version": "2026.10.22-007",
+   "new_records": 0,
+   "corpus_total": 6604,
+   "at": "2026-10-22T05:35:06Z"
+  },
+  {
+   "run_id": "run_20261022_134642",
+   "version": "2026.10.22-008",
+   "new_records": 0,
+   "corpus_total": 6604,
+   "at": "2026-10-22T05:46:42Z"
+  },
+  {
+   "run_id": "run_20261022_135039",
+   "version": "2026.10.22-009",
+   "new_records": 0,
+   "corpus_total": 6604,
+   "at": "2026-10-22T05:50:39Z"
+  },
+  {
+   "run_id": "run_20261022_135431",
+   "version": "2026.10.22-010",
+   "new_records": 0,
+   "corpus_total": 6604,
+   "at": "2026-10-22T05:54:31Z"
+  },
+  {
+   "run_id": "run_20261022_140506",
+   "version": "2026.10.22-011",
+   "new_records": 0,
+   "corpus_total": 6604,
+   "at": "2026-10-22T06:05:07Z"
+  },
+  {
+   "run_id": "run_20261022_140634",
+   "version": "2026.10.22-012",
+   "new_records": 0,
+   "corpus_total": 6604,
+   "at": "2026-10-22T06:06:34Z"
+  },
+  {
+   "run_id": "run_20261022_174024",
+   "version": "2026.10.22-013",
+   "new_records": 0,
+   "corpus_total": 6604,
+   "at": "2026-10-22T09:50:28Z"
+  },
+  {
+   "run_id": "run_20261023_030001",
+   "version": "2026.10.23-014",
+   "new_records": 6,
+   "corpus_total": 6610,
+   "at": "2026-10-22T19:08:46Z"
+  },
+  {
+   "run_id": "run_20261024_030000",
+   "version": "2026.10.24-015",
+   "new_records": 15,
+   "corpus_total": 6625,
+   "at": "2026-10-23T19:09:56Z"
+  },
+  {
+   "run_id": "run_20261025_030000",
+   "version": "2026.10.25-016",
+   "new_records": 0,
+   "corpus_total": 6625,
+   "at": "2026-10-24T19:09:58Z"
+  },
+  {
+   "run_id": "run_20261026_030000",
+   "version": "2026.10.26-017",
+   "new_records": 0,
+   "corpus_total": 6625,
+   "at": "2026-10-25T19:09:55Z"
+  },
+  {
+   "run_id": "run_20261027_030001",
+   "version": "2026.10.27-018",
+   "new_records": 1,
+   "corpus_total": 6626,
+   "at": "2026-10-26T19:09:56Z"
+  },
+  {
+   "run_id": "run_20261028_030001",
+   "version": "2026.10.28-019",
+   "new_records": 0,
+   "corpus_total": 6626,
+   "at": "2026-10-27T19:09:55Z"
+  },
+  {
+   "run_id": "run_20261029_030000",
+   "version": "2026.10.29-020",
+   "new_records": 2,
+   "corpus_total": 6628,
+   "at": "2026-10-28T19:09:54Z"
+  },
+  {
+   "run_id": "run_20261029_235229",
+   "version": "2026.10.29-021",
+   "new_records": 0,
+   "corpus_total": 6627,
+   "at": "2026-10-29T15:52:29Z"
+  },
+  {
+   "run_id": "run_20261029_235340",
+   "version": "2026.10.29-022",
+   "new_records": 0,
+   "corpus_total": 6627,
+   "at": "2026-10-29T15:53:40Z"
+  },
+  {
+   "run_id": "run_20261029_235413",
+   "version": "2026.10.29-023",
+   "new_records": 0,
+   "corpus_total": 6627,
+   "at": "2026-10-29T15:54:13Z"
+  },
+  {
+   "run_id": "run_20261030_004014",
+   "version": "2026.10.30-024",
+   "new_records": 1057,
+   "corpus_total": 7684,
+   "at": "2026-10-29T16:54:46Z"
+  },
+  {
+   "run_id": "run_20261030_005513",
+   "version": "2026.10.30-025",
+   "new_records": 0,
+   "corpus_total": 7570,
+   "at": "2026-10-29T16:55:13Z"
+  },
+  {
+   "run_id": "run_20261030_030001",
+   "version": "2026.10.30-026",
+   "new_records": 114,
+   "corpus_total": 7684,
+   "at": "2026-10-29T19:14:55Z"
+  },
+  {
+   "run_id": "run_20261031_030001",
+   "version": "2026.10.31-027",
+   "new_records": 43,
+   "corpus_total": 7727,
+   "at": "2026-10-30T19:13:51Z"
+  },
+  {
+   "run_id": "run_20261101_030001",
+   "version": "2026.11.01-028",
+   "new_records": 45,
+   "corpus_total": 7772,
+   "at": "2026-10-31T19:04:44Z"
+  },
+  {
+   "run_id": "run_20261102_030000",
+   "version": "2026.11.02-029",
+   "new_records": 36,
+   "corpus_total": 7808,
+   "at": "2026-11-01T19:16:16Z"
+  },
+  {
+   "run_id": "run_20261104_030001",
+   "version": "2026.11.04-030",
+   "new_records": 32,
+   "corpus_total": 7840,
+   "at": "2026-11-03T23:00:24Z"
+  }
+ ],
+ "watermarks": {
+  "seed": {
+   "last_count": 149,
+   "at": "2026-11-03T23:00:24Z"
+  },
+  "eastmoney_ipo": {
+   "last_count": 349,
+   "at": "2026-11-03T23:00:24Z"
+  },
+  "cninfo_all_a": {
+   "last_count": 6186,
+   "at": "2026-11-03T23:00:24Z"
+  },
+  "wiki_zh_brand": {
+   "last_count": 758,
+   "at": "2026-11-03T23:00:24Z"
+  },
+  "itunes_apps": {
+   "last_count": 908,
+   "at": "2026-11-03T23:00:24Z"
+  }
+ },
+ "last_run_at": "2026-11-03T23:00:24Z",
+ "last_version": "2026.11.04-030"
+}
