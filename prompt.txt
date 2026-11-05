@@ -40,7 +40,7 @@
 - WHOIS 只兜底：com/net/io/ai/me/sh/so 可用（whois <域名>，出现 Registrar、Creation Date 为已注册；「No match for」是 .com/.net 未注册，「Domain not found」是 .io/.me/.sh 未注册）。.dev/.app 的 WHOIS 实测对已注册与不存在的域名都回空串，不走这条路。
 - DNS 不能单独下结论：查到 NS 记录可直接判已注册；NXDOMAIN 只说明没有委派，已注册但没配 NS 的域名也长这样，得回 RDAP 确认。本机 DNS 可能被代理劫持编造假地址，不用解析结果判断可用性。
 - 同一后缀不并发轰炸；同一域名两次结论一致才写状态。仓库脚本 scripts/domain-check-fast.py 实现了这套查询链（DoH 预筛、权威 RDAP、WHOIS 兜底）：python3 scripts/domain-check-fast.py --variants link-parse,direct-fetch --json out.json。
-- 可注册不等于能用：还要查 npm 包名占用、GitHub 同名仓库、商标（USPTO、CNIPA）与同名产品，这些一律写「待核验」。
+- 可注册不等于能用：npm 包名占用、GitHub 同名仓库、商标（USPTO、CNIPA）与同名产品必须逐项查清并报实测结果，不许用「待核验」搪塞。npm 查 registry.npmjs.org/<包名> 返回码（404 未占用、200 已占用）；GitHub 查 api.github.com/users/<名>（404 用户名未占用）加 api.github.com/search/repositories?q=<名>+in:name 看同名仓库数；商标查 USPTO tmsearch 与 CNIPA 商标库，查到记录报注册号与状态，公开渠道查不到就写明查了哪个库、结论是未见记录还是需登录核验，不能只写待核验。同名产品用 web_search 搜一圈。npm、GitHub、商标任一被占用就淘汰该名，不靠改解释救回。
 - 交付写明：查了哪些域名、各自状态与来源（rdap / whois / doh-ns）、查询时间；没查的只叫候选域名。
 
 共用评审判据（每个候选都检查，不再另写自检清单）
@@ -49,11 +49,11 @@
 - 词面与类别：一个具体词、两个真实词组合，或一个读得通的自然造词，至少要有一个具体物件、具体动作或清楚的方向。不要两个通用褒义词、抽象名词拼接（Bridgescape、Flybridge、Gainbridge），不要靠外语释义成立的名字（Ikena），不要一批普通短动词（unwrap、sift、peel、pluck）或动作压缩出的效果词；route 这类通用动词单独用不算问题，但主体必须另有具体信息。通用技术词（parser、fetcher、adapter、helper、manager、handler、gateway、client、server、kit、suite、pack、hub）本身不构成名字，必须能对上产品里的具体动作或具体对象才对；对不上就是通用词，判不成立。读音像词但含义只能靠解释才成立的名字（Linkdex、Sharedex，dex 要解释成索引才通）也不成立，除非这个字本身能让人看出指向。只复述物料、规格、颜色、数量、状态、工序、场所、容器或格式的标签不算品牌名；真实物件或动作有具体产品关联时，不因它属于这些类别就否决。开发者工具不能靠商品式包装掩盖类别不合。
 - 套路：不用通用词加 -ly/-ify/-io/-ai/-hq/-labs/-base/-flow/-wise/-verse/-nova/-gen/-mint/-ora/-eon/-ium 批量造名，不用 elevate、empower、seamless、innovate、future、vision、unleash、limitless 或“类别词 + AI”。灯塔、指南针、雷达、哨兵、信标、地图册、守望塔、守卫、盾牌这类通用隐喻，漏斗、交叉口、交换机、握手、校验和、数据包这类只对得上结构关系的器物，以及 Courier、Waybill、Parcel、Relay、Package 这类行业标签，不拿来套泛化关联。
 - 形态自查：每个候选的 packageName 逐个核一遍连字符规则；展示名与包名不同就两个字段都写对，别让 packageName 漏掉词间连字符。逐个核 domains 字段有没有 2-3 个候选、有没有漏写后缀，以及域名是不是照 packageName 原样拼的。
-- 可用表达：短、好打、好记，念出声清晰，听一遍能转述拼写。主名 2-3 个音节最合适，5 个音节以上先换短再交付。词首爆破音（k/p/t/d）读着利落，前元音（i/e）偏快偏小、后元音（o/u）偏慢偏大，这条只在两个候选同分时取舍用，不作淘汰理由。检查同音歧义、明显知名项目撞名和已知竞品混淆；未联网核验的注册、域名、商标风险写“待核验”，不能当作已证实碰撞。放进“X 是一个……”和同类产品网站的语境，仍像名字，不是功能描述。
+- 可用表达：短、好打、好记，念出声清晰，听一遍能转述拼写。主名 2-3 个音节最合适，5 个音节以上先换短再交付。词首爆破音（k/p/t/d）读着利落，前元音（i/e）偏快偏小、后元音（o/u）偏慢偏大，这条只在两个候选同分时取舍用，不作淘汰理由。检查同音歧义、明显知名项目撞名和已知竞品混淆；注册、域名、商标必须联网核验后报结果，不查就不许交付，也不能把已证实的撞名写成待核验。放进“X 是一个……”和同类产品网站的语境，仍像名字，不是功能描述。
 - 同批检查：不全挤在一个结构或意象族（邮政、影视机械、网络设备各算一族）；数一遍每个词出现在几个候选里，同一个词出现在超过 3 个、或同一结构模板出现在超过 3 个，都算扎堆，要换掉多余的；同一主体的前缀变体（Parsevia 与 GetParsevia、URLKit 与 GoURLKit）算重复，多余的换掉；前缀名数量合规、名字形态合规、无重复。不照抄上述示例、不换字仿写、不续写同系列。来源真实、关联具体且无已证实问题的名字，朴素也可以保留，不因个人偏好强行淘汰。
 
 输出
-缺项时只列问题，不出名字。起名完成后给两种输出：先用列表读给人看，再给 JSON 给程序读，两者内容必须一致；解释用中文，不要长篇分析、词源故事或综合评分。列表一行一个名字，写成「序号. 名字（包名）· 读音 · 域名（状态）· 一句话由来」，域名逐个标可注册、已注册、溢价、保留、出售或未确认，不重复 JSON 里的联想和长理由。JSON 只放结构化字段，数字用整数，kept 按实际条数填写，rejected 列出本轮所有已淘汰的名字，不只写总数。
-{"analysis":{"factsGaps":[],"topUp":{"rounds":0,"added":0},"familyCheck":[{"word":"词","count":1}],"reviewed":{"kept":8,"rejected":[{"name":"淘汰名","reason":"规则与证据","suggestion":"新取材方向"}]}},"names":[{"name":"英文主名","packageName":"小写连字符写法","source":"真实来源或造词思路，简短说明是什么","associations":["联想一","联想二","联想三"],"productFact":"引用输入原词","rationale":"一句话说明来源与产品事实的联系","pronunciation":"读法","domains":["候选域名一","候选域名二","候选域名三"],"riskNotes":"同音、拼写、撞名风险；域名与商标待核验"}]}
+缺项时只列问题，不出名字。起名完成后给两种输出：先用列表读给人看，再给 JSON 给程序读，两者内容必须一致；解释用中文，不要长篇分析、词源故事或综合评分。列表一行一个名字，写成「序号. 名字（包名）· 读音 · 域名（状态）· npm/GitHub/商标核验 · 一句话由来」，域名逐个标可注册、已注册、溢价、保留、出售或未确认，npm 标占用或未占用，GitHub 标用户名占用与否与同名仓库数，商标标查到注册号或未见记录，不重复 JSON 里的联想和长理由。JSON 只放结构化字段，数字用整数，kept 按实际条数填写，rejected 列出本轮所有已淘汰的名字，不只写总数。
+{"analysis":{"factsGaps":[],"topUp":{"rounds":0,"added":0},"familyCheck":[{"word":"词","count":1}],"reviewed":{"kept":8,"rejected":[{"name":"淘汰名","reason":"规则与证据","suggestion":"新取材方向"}]}},"names":[{"name":"英文主名","packageName":"小写连字符写法","source":"真实来源或造词思路，简短说明是什么","associations":["联想一","联想二","联想三"],"productFact":"引用输入原词","rationale":"一句话说明来源与产品事实的联系","pronunciation":"读法","domains":["候选域名一","候选域名二","候选域名三"],"riskNotes":"同音、拼写、撞名风险；填域名、npm、GitHub、商标的实测核验结果，不写待核验"}]}
 只评审时同样先给列表（每行「名字 · 保留或淘汰 · 一句理由」），再输出 {"verdicts":[{"name":"候选名","decision":"keep|reject","reason":"引用规则和具体证据；保留的也给证据","suggestion":"淘汰时的新方向"}]}，每个输入候选恰好一条。
 只交英文名：names 里每条都是英文名，不出现汉字；拼音、简拼、拼音-用途词只以拉丁字母写法出现，不替代英文主名。
