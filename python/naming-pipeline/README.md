@@ -53,9 +53,9 @@ uv venv && uv pip install requests pypinyin opencc-python-reimplemented pytest  
 0 3 * * *  /Users/mac/workspace/active/NameYouLike/python/naming-pipeline/scheduled_run.sh
 ```
 
-注意 crontab 在机器睡眠时不会补跑。若要睡眠唤醒后自动补跑，可改用 launchd：
-`~/Library/LaunchAgents/com.nameyoulike.pipeline.plist` 已写好（每天 03:00，同一脚本），
-在系统终端（不要在 Hermes 内置终端）执行一次即可启用，启用后把上面的 crontab 行删掉：
+注意 crontab 在机器睡眠时不会补跑。若要睡眠唤醒后自动补跑，可改用 launchd：先创建
+`~/Library/LaunchAgents/com.nameyoulike.pipeline.plist`（每天 03:00，同一脚本；当前尚未创建），
+再在系统终端（不要在 Hermes 内置终端）执行一次即可启用，启用后把上面的 crontab 行删掉：
 
 ```bash
 launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.nameyoulike.pipeline.plist

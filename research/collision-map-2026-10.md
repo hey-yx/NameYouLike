@@ -3,6 +3,8 @@
 > 交付日期：2026-10-26。用途：**候选池过滤器**——新候选名先过 §1 雷区清单，再过 §2 黑名单，域名成本按 §3 行情判断。
 > 数据快照：GitHub 搜索 3 组（2026-10-26，`gh search repos`，并集 108 仓库，原始数据 `research/raw/gh-*.json`）；Cloudflare 注册局成本价快照（cfdomainpricing.com/prices.json，2026-10 更新）；Porkbun/Namecheap 官网价（Google 索引快照，2026-10 在售价）。
 > 汇率假设：$1 ≈ ¥7.12；预算口径 ¥240/年 ≈ $34/年。价格为非溢价（non-premium）域名价格，含 ICANN 费。
+>
+> 【勘误 2026-11-07】快照所引原始数据 research/raw/gh-*.json、gh-dt-topic50.json 未入库、现已不可核；正文表格为当时实测记录，以正文为准。
 
 ## 结论
 

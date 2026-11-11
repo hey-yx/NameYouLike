@@ -1,42 +1,7 @@
 {
  "schema": 1,
- "version_seq": 30,
+ "version_seq": 35,
  "runs": [
-  {
-   "run_id": "run_20261022_131327",
-   "version": "2026.10.22-001",
-   "new_records": 6664,
-   "corpus_total": 6664,
-   "at": "2026-10-22T05:23:28Z"
-  },
-  {
-   "run_id": "run_20261022_132948",
-   "version": "2026.10.22-002",
-   "new_records": 0,
-   "corpus_total": 6664,
-   "at": "2026-10-22T05:29:48Z"
-  },
-  {
-   "run_id": "run_20261022_133123",
-   "version": "2026.10.22-003",
-   "new_records": 0,
-   "corpus_total": 6606,
-   "at": "2026-10-22T05:31:23Z"
-  },
-  {
-   "run_id": "run_20261022_133314",
-   "version": "2026.10.22-004",
-   "new_records": 0,
-   "corpus_total": 6604,
-   "at": "2026-10-22T05:33:14Z"
-  },
-  {
-   "run_id": "run_20261022_133345",
-   "version": "2026.10.22-005",
-   "new_records": 1,
-   "corpus_total": 6605,
-   "at": "2026-10-22T05:33:48Z"
-  },
   {
    "run_id": "run_20261022_133502",
    "version": "2026.10.22-006",
@@ -211,30 +176,65 @@
    "new_records": 32,
    "corpus_total": 7840,
    "at": "2026-11-03T23:00:24Z"
+  },
+  {
+   "run_id": "run_20261106_030001",
+   "version": "2026.11.06-031",
+   "new_records": 19,
+   "corpus_total": 7859,
+   "at": "2026-11-05T19:14:56Z"
+  },
+  {
+   "run_id": "run_20261107_030001",
+   "version": "2026.11.07-032",
+   "new_records": 17,
+   "corpus_total": 7876,
+   "at": "2026-11-06T19:14:55Z"
+  },
+  {
+   "run_id": "run_20261108_030001",
+   "version": "2026.11.08-033",
+   "new_records": 17,
+   "corpus_total": 7893,
+   "at": "2026-11-07T19:14:10Z"
+  },
+  {
+   "run_id": "run_20261109_030001",
+   "version": "2026.11.09-034",
+   "new_records": 14,
+   "corpus_total": 7907,
+   "at": "2026-11-08T19:14:55Z"
+  },
+  {
+   "run_id": "run_20261110_030000",
+   "version": "2026.11.10-035",
+   "new_records": 13,
+   "corpus_total": 7920,
+   "at": "2026-11-09T19:14:12Z"
   }
  ],
  "watermarks": {
   "seed": {
    "last_count": 149,
-   "at": "2026-11-03T23:00:24Z"
+   "at": "2026-11-09T19:14:12Z"
   },
   "eastmoney_ipo": {
-   "last_count": 349,
-   "at": "2026-11-03T23:00:24Z"
+   "last_count": 350,
+   "at": "2026-11-09T19:14:12Z"
   },
   "cninfo_all_a": {
-   "last_count": 6186,
-   "at": "2026-11-03T23:00:24Z"
+   "last_count": 6187,
+   "at": "2026-11-09T19:14:12Z"
   },
   "wiki_zh_brand": {
-   "last_count": 758,
-   "at": "2026-11-03T23:00:24Z"
+   "last_count": 755,
+   "at": "2026-11-09T19:14:12Z"
   },
   "itunes_apps": {
    "last_count": 908,
-   "at": "2026-11-03T23:00:24Z"
+   "at": "2026-11-09T19:14:12Z"
   }
  },
- "last_run_at": "2026-11-03T23:00:24Z",
- "last_version": "2026.11.04-030"
+ "last_run_at": "2026-11-09T19:14:12Z",
+ "last_version": "2026.11.10-035"
 }

@@ -75,14 +75,14 @@
 
 | 碰撞类型 | 判据 | 处理 |
 |----------|------|------|
-| `exact` 精确重名 | 名字命中 7719 个已有品牌名索引 | **直接剔除**，剔除记录进 `last_dropped` / JSON `patterns.dropped_exact_collisions`（可审计） |
-| `phonetic` 同音 | 无声调拼音键命中 7655 个已有品牌语音键 | **评分 ×0.4 强降权**并标注 `collision`（通常沉出 top-N，不再打扰用户） |
+| `exact` 精确重名 | 名字命中已有品牌名索引（截至内置 v2026.11.04-030 共 7751 个） | **直接剔除**，剔除记录进 `last_dropped` / JSON `patterns.dropped_exact_collisions`（可审计） |
+| `phonetic` 同音 | 无声调拼音键命中已有品牌语音键（同版本共 7686 个） | **评分 ×0.4 强降权**并标注 `collision`（通常沉出 top-N，不再打扰用户） |
 
 语音键口径：与管道索引一致，**逐字** `lazy_pinyin` 拼接（多音字取默认读音，
 如 银行 → `yinxing`），与本引擎词组级拼音（`yinhang`）可能不同——查索引必须
 用逐字口径，`brandgen.stats.collision_key()` 已封装。
 
-真实数据效果（内置 v2026.11.02-029）：
+真实数据效果（内置 v2026.11.04-030；索引随每日管道增长，版本与计数以 `data/naming_patterns.slim.json` 为准）：
 
 - 精确剔除示例：`极兔`（前缀『极』+种子『兔』构出）、种子词 `飞跃` 本身；
   美团 / 腾讯 / 华为 均能识别。
@@ -169,7 +169,7 @@ brandgen/
 ../scripts/       # 与 brandgen/ 同级（项目 python/scripts/）
   extract_slim.py      # 从管道完整统计刷新内置数据
   smoke_real_stats.py  # 真实统计冒烟（碰撞/自然度）
-../tests/         # 与 brandgen/ 同级（项目 python/tests/），brandgen 相关 81 个测试（离线）
+../tests/         # 与 brandgen/ 同级（项目 python/tests/），brandgen 相关测试（离线，数量以 pytest 运行为准）
 ```
 
 ## 给下游引擎的集成说明

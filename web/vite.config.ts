@@ -4,7 +4,7 @@ import path from "node:path";
 
 export default defineConfig({
   root: import.meta.dirname,
-  base: "/nylike/",
+  base: "/NameYouLike/",
   plugins: [react()],
   resolve: {
     alias: {

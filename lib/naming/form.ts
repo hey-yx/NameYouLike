@@ -47,25 +47,6 @@ export interface ProductFormOptions {
   pinyinTokens?: Set<string>;
 }
 
-/**
- * 生成端的形态约束原话。数字都与上面的判据同源，拼进生成提示词与评审提示词。
- */
-export const PRODUCT_FORM_BRIEF =
-  "候选必须是一个完整的产品名——念出来像一个产品的名字（Caliper、Gauge、Plumb、Loom " +
-  "这种），不是一段功能描述，也不是「意象词 + 实字」的拼接。" +
-  "形体：1-2 个词件，可用一个连字符连接（skill-design、design-ledger 这种）；" +
-  "英文总长 ≤12 个字母、2-4 个音节" +
-  "（94% 的真实品牌落在 3 音节以内）。" +
-  "不要用泛泛的常见英文单词（tool、easy、fast、simple 这种没辨识度的），" +
-  "也不要用已烂大街的工具类实词；优先「功能用途词 + 特征词」的组合——" +
-  "功能词如 design、skill、code、data、doc、note，特征词是具体、有画面的词。" +
-  "不带空格、数字，不带 -kit/-sdk/-utils/-lib/-core/-api/-cli 这类技术后缀" +
-  "（100 个真实产品名里出现 0 次）。" +
-  "中文 2-4 个常用汉字，是字本身站得住的一个词；不要把两个抽象字拼成一个词（智域、云枢）。" +
-  "文化意象（星宿、草木、朝代、节气、诗词、瑞兽）可用但要谨慎：整个名字就是那一个词" +
-  "（北斗、甘棠、赤兔），不要拼成「北斗尺」「甘棠册」「麒麟册」「凤凰规」三字组合——" +
-  "真实生态里这种拼接结构 0 例。";
-
 function lettersOnly(name: string): string {
   return name.toLowerCase().replace(/[^a-z]/g, "");
 }

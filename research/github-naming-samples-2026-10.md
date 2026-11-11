@@ -24,6 +24,8 @@
 
 **口径说明（可复核）**
 
+> 【勘误 2026-11-07】本节提到的复现脚本（normalize-raw.py、culture_lexicon.py）与数据文件（raw/github-naming-<track>.json、morphology-2026-10.json、stats-2026-10.json）未入库、现已不存在，无法按此复现；统计为 2026-10 当时实测记录，结论保留。
+
 - **赛道划分**：按 GitHub topic 采集后归一到 15 个赛道；主会话按 topic 命名的文件（api/cli/figma/react/saas…）已合并进对应赛道（见 `research/normalize-raw.py`）。
 - **去重**：以 `full_name`（owner/repo）为键全局去重，同一仓库只算一次。
 - **meta 过滤**：剔除 awesome-list / roadmap / 面试 / 教程 / 模板 / 文档类（名字或描述命中即剔除），共剔 381 条。它们不是产品名，混进来会把"描述性长名"的比例抬高。
@@ -482,4 +484,6 @@ def audit(name):
 | `research/stats-2026-10.json` | 报告里所有统计数字 |
 | `research/culture_lexicon.py` | 文化词词典（来源/性质标注）＋误判黑名单＋中国来源名单 |
 | `research/classify-morph.py` / `stats-report.py` / `split-raw.py` / `topup-tracks.py` / `normalize-raw.py` | 复现脚本（改完重跑即可刷新本报告） |
+
+> 【勘误 2026-11-07】附录所列脚本与数据文件均未入库、现已不存在（research/ 现存：2 份报告 md、prompt-run/、raw/form-stats.json、命名方法学习-*）；本表为当时交付清单，不可再生。
 
