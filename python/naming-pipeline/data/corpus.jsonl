@@ -7918,3 +7918,16 @@
 {"record_id": "e94e3b1d61f82de1", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "状态迁移", "name_clean": "状态迁移"}
 {"record_id": "8806f893e9c6a220", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "掌上妇幼", "name_clean": "掌上妇幼"}
 {"record_id": "fa27eb7bdf9594c4", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "解剖大师-3d运动解剖学习库", "name_clean": "解剖大师"}
+{"record_id": "43b407d95374c09b", "source": "cninfo_all_a", "source_priority": 1, "kind": "baseline", "name_raw": "中胤科技", "name_clean": "中胤科技", "secucode": "300901"}
+{"record_id": "2a438d4ee18b6f03", "source": "cninfo_all_a", "source_priority": 1, "kind": "baseline", "name_raw": "百洋制药", "name_clean": "百洋制药", "secucode": "301015"}
+{"record_id": "cedfb95e7a3c2a1f", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "崩坏：星穹铁道", "name_clean": "崩坏"}
+{"record_id": "6cf6684e53eaa8db", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "奇迹暖暖", "name_clean": "奇迹暖暖"}
+{"record_id": "813c51aa6b3d47d8", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "无期迷途-MBCC特别庆典", "name_clean": "无期迷途"}
+{"record_id": "cd46f6630c0f8c6e", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "问道", "name_clean": "问道"}
+{"record_id": "6ba0d12e003e1e69", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "富业", "name_clean": "富业"}
+{"record_id": "b71448b9be5b6ad3", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "自由笔记 - AI记事本与随手记", "name_clean": "自由笔记"}
+{"record_id": "3d916e26a82f8380", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "淘宝主播", "name_clean": "淘宝主播"}
+{"record_id": "34f0dace51099852", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "浇水配额", "name_clean": "浇水配额"}
+{"record_id": "9872d67437413ed5", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "郑好办", "name_clean": "郑好办"}
+{"record_id": "e2f81898e78627c9", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "恰饭啦 - 好看又有趣的饮食记录App", "name_clean": "恰饭啦"}
+{"record_id": "98dfd7e3b3a37bf1", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "传安知信", "name_clean": "传安知信"}

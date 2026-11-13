@@ -1,21 +1,21 @@
 {
  "schema": "naming-patterns/v1",
- "version": "2026.11.10-035",
- "generated_at": "2026-11-09T19:14:12Z",
- "run_id": "run_20261110_030000",
+ "version": "2026.11.12-036",
+ "generated_at": "2026-11-11T19:14:57Z",
+ "run_id": "run_20261112_030000",
  "corpus": {
-  "total_records": 7920,
-  "stats_records": 1952,
-  "baseline_records": 5968,
+  "total_records": 7933,
+  "stats_records": 1963,
+  "baseline_records": 5970,
   "by_kind": {
-   "baseline": 0.691,
-   "product_app": 0.1323,
-   "famous_brand": 0.1182,
+   "baseline": 0.6902,
+   "product_app": 0.1335,
+   "famous_brand": 0.118,
    "new_enterprise": 0.0439,
    "brand_tradename": 0.0145
   },
   "by_source_counts": {
-   "itunes_apps": 1048,
+   "itunes_apps": 1059,
    "wiki_zh_brand": 489,
    "eastmoney_ipo": 270,
    "curated_seed": 145
@@ -23,2593 +23,2628 @@
   "with_domain": 394,
   "with_industry": 410,
   "by_stats_domain": {
-   "company": 0.7535,
-   "brand": 0.2465
+   "company": 0.7526,
+   "brand": 0.2474
   },
   "brand_domain_by_source": {
-   "itunes_apps": 1048,
+   "itunes_apps": 1059,
    "wiki_zh_brand": 489,
    "eastmoney_ipo": 270,
    "curated_seed": 145
   }
  },
  "length_dist": {
-  "2": 0.3525,
-  "4": 0.3468,
-  "3": 0.3007
+  "2": 0.352,
+  "4": 0.3479,
+  "3": 0.3001
  },
  "baseline_length_dist": {
-  "4": 0.6448,
-  "2": 0.1914,
+  "4": 0.6449,
+  "2": 0.1913,
   "3": 0.133,
   "5+": 0.0308
  },
  "char_scores": {
   "小": {
    "count": 65,
-   "freq": 0.01112,
+   "freq": 0.01105,
    "weight": 1.0,
    "pos_first": 44,
    "pos_last": 1
   },
   "天": {
    "count": 46,
-   "freq": 0.00787,
+   "freq": 0.00782,
    "weight": 0.8412,
    "pos_first": 26,
    "pos_last": 4
   },
   "大": {
    "count": 43,
-   "freq": 0.00736,
+   "freq": 0.00731,
    "weight": 0.8134,
    "pos_first": 20,
    "pos_last": 5
   },
+  "宝": {
+   "count": 37,
+   "freq": 0.00629,
+   "weight": 0.7545,
+   "pos_first": 3,
+   "pos_last": 21
+  },
   "云": {
    "count": 37,
-   "freq": 0.00633,
+   "freq": 0.00629,
    "weight": 0.7545,
    "pos_first": 11,
    "pos_last": 20
   },
-  "宝": {
-   "count": 36,
-   "freq": 0.00616,
-   "weight": 0.7442,
-   "pos_first": 3,
-   "pos_last": 21
-  },
   "家": {
    "count": 35,
-   "freq": 0.00599,
+   "freq": 0.00595,
    "weight": 0.7338,
    "pos_first": 2,
    "pos_last": 25
   },
   "通": {
    "count": 34,
-   "freq": 0.00582,
+   "freq": 0.00578,
    "weight": 0.7232,
    "pos_first": 4,
    "pos_last": 18
   },
   "美": {
    "count": 33,
-   "freq": 0.00565,
+   "freq": 0.00561,
    "weight": 0.7125,
    "pos_first": 17,
    "pos_last": 4
   },
   "中": {
    "count": 29,
-   "freq": 0.00496,
+   "freq": 0.00493,
    "weight": 0.6679,
    "pos_first": 25,
    "pos_last": 0
   },
   "华": {
    "count": 28,
-   "freq": 0.00479,
+   "freq": 0.00476,
    "weight": 0.6563,
    "pos_first": 15,
    "pos_last": 5
   },
   "海": {
    "count": 28,
-   "freq": 0.00479,
+   "freq": 0.00476,
    "weight": 0.6563,
    "pos_first": 22,
    "pos_last": 2
   },
   "音": {
    "count": 26,
-   "freq": 0.00445,
+   "freq": 0.00442,
    "weight": 0.6325,
    "pos_first": 5,
    "pos_last": 6
   },
   "书": {
    "count": 25,
-   "freq": 0.00428,
+   "freq": 0.00425,
    "weight": 0.6202,
    "pos_first": 5,
    "pos_last": 9
   },
   "星": {
    "count": 25,
-   "freq": 0.00428,
+   "freq": 0.00425,
    "weight": 0.6202,
    "pos_first": 9,
    "pos_last": 4
   },
   "乐": {
    "count": 25,
-   "freq": 0.00428,
+   "freq": 0.00425,
    "weight": 0.6202,
    "pos_first": 8,
    "pos_last": 9
   },
   "微": {
    "count": 24,
-   "freq": 0.00411,
+   "freq": 0.00408,
    "weight": 0.6076,
    "pos_first": 17,
    "pos_last": 4
   },
   "国": {
    "count": 24,
-   "freq": 0.00411,
+   "freq": 0.00408,
    "weight": 0.6076,
    "pos_first": 7,
    "pos_last": 6
   },
+  "信": {
+   "count": 23,
+   "freq": 0.00391,
+   "weight": 0.5948,
+   "pos_first": 3,
+   "pos_last": 12
+  },
+  "安": {
+   "count": 23,
+   "freq": 0.00391,
+   "weight": 0.5948,
+   "pos_first": 12,
+   "pos_last": 4
+  },
   "车": {
    "count": 23,
-   "freq": 0.00393,
+   "freq": 0.00391,
    "weight": 0.5948,
    "pos_first": 2,
    "pos_last": 13
   },
-  "信": {
-   "count": 22,
-   "freq": 0.00376,
-   "weight": 0.5818,
-   "pos_first": 3,
-   "pos_last": 11
-  },
   "达": {
    "count": 22,
-   "freq": 0.00376,
+   "freq": 0.00374,
    "weight": 0.5818,
    "pos_first": 1,
    "pos_last": 14
   },
-  "安": {
-   "count": 22,
-   "freq": 0.00376,
-   "weight": 0.5818,
-   "pos_first": 12,
-   "pos_last": 4
-  },
   "易": {
    "count": 21,
-   "freq": 0.00359,
+   "freq": 0.00357,
    "weight": 0.5684,
    "pos_first": 11,
    "pos_last": 2
   },
   "三": {
    "count": 21,
-   "freq": 0.00359,
+   "freq": 0.00357,
    "weight": 0.5684,
    "pos_first": 19,
    "pos_last": 0
   },
+  "业": {
+   "count": 21,
+   "freq": 0.00357,
+   "weight": 0.5684,
+   "pos_first": 0,
+   "pos_last": 16
+  },
   "光": {
    "count": 21,
-   "freq": 0.00359,
+   "freq": 0.00357,
    "weight": 0.5684,
    "pos_first": 5,
    "pos_last": 6
   },
   "新": {
    "count": 20,
-   "freq": 0.00342,
+   "freq": 0.0034,
    "weight": 0.5547,
    "pos_first": 17,
    "pos_last": 1
   },
   "金": {
    "count": 20,
-   "freq": 0.00342,
+   "freq": 0.0034,
    "weight": 0.5547,
    "pos_first": 14,
    "pos_last": 3
   },
   "智": {
    "count": 20,
-   "freq": 0.00342,
+   "freq": 0.0034,
    "weight": 0.5547,
    "pos_first": 14,
    "pos_last": 0
   },
-  "业": {
-   "count": 20,
-   "freq": 0.00342,
-   "weight": 0.5547,
-   "pos_first": 0,
-   "pos_last": 15
-  },
   "德": {
    "count": 20,
-   "freq": 0.00342,
+   "freq": 0.0034,
    "weight": 0.5547,
    "pos_first": 9,
    "pos_last": 3
   },
   "日": {
    "count": 20,
-   "freq": 0.00342,
+   "freq": 0.0034,
    "weight": 0.5547,
    "pos_first": 4,
    "pos_last": 3
   },
   "生": {
    "count": 20,
-   "freq": 0.00342,
+   "freq": 0.0034,
    "weight": 0.5547,
    "pos_first": 0,
    "pos_last": 7
   },
   "一": {
    "count": 20,
-   "freq": 0.00342,
+   "freq": 0.0034,
    "weight": 0.5547,
    "pos_first": 12,
    "pos_last": 1
   },
   "香": {
    "count": 20,
-   "freq": 0.00342,
+   "freq": 0.0034,
    "weight": 0.5547,
    "pos_first": 2,
    "pos_last": 2
   },
   "猫": {
    "count": 19,
-   "freq": 0.00325,
+   "freq": 0.00323,
    "weight": 0.5407,
    "pos_first": 3,
    "pos_last": 10
   },
   "网": {
    "count": 19,
-   "freq": 0.00325,
+   "freq": 0.00323,
    "weight": 0.5407,
    "pos_first": 7,
    "pos_last": 9
   },
   "学": {
    "count": 19,
-   "freq": 0.00325,
+   "freq": 0.00323,
    "weight": 0.5407,
    "pos_first": 5,
    "pos_last": 7
   },
   "酒": {
    "count": 19,
-   "freq": 0.00325,
+   "freq": 0.00323,
    "weight": 0.5407,
    "pos_first": 0,
    "pos_last": 10
   },
   "医": {
    "count": 19,
-   "freq": 0.00325,
+   "freq": 0.00323,
    "weight": 0.5407,
    "pos_first": 5,
    "pos_last": 1
   },
+  "记": {
+   "count": 18,
+   "freq": 0.00306,
+   "weight": 0.5262,
+   "pos_first": 1,
+   "pos_last": 12
+  },
   "康": {
    "count": 18,
-   "freq": 0.00308,
+   "freq": 0.00306,
    "weight": 0.5262,
    "pos_first": 4,
    "pos_last": 2
   },
   "长": {
    "count": 18,
-   "freq": 0.00308,
+   "freq": 0.00306,
    "weight": 0.5262,
    "pos_first": 11,
    "pos_last": 2
   },
   "人": {
    "count": 18,
-   "freq": 0.00308,
+   "freq": 0.00306,
    "weight": 0.5262,
    "pos_first": 4,
    "pos_last": 5
   },
   "店": {
    "count": 18,
-   "freq": 0.00308,
+   "freq": 0.00306,
    "weight": 0.5262,
    "pos_first": 1,
    "pos_last": 15
   },
   "漫": {
    "count": 18,
-   "freq": 0.00308,
+   "freq": 0.00306,
    "weight": 0.5262,
    "pos_first": 7,
    "pos_last": 2
   },
   "马": {
    "count": 17,
-   "freq": 0.00291,
+   "freq": 0.00289,
    "weight": 0.5114,
    "pos_first": 7,
    "pos_last": 2
   },
-  "记": {
-   "count": 17,
-   "freq": 0.00291,
-   "weight": 0.5114,
-   "pos_first": 1,
-   "pos_last": 11
-  },
   "电": {
    "count": 17,
-   "freq": 0.00291,
+   "freq": 0.00289,
    "weight": 0.5114,
    "pos_first": 4,
    "pos_last": 2
   },
   "花": {
    "count": 17,
-   "freq": 0.00291,
+   "freq": 0.00289,
    "weight": 0.5114,
    "pos_first": 4,
    "pos_last": 7
   },
   "利": {
    "count": 17,
-   "freq": 0.00291,
+   "freq": 0.00289,
    "weight": 0.5114,
    "pos_first": 3,
    "pos_last": 8
   },
   "堂": {
    "count": 17,
-   "freq": 0.00291,
+   "freq": 0.00289,
    "weight": 0.5114,
    "pos_first": 0,
    "pos_last": 17
   },
   "王": {
    "count": 17,
-   "freq": 0.00291,
+   "freq": 0.00289,
    "weight": 0.5114,
    "pos_first": 9,
    "pos_last": 4
   },
   "楼": {
    "count": 17,
-   "freq": 0.00291,
+   "freq": 0.00289,
    "weight": 0.5114,
    "pos_first": 1,
    "pos_last": 16
   },
   "精": {
    "count": 17,
-   "freq": 0.00291,
+   "freq": 0.00289,
    "weight": 0.5114,
    "pos_first": 4,
    "pos_last": 2
   },
   "点": {
    "count": 16,
-   "freq": 0.00274,
+   "freq": 0.00272,
    "weight": 0.4961,
    "pos_first": 4,
    "pos_last": 5
   },
   "来": {
    "count": 16,
-   "freq": 0.00274,
+   "freq": 0.00272,
    "weight": 0.4961,
    "pos_first": 5,
    "pos_last": 7
   },
   "泰": {
    "count": 16,
-   "freq": 0.00274,
+   "freq": 0.00272,
    "weight": 0.4961,
    "pos_first": 5,
    "pos_last": 6
   },
   "南": {
    "count": 16,
-   "freq": 0.00274,
+   "freq": 0.00272,
    "weight": 0.4961,
    "pos_first": 10,
    "pos_last": 3
   },
   "上": {
    "count": 16,
-   "freq": 0.00274,
+   "freq": 0.00272,
    "weight": 0.4961,
    "pos_first": 3,
    "pos_last": 4
   },
   "爱": {
    "count": 15,
-   "freq": 0.00257,
+   "freq": 0.00255,
    "weight": 0.4804,
    "pos_first": 12,
    "pos_last": 0
   },
   "百": {
    "count": 15,
-   "freq": 0.00257,
+   "freq": 0.00255,
    "weight": 0.4804,
    "pos_first": 10,
    "pos_last": 1
   },
   "快": {
    "count": 15,
-   "freq": 0.00257,
+   "freq": 0.00255,
    "weight": 0.4804,
    "pos_first": 10,
    "pos_last": 0
   },
   "米": {
    "count": 15,
-   "freq": 0.00257,
+   "freq": 0.00255,
    "weight": 0.4804,
    "pos_first": 6,
    "pos_last": 5
   },
+  "好": {
+   "count": 15,
+   "freq": 0.00255,
+   "weight": 0.4804,
+   "pos_first": 12,
+   "pos_last": 0
+  },
   "之": {
    "count": 15,
-   "freq": 0.00257,
+   "freq": 0.00255,
    "weight": 0.4804,
    "pos_first": 2,
    "pos_last": 0
   },
   "东": {
    "count": 14,
-   "freq": 0.0024,
+   "freq": 0.00238,
    "weight": 0.4641,
    "pos_first": 9,
    "pos_last": 2
   },
   "多": {
    "count": 14,
-   "freq": 0.0024,
+   "freq": 0.00238,
    "weight": 0.4641,
    "pos_first": 5,
    "pos_last": 3
   },
   "豆": {
    "count": 14,
-   "freq": 0.0024,
+   "freq": 0.00238,
    "weight": 0.4641,
    "pos_first": 5,
    "pos_last": 3
   },
   "飞": {
    "count": 14,
-   "freq": 0.0024,
+   "freq": 0.00238,
    "weight": 0.4641,
    "pos_first": 9,
    "pos_last": 3
   },
   "同": {
    "count": 14,
-   "freq": 0.0024,
+   "freq": 0.00238,
    "weight": 0.4641,
    "pos_first": 8,
    "pos_last": 0
   },
   "科": {
    "count": 14,
-   "freq": 0.0024,
+   "freq": 0.00238,
    "weight": 0.4641,
    "pos_first": 7,
    "pos_last": 2
   },
   "图": {
    "count": 14,
-   "freq": 0.0024,
+   "freq": 0.00238,
    "weight": 0.4641,
    "pos_first": 1,
    "pos_last": 8
   },
-  "好": {
+  "奇": {
    "count": 14,
-   "freq": 0.0024,
+   "freq": 0.00238,
    "weight": 0.4641,
-   "pos_first": 12,
-   "pos_last": 0
+   "pos_first": 6,
+   "pos_last": 4
   },
   "力": {
    "count": 14,
-   "freq": 0.0024,
+   "freq": 0.00238,
    "weight": 0.4641,
    "pos_first": 1,
    "pos_last": 7
   },
   "城": {
    "count": 14,
-   "freq": 0.0024,
+   "freq": 0.00238,
    "weight": 0.4641,
    "pos_first": 2,
    "pos_last": 7
   },
   "茶": {
    "count": 14,
-   "freq": 0.0024,
+   "freq": 0.00238,
    "weight": 0.4641,
    "pos_first": 2,
    "pos_last": 7
   },
   "工": {
    "count": 14,
-   "freq": 0.0024,
+   "freq": 0.00238,
    "weight": 0.4641,
    "pos_first": 2,
    "pos_last": 4
   },
   "福": {
    "count": 14,
-   "freq": 0.0024,
+   "freq": 0.00238,
    "weight": 0.4641,
    "pos_first": 7,
    "pos_last": 6
   },
   "龙": {
    "count": 14,
-   "freq": 0.0024,
+   "freq": 0.00238,
    "weight": 0.4641,
    "pos_first": 5,
    "pos_last": 4
   },
   "园": {
    "count": 14,
-   "freq": 0.0024,
+   "freq": 0.00238,
    "weight": 0.4641,
    "pos_first": 0,
    "pos_last": 12
   },
   "动": {
    "count": 14,
-   "freq": 0.0024,
+   "freq": 0.00238,
    "weight": 0.4641,
    "pos_first": 1,
    "pos_last": 2
   },
   "考": {
    "count": 14,
-   "freq": 0.0024,
+   "freq": 0.00238,
    "weight": 0.4641,
    "pos_first": 2,
    "pos_last": 6
   },
   "讯": {
    "count": 13,
-   "freq": 0.00222,
+   "freq": 0.00221,
    "weight": 0.4472,
    "pos_first": 2,
    "pos_last": 4
   },
   "球": {
    "count": 13,
-   "freq": 0.00222,
+   "freq": 0.00221,
    "weight": 0.4472,
    "pos_first": 0,
    "pos_last": 8
   },
   "兴": {
    "count": 13,
-   "freq": 0.00222,
+   "freq": 0.00221,
    "weight": 0.4472,
    "pos_first": 2,
    "pos_last": 7
   },
   "理": {
    "count": 13,
-   "freq": 0.00222,
+   "freq": 0.00221,
    "weight": 0.4472,
    "pos_first": 4,
    "pos_last": 7
   },
   "山": {
    "count": 13,
-   "freq": 0.00222,
+   "freq": 0.00221,
    "weight": 0.4472,
    "pos_first": 2,
    "pos_last": 5
   },
-  "奇": {
-   "count": 13,
-   "freq": 0.00222,
-   "weight": 0.4472,
-   "pos_first": 5,
-   "pos_last": 4
-  },
   "联": {
    "count": 13,
-   "freq": 0.00222,
+   "freq": 0.00221,
    "weight": 0.4472,
    "pos_first": 5,
    "pos_last": 4
   },
   "老": {
    "count": 13,
-   "freq": 0.00222,
+   "freq": 0.00221,
    "weight": 0.4472,
    "pos_first": 10,
    "pos_last": 0
   },
   "特": {
    "count": 13,
-   "freq": 0.00222,
+   "freq": 0.00221,
    "weight": 0.4472,
    "pos_first": 1,
    "pos_last": 9
   },
   "子": {
    "count": 13,
-   "freq": 0.00222,
+   "freq": 0.00221,
    "weight": 0.4472,
    "pos_first": 0,
    "pos_last": 5
   },
   "春": {
    "count": 13,
-   "freq": 0.00222,
+   "freq": 0.00221,
    "weight": 0.4472,
    "pos_first": 3,
    "pos_last": 8
   },
   "白": {
    "count": 13,
-   "freq": 0.00222,
+   "freq": 0.00221,
    "weight": 0.4472,
    "pos_first": 3,
    "pos_last": 3
   },
   "心": {
    "count": 13,
-   "freq": 0.00222,
+   "freq": 0.00221,
    "weight": 0.4472,
    "pos_first": 4,
    "pos_last": 5
   },
   "影": {
    "count": 13,
-   "freq": 0.00222,
+   "freq": 0.00221,
    "weight": 0.4472,
    "pos_first": 2,
    "pos_last": 4
   },
   "语": {
    "count": 13,
-   "freq": 0.00222,
+   "freq": 0.00221,
    "weight": 0.4472,
    "pos_first": 1,
    "pos_last": 9
   },
   "全": {
    "count": 13,
-   "freq": 0.00222,
+   "freq": 0.00221,
    "weight": 0.4472,
    "pos_first": 10,
    "pos_last": 3
   },
   "剧": {
    "count": 13,
-   "freq": 0.00222,
+   "freq": 0.00221,
    "weight": 0.4472,
    "pos_first": 1,
    "pos_last": 8
   },
   "行": {
    "count": 13,
-   "freq": 0.00222,
+   "freq": 0.00221,
    "weight": 0.4472,
    "pos_first": 0,
    "pos_last": 9
   },
   "鱼": {
    "count": 12,
-   "freq": 0.00205,
+   "freq": 0.00204,
    "weight": 0.4297,
    "pos_first": 2,
    "pos_last": 5
   },
   "博": {
    "count": 12,
-   "freq": 0.00205,
+   "freq": 0.00204,
    "weight": 0.4297,
    "pos_first": 4,
    "pos_last": 3
   },
   "团": {
    "count": 12,
-   "freq": 0.00205,
+   "freq": 0.00204,
    "weight": 0.4297,
    "pos_first": 1,
    "pos_last": 8
   },
   "平": {
    "count": 12,
-   "freq": 0.00205,
+   "freq": 0.00204,
    "weight": 0.4297,
    "pos_first": 5,
    "pos_last": 1
   },
   "北": {
    "count": 12,
-   "freq": 0.00205,
+   "freq": 0.00204,
    "weight": 0.4297,
    "pos_first": 8,
    "pos_last": 0
   },
   "高": {
    "count": 12,
-   "freq": 0.00205,
+   "freq": 0.00204,
    "weight": 0.4297,
    "pos_first": 5,
    "pos_last": 4
   },
   "客": {
    "count": 12,
-   "freq": 0.00205,
+   "freq": 0.00204,
    "weight": 0.4297,
    "pos_first": 0,
    "pos_last": 7
   },
   "瑞": {
    "count": 12,
-   "freq": 0.00205,
+   "freq": 0.00204,
    "weight": 0.4297,
    "pos_first": 5,
    "pos_last": 2
   },
   "和": {
    "count": 12,
-   "freq": 0.00205,
+   "freq": 0.00204,
    "weight": 0.4297,
    "pos_first": 6,
    "pos_last": 4
   },
   "元": {
    "count": 12,
-   "freq": 0.00205,
+   "freq": 0.00204,
    "weight": 0.4297,
    "pos_first": 6,
    "pos_last": 4
   },
   "州": {
    "count": 12,
-   "freq": 0.00205,
+   "freq": 0.00204,
    "weight": 0.4297,
    "pos_first": 0,
    "pos_last": 3
   },
   "火": {
    "count": 12,
-   "freq": 0.00205,
+   "freq": 0.00204,
    "weight": 0.4297,
    "pos_first": 4,
    "pos_last": 0
   },
+  "无": {
+   "count": 12,
+   "freq": 0.00204,
+   "weight": 0.4297,
+   "pos_first": 8,
+   "pos_last": 0
+  },
   "得": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 6,
    "pos_last": 2
   },
+  "知": {
+   "count": 11,
+   "freq": 0.00187,
+   "weight": 0.4114,
+   "pos_first": 9,
+   "pos_last": 0
+  },
   "红": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 9,
    "pos_last": 1
   },
   "手": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 2,
    "pos_last": 5
   },
+  "途": {
+   "count": 11,
+   "freq": 0.00187,
+   "weight": 0.4114,
+   "pos_first": 5,
+   "pos_last": 5
+  },
   "牛": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 3,
    "pos_last": 6
   },
   "拉": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 3,
    "pos_last": 4
   },
   "极": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 9,
    "pos_last": 0
   },
   "思": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 3,
    "pos_last": 4
   },
   "世": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 3,
    "pos_last": 1
   },
   "尔": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 0,
    "pos_last": 4
   },
   "贝": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 3,
    "pos_last": 3
   },
+  "富": {
+   "count": 11,
+   "freq": 0.00187,
+   "weight": 0.4114,
+   "pos_first": 5,
+   "pos_last": 2
+  },
   "维": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 5,
    "pos_last": 2
   },
   "英": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 3,
    "pos_last": 3
   },
   "健": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 10,
    "pos_last": 1
   },
   "万": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 9,
    "pos_last": 0
   },
   "时": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 2,
    "pos_last": 1
   },
   "成": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 6,
    "pos_last": 1
   },
   "空": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 0,
    "pos_last": 6
   },
   "江": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 3,
    "pos_last": 0
   },
-  "无": {
-   "count": 11,
-   "freq": 0.00188,
-   "weight": 0.4114,
-   "pos_first": 7,
-   "pos_last": 0
-  },
   "看": {
    "count": 11,
-   "freq": 0.00188,
+   "freq": 0.00187,
    "weight": 0.4114,
    "pos_first": 2,
    "pos_last": 6
   },
   "阿": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 6,
    "pos_last": 0
   },
-  "知": {
-   "count": 10,
-   "freq": 0.00171,
-   "weight": 0.3922,
-   "pos_first": 9,
-   "pos_last": 0
-  },
   "界": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 1,
    "pos_last": 8
   },
   "面": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 3,
    "pos_last": 7
   },
-  "途": {
-   "count": 10,
-   "freq": 0.00171,
-   "weight": 0.3922,
-   "pos_first": 5,
-   "pos_last": 4
-  },
   "滴": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 5,
    "pos_last": 1
   },
   "线": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 0,
    "pos_last": 9
   },
   "有": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 6,
    "pos_last": 0
   },
   "方": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 4,
    "pos_last": 3
   },
   "九": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 8,
    "pos_last": 1
   },
   "西": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 5,
    "pos_last": 1
   },
   "汇": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 3,
    "pos_last": 6
   },
-  "富": {
-   "count": 10,
-   "freq": 0.00171,
-   "weight": 0.3922,
-   "pos_first": 4,
-   "pos_last": 2
-  },
   "恒": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 8,
    "pos_last": 0
   },
   "公": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 2,
    "pos_last": 2
   },
   "斯": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 0,
    "pos_last": 7
   },
   "测": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 4,
    "pos_last": 3
   },
   "可": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 4,
    "pos_last": 3
   },
   "能": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 1,
    "pos_last": 2
   },
   "慧": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 5,
    "pos_last": 2
   },
   "斋": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 0,
    "pos_last": 10
   },
   "灵": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 3,
    "pos_last": 7
   },
   "画": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 2,
    "pos_last": 4
   },
+  "饭": {
+   "count": 10,
+   "freq": 0.0017,
+   "weight": 0.3922,
+   "pos_first": 1,
+   "pos_last": 0
+  },
   "轻": {
    "count": 10,
-   "freq": 0.00171,
+   "freq": 0.0017,
    "weight": 0.3922,
    "pos_first": 6,
    "pos_last": 2
   },
   "程": {
    "count": 9,
-   "freq": 0.00154,
+   "freq": 0.00153,
    "weight": 0.3721,
    "pos_first": 0,
    "pos_last": 7
   },
   "荣": {
    "count": 9,
-   "freq": 0.00154,
+   "freq": 0.00153,
    "weight": 0.3721,
    "pos_first": 6,
    "pos_last": 0
   },
   "地": {
    "count": 9,
-   "freq": 0.00154,
+   "freq": 0.00153,
    "weight": 0.3721,
    "pos_first": 1,
    "pos_last": 2
   },
   "克": {
    "count": 9,
-   "freq": 0.00154,
+   "freq": 0.00153,
    "weight": 0.3721,
    "pos_first": 0,
    "pos_last": 6
   },
   "创": {
    "count": 9,
-   "freq": 0.00154,
+   "freq": 0.00153,
    "weight": 0.3721,
    "pos_first": 3,
    "pos_last": 5
   },
   "源": {
    "count": 9,
-   "freq": 0.00154,
+   "freq": 0.00153,
    "weight": 0.3721,
    "pos_first": 0,
    "pos_last": 5
   },
   "林": {
    "count": 9,
-   "freq": 0.00154,
+   "freq": 0.00153,
    "weight": 0.3721,
    "pos_first": 2,
    "pos_last": 3
   },
   "广": {
    "count": 9,
-   "freq": 0.00154,
+   "freq": 0.00153,
    "weight": 0.3721,
    "pos_first": 6,
    "pos_last": 0
   },
   "股": {
    "count": 9,
-   "freq": 0.00154,
+   "freq": 0.00153,
    "weight": 0.3721,
    "pos_first": 0,
    "pos_last": 2
   },
   "神": {
    "count": 9,
-   "freq": 0.00154,
+   "freq": 0.00153,
    "weight": 0.3721,
    "pos_first": 3,
    "pos_last": 4
   },
   "民": {
    "count": 9,
-   "freq": 0.00154,
+   "freq": 0.00153,
    "weight": 0.3721,
    "pos_first": 1,
    "pos_last": 3
   },
   "市": {
    "count": 9,
-   "freq": 0.00154,
+   "freq": 0.00153,
    "weight": 0.3721,
    "pos_first": 7,
    "pos_last": 0
   },
   "千": {
    "count": 9,
-   "freq": 0.00154,
+   "freq": 0.00153,
    "weight": 0.3721,
    "pos_first": 5,
    "pos_last": 3
   },
-  "饭": {
-   "count": 9,
-   "freq": 0.00154,
-   "weight": 0.3721,
-   "pos_first": 1,
-   "pos_last": 0
-  },
   "掌": {
    "count": 9,
-   "freq": 0.00154,
+   "freq": 0.00153,
    "weight": 0.3721,
    "pos_first": 8,
    "pos_last": 0
   },
   "读": {
    "count": 9,
-   "freq": 0.00154,
+   "freq": 0.00153,
    "weight": 0.3721,
    "pos_first": 0,
    "pos_last": 7
   },
   "听": {
    "count": 9,
-   "freq": 0.00154,
+   "freq": 0.00153,
    "weight": 0.3721,
    "pos_first": 1,
    "pos_last": 4
   },
   "里": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 0,
    "pos_last": 4
   },
   "度": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 2,
    "pos_last": 2
   },
   "租": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 1,
    "pos_last": 1
   },
   "视": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 1,
    "pos_last": 3
   },
   "拍": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 1,
    "pos_last": 3
   },
   "友": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 3,
    "pos_last": 5
   },
   "酷": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 7,
    "pos_last": 1
   },
   "益": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 4,
    "pos_last": 4
   },
   "阳": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 3,
    "pos_last": 3
   },
   "器": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 0,
    "pos_last": 8
   },
   "雅": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 2,
    "pos_last": 5
   },
   "昌": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 0,
    "pos_last": 7
   },
   "惠": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 6,
    "pos_last": 0
   },
   "盛": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 4,
    "pos_last": 2
   },
   "禾": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 1,
    "pos_last": 4
   },
   "活": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 0,
    "pos_last": 8
   },
   "黄": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 6,
    "pos_last": 1
   },
   "宇": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 2,
    "pos_last": 4
   },
   "实": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 5,
    "pos_last": 0
   },
+  "传": {
+   "count": 8,
+   "freq": 0.00136,
+   "weight": 0.3508,
+   "pos_first": 3,
+   "pos_last": 1
+  },
   "份": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 0,
    "pos_last": 8
   },
   "烟": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 0,
    "pos_last": 7
   },
   "气": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 0,
    "pos_last": 2
   },
   "月": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 3,
    "pos_last": 0
   },
   "场": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 0,
    "pos_last": 8
   },
+  "水": {
+   "count": 8,
+   "freq": 0.00136,
+   "weight": 0.3508,
+   "pos_first": 3,
+   "pos_last": 1
+  },
   "企": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 4,
    "pos_last": 1
   },
   "狗": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 0,
    "pos_last": 5
   },
   "在": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 2,
    "pos_last": 0
   },
   "教": {
    "count": 8,
-   "freq": 0.00137,
+   "freq": 0.00136,
    "weight": 0.3508,
    "pos_first": 1,
    "pos_last": 1
   },
   "京": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 6,
    "pos_last": 1
   },
   "会": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 2,
    "pos_last": 3
   },
   "腾": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 5,
    "pos_last": 1
   },
   "虎": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 3,
    "pos_last": 1
   },
   "抖": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 6,
    "pos_last": 1
   },
   "七": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 6,
    "pos_last": 0
   },
   "明": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 1,
    "pos_last": 4
   },
+  "道": {
+   "count": 7,
+   "freq": 0.00119,
+   "weight": 0.3282,
+   "pos_first": 0,
+   "pos_last": 6
+  },
   "游": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 2,
    "pos_last": 2
   },
   "鸿": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 4,
    "pos_last": 0
   },
   "喜": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 5,
    "pos_last": 0
   },
   "居": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 0,
    "pos_last": 6
   },
   "速": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 1,
    "pos_last": 2
   },
   "吉": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 4,
    "pos_last": 1
   },
   "双": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 7,
    "pos_last": 0
   },
   "麦": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 3,
    "pos_last": 2
   },
   "永": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 7,
    "pos_last": 0
   },
   "宏": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 6,
    "pos_last": 1
   },
   "普": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 2,
    "pos_last": 1
   },
   "摩": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 4,
    "pos_last": 0
   },
   "农": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 1,
    "pos_last": 2
   },
   "风": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 1,
    "pos_last": 2
   },
-  "传": {
-   "count": 7,
-   "freq": 0.0012,
-   "weight": 0.3282,
-   "pos_first": 2,
-   "pos_last": 1
-  },
   "际": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 0,
    "pos_last": 6
   },
   "号": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 0,
    "pos_last": 6
   },
   "师": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 1,
    "pos_last": 4
   },
   "分": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 2,
    "pos_last": 2
   },
   "悦": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 5,
    "pos_last": 0
   },
   "钢": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 1,
    "pos_last": 0
   },
   "钱": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 2,
    "pos_last": 2
   },
   "文": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 2,
    "pos_last": 0
   },
   "果": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 1,
    "pos_last": 2
   },
-  "水": {
-   "count": 7,
-   "freq": 0.0012,
-   "weight": 0.3282,
-   "pos_first": 3,
-   "pos_last": 1
-  },
   "岛": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 0,
    "pos_last": 7
   },
   "番": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 4,
    "pos_last": 1
   },
   "机": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 0,
    "pos_last": 4
   },
   "集": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 0,
    "pos_last": 2
   },
+  "办": {
+   "count": 7,
+   "freq": 0.00119,
+   "weight": 0.3282,
+   "pos_first": 0,
+   "pos_last": 6
+  },
   "清": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 1,
    "pos_last": 1
   },
   "解": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 4,
    "pos_last": 1
   },
   "琴": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 0,
    "pos_last": 6
   },
   "阅": {
    "count": 7,
-   "freq": 0.0012,
+   "freq": 0.00119,
    "weight": 0.3282,
    "pos_first": 4,
    "pos_last": 1
   },
   "巴": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 3,
    "pos_last": 1
   },
+  "淘": {
+   "count": 6,
+   "freq": 0.00102,
+   "weight": 0.3038,
+   "pos_first": 5,
+   "pos_last": 1
+  },
   "脉": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 1,
    "pos_last": 3
   },
   "搜": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 2,
    "pos_last": 2
   },
   "众": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 3,
    "pos_last": 1
   },
   "货": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 2,
    "pos_last": 2
   },
   "帮": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 0,
    "pos_last": 5
   },
   "丰": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 2,
    "pos_last": 2
   },
   "六": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 4,
    "pos_last": 0
   },
   "森": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 1,
    "pos_last": 3
   },
-  "道": {
-   "count": 6,
-   "freq": 0.00103,
-   "weight": 0.3038,
-   "pos_first": 0,
-   "pos_last": 5
-  },
   "格": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 3,
    "pos_last": 3
   },
   "的": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 0,
    "pos_last": 2
   },
   "冰": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 1,
    "pos_last": 0
   },
+  "自": {
+   "count": 6,
+   "freq": 0.00102,
+   "weight": 0.3038,
+   "pos_first": 5,
+   "pos_last": 0
+  },
   "到": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 1,
    "pos_last": 3
   },
   "路": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 0,
    "pos_last": 4
   },
   "迪": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 0,
    "pos_last": 2
   },
   "发": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 2,
    "pos_last": 3
   },
   "石": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 1,
    "pos_last": 1
   },
   "超": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 5,
    "pos_last": 0
   },
   "优": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 5,
    "pos_last": 0
   },
   "佳": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 2,
    "pos_last": 3
   },
   "汉": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 4,
    "pos_last": 0
   },
   "远": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 2,
    "pos_last": 3
   },
   "捷": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 1,
    "pos_last": 4
   },
   "航": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 2,
    "pos_last": 4
   },
   "正": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 4,
    "pos_last": 0
   },
   "门": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 0,
    "pos_last": 3
   },
   "轮": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 0,
    "pos_last": 2
   },
   "歌": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 1,
    "pos_last": 2
   },
   "牌": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 0,
    "pos_last": 6
   },
   "士": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 0,
    "pos_last": 4
   },
   "我": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 4,
    "pos_last": 2
   },
   "事": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 0,
    "pos_last": 2
   },
   "开": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 3,
    "pos_last": 1
   },
   "梦": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 2,
    "pos_last": 3
   },
   "加": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 0,
    "pos_last": 3
   },
   "味": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 2,
    "pos_last": 0
   },
   "口": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 2,
    "pos_last": 0
   },
   "仔": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 0,
    "pos_last": 0
   },
   "古": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 4,
    "pos_last": 0
   },
   "圈": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 0,
    "pos_last": 5
   },
   "台": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 1,
    "pos_last": 1
   },
   "祥": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 1,
    "pos_last": 4
   },
   "凤": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 1,
    "pos_last": 1
   },
   "聚": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 5,
    "pos_last": 0
   },
   "原": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 3,
    "pos_last": 1
   },
   "习": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 2,
    "pos_last": 1
   },
   "查": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 1,
    "pos_last": 3
   },
   "卡": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 0,
    "pos_last": 1
   },
   "吧": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 0,
    "pos_last": 6
   },
-  "办": {
-   "count": 6,
-   "freq": 0.00103,
-   "weight": 0.3038,
-   "pos_first": 0,
-   "pos_last": 5
-  },
   "连": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 2,
    "pos_last": 3
   },
+  "主": {
+   "count": 6,
+   "freq": 0.00102,
+   "weight": 0.3038,
+   "pos_first": 0,
+   "pos_last": 5
+  },
   "聊": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 0,
    "pos_last": 6
   },
   "社": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 0,
    "pos_last": 6
   },
   "享": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 0,
    "pos_last": 3
   },
   "录": {
    "count": 6,
-   "freq": 0.00103,
+   "freq": 0.00102,
    "weight": 0.3038,
    "pos_first": 2,
    "pos_last": 4
   },
-  "淘": {
-   "count": 5,
-   "freq": 0.00086,
-   "weight": 0.2774,
-   "pos_first": 4,
-   "pos_last": 1
+  "暖": {
+   "count": 6,
+   "freq": 0.00102,
+   "weight": 0.3038,
+   "pos_first": 0,
+   "pos_last": 3
   },
   "品": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 3
   },
   "选": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 5
   },
   "街": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 2
   },
   "回": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 1
   },
   "财": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 1
   },
   "商": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 0
   },
   "想": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 2
   },
   "用": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 2
   },
   "声": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 3
   },
   "课": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 1
   },
   "哈": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 1
   },
   "步": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 3
   },
   "松": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 3,
    "pos_last": 1
   },
-  "自": {
-   "count": 5,
-   "freq": 0.00086,
-   "weight": 0.2774,
-   "pos_first": 4,
-   "pos_last": 0
-  },
   "如": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 1
   },
   "房": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 3
   },
   "诚": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 3
   },
   "芯": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 2
   },
   "托": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 2
   },
   "强": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 3,
    "pos_last": 1
   },
   "赛": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 0
   },
   "数": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 3
   },
   "字": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 3
   },
   "蓝": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 4,
    "pos_last": 1
   },
   "真": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 0
   },
   "景": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 4
   },
   "五": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 3,
    "pos_last": 0
   },
   "者": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 3
   },
   "珠": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 0
   },
   "临": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 3,
    "pos_last": 0
   },
   "表": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 4
   },
   "旅": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 1
   },
   "说": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 4
   },
+  "迹": {
+   "count": 5,
+   "freq": 0.00085,
+   "weight": 0.2774,
+   "pos_first": 0,
+   "pos_last": 4
+  },
   "布": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 1
   },
   "重": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 0
   },
   "木": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 1
   },
+  "问": {
+   "count": 5,
+   "freq": 0.00085,
+   "weight": 0.2774,
+   "pos_first": 3,
+   "pos_last": 1
+  },
   "伊": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 2
   },
   "鸡": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 2
   },
   "锅": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 4
   },
   "亚": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 3,
    "pos_last": 1
   },
   "咖": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 1
   },
   "间": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 4
   },
   "皇": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 3,
    "pos_last": 1
   },
   "食": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 1
   },
   "今": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 4,
    "pos_last": 0
   },
   "霸": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 2
   },
   "外": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 1
   },
+  "笔": {
+   "count": 5,
+   "freq": 0.00085,
+   "weight": 0.2774,
+   "pos_first": 0,
+   "pos_last": 2
+  },
   "药": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 3,
    "pos_last": 2
   },
   "阁": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 5
   },
   "张": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 3
   },
   "省": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 1
   },
   "黑": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 0
   },
   "剪": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 4
   },
   "秀": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 2
   },
   "对": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 5
   },
   "咕": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 2
   },
   "恋": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 4,
    "pos_last": 1
   },
   "移": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 4,
    "pos_last": 1
   },
   "相": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 2
   },
   "准": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 2
   },
   "交": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 3
   },
   "喵": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 3
   },
-  "主": {
-   "count": 5,
-   "freq": 0.00086,
-   "weight": 0.2774,
-   "pos_first": 0,
-   "pos_last": 5
-  },
   "常": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 3
   },
   "伴": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 1
   },
   "遇": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 2
   },
   "校": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 0
   },
   "体": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 4,
    "pos_last": 1
   },
   "练": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 1,
    "pos_last": 3
   },
   "借": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 3
   },
   "票": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 2,
    "pos_last": 2
   },
+  "配": {
+   "count": 5,
+   "freq": 0.00085,
+   "weight": 0.2774,
+   "pos_first": 1,
+   "pos_last": 1
+  },
   "院": {
    "count": 5,
-   "freq": 0.00086,
+   "freq": 0.00085,
    "weight": 0.2774,
    "pos_first": 0,
    "pos_last": 5
@@ -2809,522 +2844,497 @@
    "weight": 0.2481,
    "pos_first": 0,
    "pos_last": 2
-  },
-  "恩": {
-   "count": 4,
-   "freq": 0.00068,
-   "weight": 0.2481,
-   "pos_first": 1,
-   "pos_last": 3
-  },
-  "计": {
-   "count": 4,
-   "freq": 0.00068,
-   "weight": 0.2481,
-   "pos_first": 1,
-   "pos_last": 2
-  },
-  "川": {
-   "count": 4,
-   "freq": 0.00068,
-   "weight": 0.2481,
-   "pos_first": 3,
-   "pos_last": 1
-  },
-  "奥": {
-   "count": 4,
-   "freq": 0.00068,
-   "weight": 0.2481,
-   "pos_first": 3,
-   "pos_last": 0
-  },
-  "必": {
-   "count": 4,
-   "freq": 0.00068,
-   "weight": 0.2481,
-   "pos_first": 3,
-   "pos_last": 0
   }
  },
  "char_pair_scores": {
   "生活": {
    "count": 8,
-   "lift": 292.25,
+   "lift": 294.05,
    "weight": 1.0
   },
   "世界": {
    "count": 7,
-   "lift": 371.95,
+   "lift": 374.25,
    "weight": 0.9354
   },
   "股份": {
    "count": 7,
-   "lift": 568.26,
+   "lift": 571.76,
    "weight": 0.9354
   },
   "国际": {
    "count": 7,
-   "lift": 243.54,
+   "lift": 245.04,
    "weight": 0.9354
   },
   "饭店": {
    "count": 7,
-   "lift": 252.56,
+   "lift": 228.71,
    "weight": 0.9354
   },
   "酒家": {
    "count": 6,
-   "lift": 52.74,
+   "lift": 53.06,
    "weight": 0.866
   },
   "漫画": {
    "count": 6,
-   "lift": 194.83,
+   "lift": 196.03,
    "weight": 0.866
   },
   "钢琴": {
    "count": 6,
-   "lift": 715.71,
+   "lift": 720.12,
    "weight": 0.866
   },
   "医生": {
    "count": 6,
-   "lift": 92.29,
+   "lift": 92.86,
    "weight": 0.866
   },
   "健康": {
    "count": 6,
-   "lift": 177.12,
+   "lift": 178.21,
    "weight": 0.866
   },
   "腾讯": {
    "count": 5,
-   "lift": 321.15,
+   "lift": 323.13,
    "weight": 0.7906
   },
   "网易": {
    "count": 5,
-   "lift": 73.25,
+   "lift": 73.7,
    "weight": 0.7906
   },
   "之家": {
    "count": 5,
-   "lift": 55.67,
+   "lift": 56.01,
    "weight": 0.7906
   },
   "香烟": {
    "count": 5,
-   "lift": 182.66,
+   "lift": 183.78,
    "weight": 0.7906
   },
   "天气": {
    "count": 5,
-   "lift": 79.42,
+   "lift": 79.9,
    "weight": 0.7906
   },
   "智慧": {
    "count": 5,
-   "lift": 146.12,
+   "lift": 147.02,
    "weight": 0.7906
   },
   "租车": {
    "count": 5,
-   "lift": 158.83,
+   "lift": 159.81,
    "weight": 0.7906
   },
   "在线": {
    "count": 5,
-   "lift": 365.31,
+   "lift": 367.56,
    "weight": 0.7906
   },
   "英语": {
    "count": 5,
-   "lift": 204.37,
+   "lift": 205.63,
    "weight": 0.7906
   },
   "掌上": {
    "count": 5,
-   "lift": 202.95,
+   "lift": 204.2,
    "weight": 0.7906
   },
   "集团": {
    "count": 5,
-   "lift": 347.92,
+   "lift": 350.06,
    "weight": 0.7906
   },
   "阿里": {
    "count": 4,
-   "lift": 292.25,
+   "lift": 294.05,
    "weight": 0.7071
   },
   "微信": {
    "count": 4,
-   "lift": 44.28,
+   "lift": 42.62,
    "weight": 0.7071
   },
   "抖音": {
    "count": 4,
-   "lift": 128.46,
+   "lift": 129.25,
    "weight": 0.7071
   },
   "美团": {
    "count": 4,
-   "lift": 59.04,
+   "lift": 59.4,
    "weight": 0.7071
   },
   "滴滴": {
    "count": 4,
-   "lift": 233.8,
+   "lift": 235.24,
    "weight": 0.7071
   },
   "小米": {
    "count": 4,
-   "lift": 23.98,
+   "lift": 24.13,
    "weight": 0.7071
   },
   "完美": {
    "count": 4,
-   "lift": 177.12,
+   "lift": 178.21,
    "weight": 0.7071
   },
   "轮胎": {
    "count": 4,
-   "lift": 974.17,
+   "lift": 980.17,
    "weight": 0.7071
   },
   "咖啡": {
    "count": 4,
-   "lift": 1169.0,
+   "lift": 1176.2,
    "weight": 0.7071
   },
   "企业": {
    "count": 4,
-   "lift": 146.12,
+   "lift": 140.02,
    "weight": 0.7071
   },
   "酷狗": {
    "count": 4,
-   "lift": 365.31,
+   "lift": 367.56,
    "weight": 0.7071
   },
   "移动": {
    "count": 4,
-   "lift": 334.0,
+   "lift": 336.06,
    "weight": 0.7071
   },
   "潮汐": {
    "count": 4,
-   "lift": 1461.25,
+   "lift": 1470.25,
    "weight": 0.7071
   },
   "智行": {
    "count": 4,
-   "lift": 89.92,
+   "lift": 90.48,
    "weight": 0.7071
   },
   "车主": {
    "count": 4,
-   "lift": 203.3,
+   "lift": 170.46,
    "weight": 0.7071
   },
   "精灵": {
    "count": 4,
-   "lift": 137.53,
+   "lift": 138.38,
    "weight": 0.7071
   },
   "来音": {
    "count": 4,
-   "lift": 56.2,
+   "lift": 56.55,
    "weight": 0.7071
   },
   "睡眠": {
    "count": 4,
-   "lift": 1461.25,
+   "lift": 1470.25,
    "weight": 0.7071
   },
   "剧场": {
    "count": 4,
-   "lift": 224.81,
+   "lift": 226.19,
    "weight": 0.7071
   },
   "校园": {
    "count": 4,
-   "lift": 334.0,
+   "lift": 336.06,
    "weight": 0.7071
   },
   "记录": {
    "count": 4,
-   "lift": 229.22,
+   "lift": 217.81,
    "weight": 0.7071
   },
   "澎程": {
    "count": 4,
-   "lift": 649.44,
+   "lift": 653.44,
    "weight": 0.7071
+  },
+  "淘宝": {
+   "count": 3,
+   "lift": 79.47,
+   "weight": 0.6124
   },
   "天猫": {
    "count": 3,
-   "lift": 20.06,
+   "lift": 20.19,
    "weight": 0.6124
   },
   "多多": {
    "count": 3,
-   "lift": 89.46,
+   "lift": 90.02,
    "weight": 0.6124
   },
   "百度": {
    "count": 3,
-   "lift": 146.12,
+   "lift": 147.03,
    "weight": 0.6124
   },
   "荣耀": {
    "count": 3,
-   "lift": 487.08,
+   "lift": 490.08,
    "weight": 0.6124
   },
   "讯飞": {
    "count": 3,
-   "lift": 96.35,
+   "lift": 96.94,
    "weight": 0.6124
   },
   "金山": {
    "count": 3,
-   "lift": 67.44,
+   "lift": 67.86,
    "weight": 0.6124
   },
   "未来": {
    "count": 3,
-   "lift": 365.31,
+   "lift": 367.56,
    "weight": 0.6124
   },
   "蚂蚁": {
    "count": 3,
-   "lift": 1461.25,
+   "lift": 1470.25,
    "weight": 0.6124
   },
   "日记": {
    "count": 3,
-   "lift": 51.57,
+   "lift": 49.01,
    "weight": 0.6124
   },
   "得到": {
    "count": 3,
-   "lift": 265.68,
+   "lift": 267.32,
    "weight": 0.6124
   },
   "星云": {
    "count": 3,
-   "lift": 18.96,
+   "lift": 19.07,
    "weight": 0.6124
   },
   "纵横": {
    "count": 3,
-   "lift": 1948.33,
+   "lift": 1960.33,
    "weight": 0.6124
   },
   "中华": {
    "count": 3,
-   "lift": 21.59,
+   "lift": 21.73,
    "weight": 0.6124
   },
   "电池": {
    "count": 3,
-   "lift": 343.82,
+   "lift": 345.94,
    "weight": 0.6124
   },
   "小白": {
    "count": 3,
-   "lift": 20.75,
+   "lift": 20.88,
    "weight": 0.6124
   },
   "影音": {
    "count": 3,
-   "lift": 51.88,
+   "lift": 52.2,
    "weight": 0.6124
   },
   "星座": {
    "count": 3,
-   "lift": 233.8,
+   "lift": 235.24,
    "weight": 0.6124
   },
   "柠檬": {
    "count": 3,
-   "lift": 1948.33,
+   "lift": 1960.33,
    "weight": 0.6124
   },
   "火锅": {
    "count": 3,
-   "lift": 292.25,
+   "lift": 294.05,
    "weight": 0.6124
   },
   "和平": {
    "count": 3,
-   "lift": 121.77,
+   "lift": 122.52,
    "weight": 0.6124
   },
   "新华": {
    "count": 3,
-   "lift": 31.31,
+   "lift": 31.51,
    "weight": 0.6124
   },
   "摩托": {
    "count": 3,
-   "lift": 501.0,
+   "lift": 504.09,
    "weight": 0.6124
   },
   "短剧": {
    "count": 3,
-   "lift": 337.21,
+   "lift": 339.29,
    "weight": 0.6124
   },
   "漫剧": {
    "count": 3,
-   "lift": 74.94,
+   "lift": 75.4,
    "weight": 0.6124
   },
   "三国": {
    "count": 3,
-   "lift": 34.79,
+   "lift": 35.01,
    "weight": 0.6124
   },
   "咪咕": {
    "count": 3,
-   "lift": 1169.0,
+   "lift": 1176.2,
    "weight": 0.6124
   },
   "无忧": {
    "count": 3,
-   "lift": 398.52,
+   "lift": 367.56,
    "weight": 0.6124
   },
   "扫描": {
    "count": 3,
-   "lift": 1461.25,
+   "lift": 1470.25,
    "weight": 0.6124
   },
   "空间": {
    "count": 3,
-   "lift": 318.82,
+   "lift": 320.78,
    "weight": 0.6124
   },
   "我的": {
    "count": 3,
-   "lift": 487.08,
+   "lift": 490.08,
    "weight": 0.6124
   },
   "月相": {
    "count": 3,
-   "lift": 438.38,
+   "lift": 441.07,
    "weight": 0.6124
   },
   "聚宝": {
    "count": 3,
-   "lift": 81.18,
+   "lift": 79.47,
    "weight": 0.6124
   },
   "音频": {
    "count": 3,
-   "lift": 168.61,
+   "lift": 169.64,
    "weight": 0.6124
   },
   "今日": {
    "count": 3,
-   "lift": 175.35,
+   "lift": 176.43,
    "weight": 0.6124
   },
   "全能": {
    "count": 3,
-   "lift": 134.88,
+   "lift": 135.72,
    "weight": 0.6124
   },
   "学习": {
    "count": 3,
-   "lift": 153.82,
+   "lift": 154.76,
    "weight": 0.6124
   },
   "民宿": {
    "count": 3,
-   "lift": 649.44,
+   "lift": 653.44,
    "weight": 0.6124
   },
   "地铁": {
    "count": 3,
-   "lift": 487.08,
+   "lift": 490.08,
    "weight": 0.6124
   },
   "阳光": {
    "count": 3,
-   "lift": 104.38,
+   "lift": 105.02,
    "weight": 0.6124
   },
   "同城": {
    "count": 3,
-   "lift": 89.46,
+   "lift": 90.02,
    "weight": 0.6124
   },
   "驾考": {
    "count": 3,
-   "lift": 313.12,
+   "lift": 315.05,
    "weight": 0.6124
   },
   "测测": {
    "count": 3,
-   "lift": 175.35,
+   "lift": 176.43,
    "weight": 0.6124
   },
   "星空": {
    "count": 3,
-   "lift": 63.76,
+   "lift": 64.16,
    "weight": 0.6124
   },
   "考试": {
    "count": 3,
-   "lift": 313.12,
+   "lift": 315.05,
    "weight": 0.6124
   },
   "解压": {
    "count": 3,
-   "lift": 835.0,
+   "lift": 840.14,
    "weight": 0.6124
   },
   "日常": {
    "count": 3,
-   "lift": 175.35,
+   "lift": 176.43,
    "weight": 0.6124
   },
   "光影": {
    "count": 3,
-   "lift": 64.23,
+   "lift": 64.63,
    "weight": 0.6124
   },
   "公交": {
    "count": 3,
-   "lift": 350.7,
+   "lift": 352.86,
    "weight": 0.6124
   },
   "畅听": {
    "count": 3,
-   "lift": 487.08,
+   "lift": 490.08,
    "weight": 0.6124
   },
   "体重": {
    "count": 3,
-   "lift": 701.4,
+   "lift": 705.72,
    "weight": 0.6124
   },
   "精选": {
    "count": 3,
-   "lift": 206.29,
+   "lift": 207.56,
    "weight": 0.6124
   },
   "医考": {
    "count": 3,
-   "lift": 65.92,
+   "lift": 66.33,
    "weight": 0.6124
   },
   "丁香": {
    "count": 3,
-   "lift": 219.19,
+   "lift": 220.54,
+   "weight": 0.6124
+  },
+  "暖暖": {
+   "count": 3,
+   "lift": 490.08,
    "weight": 0.6124
   }
  },
@@ -3332,181 +3342,181 @@
  "industry_length_dist": {},
  "industry_sample_sizes": {},
  "pinyin_initial_dist": {
-  "y": 0.0978,
-  "h": 0.0861,
-  "z": 0.0743,
-  "x": 0.0717,
-  "s": 0.0666,
-  "j": 0.0651,
-  "l": 0.062,
-  "d": 0.0579,
-  "m": 0.0543,
-  "w": 0.0492,
-  "t": 0.0461,
-  "b": 0.0405,
-  "q": 0.0359,
-  "c": 0.0338,
-  "f": 0.0292,
-  "g": 0.0287,
-  "k": 0.0277,
-  "a": 0.0205,
-  "p": 0.0184,
-  "n": 0.0154,
+  "y": 0.0973,
+  "h": 0.0856,
+  "z": 0.0749,
+  "x": 0.0713,
+  "s": 0.0662,
+  "j": 0.0652,
+  "l": 0.0616,
+  "d": 0.0576,
+  "m": 0.054,
+  "w": 0.0499,
+  "t": 0.0464,
+  "b": 0.0408,
+  "q": 0.0367,
+  "c": 0.0341,
+  "f": 0.0295,
+  "g": 0.0285,
+  "k": 0.0275,
+  "a": 0.0204,
+  "p": 0.0183,
+  "n": 0.0153,
   "r": 0.0138,
   "e": 0.0031,
   "o": 0.002
  },
  "pinyin_syllable_dist": {
-  "yi": 0.01933,
-  "shi": 0.01762,
-  "ji": 0.01625,
-  "li": 0.01334,
-  "zhi": 0.01334,
-  "xiao": 0.01317,
-  "wei": 0.01249,
-  "qi": 0.01232,
-  "da": 0.01215,
-  "xin": 0.01163,
-  "yuan": 0.01061,
-  "yu": 0.01044,
-  "jia": 0.01009,
-  "ke": 0.01009,
-  "xiang": 0.01009,
-  "hua": 0.00992,
-  "dian": 0.00941,
-  "xing": 0.00941,
-  "tong": 0.00907,
-  "tian": 0.00873,
-  "bao": 0.00855,
-  "jie": 0.00838,
-  "sheng": 0.00838,
-  "cheng": 0.00804,
-  "you": 0.00787,
-  "fu": 0.0077,
-  "zhong": 0.00753,
-  "jing": 0.00736,
-  "yun": 0.00736,
-  "hui": 0.00719,
-  "jian": 0.00701,
-  "xi": 0.00684,
-  "yin": 0.00667,
-  "wang": 0.00667,
-  "mei": 0.0065,
-  "de": 0.00633,
-  "guo": 0.00633,
-  "tai": 0.00616,
-  "he": 0.00616,
-  "shu": 0.00599,
-  "di": 0.00599,
-  "jin": 0.00599,
-  "ying": 0.00599,
-  "zhang": 0.00599,
-  "tu": 0.00582,
-  "jiu": 0.00582,
-  "ju": 0.00582,
-  "dong": 0.00565,
-  "lian": 0.00565,
-  "si": 0.00565,
-  "yue": 0.00547,
-  "wu": 0.0053,
-  "yan": 0.0053,
-  "gu": 0.0053,
-  "mi": 0.0053,
-  "ling": 0.0053,
-  "chang": 0.0053,
-  "bai": 0.00513,
-  "ma": 0.00513,
-  "tang": 0.00513,
-  "jiao": 0.00513,
-  "hai": 0.00513,
-  "guang": 0.00513,
-  "dou": 0.00496,
-  "qing": 0.00496,
-  "hong": 0.00479,
-  "le": 0.00479,
-  "bei": 0.00479,
-  "ye": 0.00479,
-  "zhou": 0.00479,
-  "dao": 0.00462,
-  "ba": 0.00445,
-  "huo": 0.00445,
-  "an": 0.00445,
-  "ge": 0.00445,
-  "zi": 0.00445,
-  "ya": 0.00445,
-  "fei": 0.00428,
-  "feng": 0.00428,
-  "fang": 0.00428,
-  "gong": 0.00428,
-  "ban": 0.00411,
-  "xue": 0.00411,
-  "hao": 0.00411,
-  "wan": 0.00411,
-  "ren": 0.00411,
-  "mao": 0.00393,
-  "bo": 0.00393,
-  "hu": 0.00393,
-  "man": 0.00393,
-  "lu": 0.00393,
-  "che": 0.00393,
-  "fan": 0.00393,
-  "qian": 0.00393,
-  "xian": 0.00376,
-  "zhu": 0.00376,
-  "shang": 0.00376,
-  "shan": 0.00376,
-  "er": 0.00359,
-  "san": 0.00359,
-  "fen": 0.00359,
-  "quan": 0.00359,
-  "shou": 0.00342,
-  "lai": 0.00342,
-  "yang": 0.00342,
-  "su": 0.00342,
-  "cha": 0.00342,
-  "ri": 0.00342,
-  "mo": 0.00325,
-  "bi": 0.00325,
-  "ai": 0.00308,
-  "xun": 0.00308,
-  "mai": 0.00308,
-  "du": 0.00308,
-  "pai": 0.00308,
-  "lao": 0.00308,
-  "kang": 0.00308,
-  "zhen": 0.00308,
-  "han": 0.00291,
-  "shen": 0.00291,
-  "long": 0.00291,
-  "lou": 0.00291,
-  "pin": 0.00274,
-  "duo": 0.00274,
-  "kuai": 0.00274,
-  "jiang": 0.00274,
-  "gao": 0.00274,
-  "bu": 0.00274,
-  "rui": 0.00274,
-  "heng": 0.00274,
-  "lin": 0.00274,
-  "chuan": 0.00274,
-  "nan": 0.00274,
-  "guan": 0.00274,
-  "pu": 0.00257,
-  "qiu": 0.00257,
-  "mian": 0.00257,
-  "cai": 0.00257,
-  "yao": 0.00257,
-  "lv": 0.00257,
-  "chun": 0.00257,
-  "lan": 0.00257,
-  "kong": 0.00257,
-  "miao": 0.00257,
-  "ping": 0.0024,
-  "rong": 0.0024,
-  "gou": 0.0024,
-  "huang": 0.0024,
-  "zai": 0.0024,
-  "ting": 0.0024
+  "yi": 0.01921,
+  "shi": 0.01751,
+  "ji": 0.01649,
+  "zhi": 0.01343,
+  "li": 0.01326,
+  "xiao": 0.01309,
+  "qi": 0.01258,
+  "wei": 0.01241,
+  "da": 0.01207,
+  "xin": 0.01173,
+  "yuan": 0.01054,
+  "yu": 0.01037,
+  "jia": 0.01003,
+  "ke": 0.01003,
+  "xiang": 0.01003,
+  "hua": 0.00986,
+  "dian": 0.00935,
+  "xing": 0.00935,
+  "tong": 0.00901,
+  "bao": 0.00867,
+  "tian": 0.00867,
+  "jie": 0.00833,
+  "sheng": 0.00833,
+  "cheng": 0.00799,
+  "you": 0.00799,
+  "fu": 0.00782,
+  "zhong": 0.00748,
+  "jing": 0.00731,
+  "yun": 0.00731,
+  "hui": 0.00714,
+  "jian": 0.00697,
+  "xi": 0.0068,
+  "yin": 0.00663,
+  "wang": 0.00663,
+  "mei": 0.00646,
+  "de": 0.00629,
+  "guo": 0.00629,
+  "tai": 0.00612,
+  "he": 0.00612,
+  "shu": 0.00595,
+  "tu": 0.00595,
+  "di": 0.00595,
+  "jin": 0.00595,
+  "ying": 0.00595,
+  "zhang": 0.00595,
+  "jiu": 0.00578,
+  "ju": 0.00578,
+  "dong": 0.00561,
+  "lian": 0.00561,
+  "si": 0.00561,
+  "wu": 0.00544,
+  "mi": 0.00544,
+  "yue": 0.00544,
+  "yan": 0.00527,
+  "gu": 0.00527,
+  "ling": 0.00527,
+  "jiao": 0.00527,
+  "chang": 0.00527,
+  "bai": 0.0051,
+  "ma": 0.0051,
+  "tang": 0.0051,
+  "hai": 0.0051,
+  "guang": 0.0051,
+  "dou": 0.00493,
+  "qing": 0.00493,
+  "ye": 0.00493,
+  "hong": 0.00476,
+  "le": 0.00476,
+  "bei": 0.00476,
+  "dao": 0.00476,
+  "zhou": 0.00476,
+  "an": 0.00459,
+  "zi": 0.00459,
+  "ba": 0.00442,
+  "huo": 0.00442,
+  "ge": 0.00442,
+  "ya": 0.00442,
+  "ban": 0.00425,
+  "fei": 0.00425,
+  "feng": 0.00425,
+  "hao": 0.00425,
+  "fang": 0.00425,
+  "gong": 0.00425,
+  "bo": 0.00408,
+  "xue": 0.00408,
+  "wan": 0.00408,
+  "fan": 0.00408,
+  "ren": 0.00408,
+  "mao": 0.00391,
+  "hu": 0.00391,
+  "zhu": 0.00391,
+  "man": 0.00391,
+  "lu": 0.00391,
+  "che": 0.00391,
+  "qian": 0.00391,
+  "xian": 0.00374,
+  "shang": 0.00374,
+  "shan": 0.00374,
+  "er": 0.00357,
+  "san": 0.00357,
+  "fen": 0.00357,
+  "quan": 0.00357,
+  "shou": 0.0034,
+  "bi": 0.0034,
+  "lai": 0.0034,
+  "yang": 0.0034,
+  "su": 0.0034,
+  "cha": 0.0034,
+  "ri": 0.0034,
+  "mo": 0.00323,
+  "ai": 0.00306,
+  "xun": 0.00306,
+  "mai": 0.00306,
+  "du": 0.00306,
+  "pai": 0.00306,
+  "lao": 0.00306,
+  "kang": 0.00306,
+  "zhen": 0.00306,
+  "han": 0.00289,
+  "shen": 0.00289,
+  "long": 0.00289,
+  "chuan": 0.00289,
+  "lou": 0.00289,
+  "pin": 0.00272,
+  "duo": 0.00272,
+  "kuai": 0.00272,
+  "jiang": 0.00272,
+  "gao": 0.00272,
+  "bu": 0.00272,
+  "rui": 0.00272,
+  "heng": 0.00272,
+  "lin": 0.00272,
+  "nan": 0.00272,
+  "guan": 0.00272,
+  "pu": 0.00255,
+  "qiu": 0.00255,
+  "mian": 0.00255,
+  "cai": 0.00255,
+  "yao": 0.00255,
+  "lv": 0.00255,
+  "chun": 0.00255,
+  "lan": 0.00255,
+  "kong": 0.00255,
+  "miao": 0.00255,
+  "ping": 0.00238,
+  "rong": 0.00238,
+  "gou": 0.00238,
+  "huang": 0.00238,
+  "zai": 0.00238,
+  "ting": 0.00238
  },
  "pinyin_style_dist": {
   "creative": 0.6244,
@@ -4429,6 +4439,7 @@
    "中纺标",
    "中联重科",
    "中胤时尚",
+   "中胤科技",
    "中能电气",
    "中自科技",
    "中航产融",
@@ -4849,6 +4860,7 @@
    "伟测科技",
    "伟隆",
    "传化智联",
+   "传安知信",
    "传智教育",
    "传祺",
    "传艺科技",
@@ -6485,6 +6497,7 @@
    "奇点汽车",
    "奇瑞捷豹路虎",
    "奇精机械",
+   "奇迹暖暖",
    "奇遇小镇",
    "奈雪的茶",
    "奋达科技",
@@ -6796,6 +6809,7 @@
    "密封科技",
    "密尔克卫",
    "密斯布鲁",
+   "富业",
    "富临精工",
    "富临运业",
    "富乐德",
@@ -6952,6 +6966,7 @@
    "崇德科技",
    "崇达技术",
    "崧盛",
+   "崩坏",
    "崩豆张",
    "嵘泰",
    "巍华",
@@ -7442,6 +7457,7 @@
    "恩威医药",
    "恩捷",
    "恩雅",
+   "恰饭啦",
    "恺英网络",
    "悍高",
    "悍高集团",
@@ -7843,6 +7859,7 @@
    "无他",
    "无尽冬日",
    "无忧行",
+   "无期迷途",
    "无极机车",
    "无畏契约",
    "无疆摩托",
@@ -8678,6 +8695,7 @@
    "流利说",
    "流量分配",
    "流金科技",
+   "浇水配额",
    "测测",
    "测测八字",
    "测测星座",
@@ -8893,6 +8911,7 @@
    "涪陵电力",
    "淑女屋",
    "淘宝",
+   "淘宝主播",
    "淘宝闪购",
    "淘票票",
    "淘车位",
@@ -9354,6 +9373,7 @@
    "百搜",
    "百普赛斯",
    "百洋",
+   "百洋制药",
    "百洋医药",
    "百济神州",
    "百润",
@@ -10107,6 +10127,7 @@
    "自如",
    "自律石头",
    "自然堂",
+   "自由笔记",
    "至信",
    "至纯科技",
    "至臻宝",
@@ -10815,6 +10836,7 @@
    "郎酒",
    "郑中设计",
    "郑兴利",
+   "郑好办",
    "郑州煤电",
    "郑州银行",
    "部落冲突",
@@ -11161,6 +11183,7 @@
    "闪耀暖暖",
    "问界",
    "问真八字",
+   "问道",
    "闰土",
    "闲创无忧",
    "闲鱼",
@@ -19368,7 +19391,20 @@
    "manggua": "芒瓜",
    "zhuangtaiqianyi": "状态迁移",
    "zhangshangfuyou": "掌上妇幼",
-   "jiepoudashi": "解剖大师"
+   "jiepoudashi": "解剖大师",
+   "zhongyinkeji": "中胤科技",
+   "baiyangzhiyao": "百洋制药",
+   "benghuai": "崩坏",
+   "qijinuannuan": "奇迹暖暖",
+   "wuqimitu": "无期迷途",
+   "wendao": "问道",
+   "fuye": "富业",
+   "ziyoubiji": "自由笔记",
+   "taobaozhubo": "淘宝主播",
+   "jiaoshuipeie": "浇水配额",
+   "zhenghaoban": "郑好办",
+   "qiafanla": "恰饭啦",
+   "chuananzhixin": "传安知信"
   },
   "note": "推荐引擎生成候选后应先查碰撞：exact -> 剔除; phonetic -> 强降权或剔除"
  },
@@ -19377,8 +19413,8 @@
    "小": 1.0,
    "天": 0.8412,
    "大": 0.8134,
+   "宝": 0.7545,
    "云": 0.7545,
-   "宝": 0.7442,
    "家": 0.7338,
    "通": 0.7232,
    "美": 0.7125,
@@ -19391,17 +19427,17 @@
    "乐": 0.6202,
    "微": 0.6076,
    "国": 0.6076,
+   "信": 0.5948,
+   "安": 0.5948,
    "车": 0.5948,
-   "信": 0.5818,
    "达": 0.5818,
-   "安": 0.5818,
    "易": 0.5684,
    "三": 0.5684,
+   "业": 0.5684,
    "光": 0.5684,
    "新": 0.5547,
    "金": 0.5547,
    "智": 0.5547,
-   "业": 0.5547,
    "德": 0.5547,
    "日": 0.5547,
    "生": 0.5547,
@@ -19412,13 +19448,13 @@
    "学": 0.5407,
    "酒": 0.5407,
    "医": 0.5407,
+   "记": 0.5262,
    "康": 0.5262,
    "长": 0.5262,
    "人": 0.5262,
    "店": 0.5262,
    "漫": 0.5262,
    "马": 0.5114,
-   "记": 0.5114,
    "电": 0.5114,
    "花": 0.5114,
    "利": 0.5114,
@@ -19435,6 +19471,7 @@
    "百": 0.4804,
    "快": 0.4804,
    "米": 0.4804,
+   "好": 0.4804,
    "之": 0.4804,
    "东": 0.4641,
    "多": 0.4641,
@@ -19443,7 +19480,7 @@
    "同": 0.4641,
    "科": 0.4641,
    "图": 0.4641,
-   "好": 0.4641,
+   "奇": 0.4641,
    "力": 0.4641,
    "城": 0.4641,
    "茶": 0.4641,
@@ -19458,7 +19495,6 @@
    "兴": 0.4472,
    "理": 0.4472,
    "山": 0.4472,
-   "奇": 0.4472,
    "联": 0.4472,
    "老": 0.4472,
    "特": 0.4472,
@@ -19483,9 +19519,12 @@
    "元": 0.4297,
    "州": 0.4297,
    "火": 0.4297,
+   "无": 0.4297,
    "得": 0.4114,
+   "知": 0.4114,
    "红": 0.4114,
    "手": 0.4114,
+   "途": 0.4114,
    "牛": 0.4114,
    "拉": 0.4114,
    "极": 0.4114,
@@ -19493,6 +19532,7 @@
    "世": 0.4114,
    "尔": 0.4114,
    "贝": 0.4114,
+   "富": 0.4114,
    "维": 0.4114,
    "英": 0.4114,
    "健": 0.4114,
@@ -19501,13 +19541,10 @@
    "成": 0.4114,
    "空": 0.4114,
    "江": 0.4114,
-   "无": 0.4114,
    "看": 0.4114,
    "阿": 0.3922,
-   "知": 0.3922,
    "界": 0.3922,
    "面": 0.3922,
-   "途": 0.3922,
    "滴": 0.3922,
    "线": 0.3922,
    "有": 0.3922,
@@ -19515,7 +19552,6 @@
    "九": 0.3922,
    "西": 0.3922,
    "汇": 0.3922,
-   "富": 0.3922,
    "恒": 0.3922,
    "公": 0.3922,
    "斯": 0.3922,
@@ -19526,6 +19562,7 @@
    "斋": 0.3922,
    "灵": 0.3922,
    "画": 0.3922,
+   "饭": 0.3922,
    "轻": 0.3922,
    "程": 0.3721,
    "荣": 0.3721,
@@ -19540,7 +19577,6 @@
    "民": 0.3721,
    "市": 0.3721,
    "千": 0.3721,
-   "饭": 0.3721,
    "掌": 0.3721,
    "读": 0.3721,
    "听": 0.3721,
@@ -19563,11 +19599,13 @@
    "黄": 0.3508,
    "宇": 0.3508,
    "实": 0.3508,
+   "传": 0.3508,
    "份": 0.3508,
    "烟": 0.3508,
    "气": 0.3508,
    "月": 0.3508,
    "场": 0.3508,
+   "水": 0.3508,
    "企": 0.3508,
    "狗": 0.3508,
    "在": 0.3508,
@@ -19579,6 +19617,7 @@
    "抖": 0.3282,
    "七": 0.3282,
    "明": 0.3282,
+   "道": 0.3282,
    "游": 0.3282,
    "鸿": 0.3282,
    "喜": 0.3282,
@@ -19593,7 +19632,6 @@
    "摩": 0.3282,
    "农": 0.3282,
    "风": 0.3282,
-   "传": 0.3282,
    "际": 0.3282,
    "号": 0.3282,
    "师": 0.3282,
@@ -19603,16 +19641,17 @@
    "钱": 0.3282,
    "文": 0.3282,
    "果": 0.3282,
-   "水": 0.3282,
    "岛": 0.3282,
    "番": 0.3282,
    "机": 0.3282,
    "集": 0.3282,
+   "办": 0.3282,
    "清": 0.3282,
    "解": 0.3282,
    "琴": 0.3282,
    "阅": 0.3282,
    "巴": 0.3038,
+   "淘": 0.3038,
    "脉": 0.3038,
    "搜": 0.3038,
    "众": 0.3038,
@@ -19621,10 +19660,10 @@
    "丰": 0.3038,
    "六": 0.3038,
    "森": 0.3038,
-   "道": 0.3038,
    "格": 0.3038,
    "的": 0.3038,
    "冰": 0.3038,
+   "自": 0.3038,
    "到": 0.3038,
    "路": 0.3038,
    "迪": 0.3038,
@@ -19662,13 +19701,13 @@
    "查": 0.3038,
    "卡": 0.3038,
    "吧": 0.3038,
-   "办": 0.3038,
    "连": 0.3038,
+   "主": 0.3038,
    "聊": 0.3038,
    "社": 0.3038,
    "享": 0.3038,
    "录": 0.3038,
-   "淘": 0.2774,
+   "暖": 0.3038,
    "品": 0.2774,
    "选": 0.2774,
    "街": 0.2774,
@@ -19682,7 +19721,6 @@
    "哈": 0.2774,
    "步": 0.2774,
    "松": 0.2774,
-   "自": 0.2774,
    "如": 0.2774,
    "房": 0.2774,
    "诚": 0.2774,
@@ -19702,9 +19740,11 @@
    "表": 0.2774,
    "旅": 0.2774,
    "说": 0.2774,
+   "迹": 0.2774,
    "布": 0.2774,
    "重": 0.2774,
    "木": 0.2774,
+   "问": 0.2774,
    "伊": 0.2774,
    "鸡": 0.2774,
    "锅": 0.2774,
@@ -19716,6 +19756,7 @@
    "今": 0.2774,
    "霸": 0.2774,
    "外": 0.2774,
+   "笔": 0.2774,
    "药": 0.2774,
    "阁": 0.2774,
    "张": 0.2774,
@@ -19731,7 +19772,6 @@
    "准": 0.2774,
    "交": 0.2774,
    "喵": 0.2774,
-   "主": 0.2774,
    "常": 0.2774,
    "伴": 0.2774,
    "遇": 0.2774,
@@ -19740,6 +19780,7 @@
    "练": 0.2774,
    "借": 0.2774,
    "票": 0.2774,
+   "配": 0.2774,
    "院": 0.2774,
    "拼": 0.2481,
    "猪": 0.2481,
@@ -19768,12 +19809,7 @@
    "诺": 0.2481,
    "钛": 0.2481,
    "嘉": 0.2481,
-   "立": 0.2481,
-   "恩": 0.2481,
-   "计": 0.2481,
-   "川": 0.2481,
-   "奥": 0.2481,
-   "必": 0.2481
+   "立": 0.2481
   },
   "w_char_pair": {
    "生活": 1.0,
@@ -19819,6 +19855,7 @@
    "校园": 0.7071,
    "记录": 0.7071,
    "澎程": 0.7071,
+   "淘宝": 0.6124,
    "天猫": 0.6124,
    "多多": 0.6124,
    "百度": 0.6124,
@@ -19871,190 +19908,191 @@
    "体重": 0.6124,
    "精选": 0.6124,
    "医考": 0.6124,
-   "丁香": 0.6124
+   "丁香": 0.6124,
+   "暖暖": 0.6124
   },
   "w_length": {
-   "2": 0.3525,
-   "4": 0.3468,
-   "3": 0.3007
+   "2": 0.352,
+   "4": 0.3479,
+   "3": 0.3001
   },
   "w_industry_char": {},
   "w_initial": {
-   "y": 0.0978,
-   "h": 0.0861,
-   "z": 0.0743,
-   "x": 0.0717,
-   "s": 0.0666,
-   "j": 0.0651,
-   "l": 0.062,
-   "d": 0.0579,
-   "m": 0.0543,
-   "w": 0.0492,
-   "t": 0.0461,
-   "b": 0.0405,
-   "q": 0.0359,
-   "c": 0.0338,
-   "f": 0.0292,
-   "g": 0.0287,
-   "k": 0.0277,
-   "a": 0.0205,
-   "p": 0.0184,
-   "n": 0.0154,
+   "y": 0.0973,
+   "h": 0.0856,
+   "z": 0.0749,
+   "x": 0.0713,
+   "s": 0.0662,
+   "j": 0.0652,
+   "l": 0.0616,
+   "d": 0.0576,
+   "m": 0.054,
+   "w": 0.0499,
+   "t": 0.0464,
+   "b": 0.0408,
+   "q": 0.0367,
+   "c": 0.0341,
+   "f": 0.0295,
+   "g": 0.0285,
+   "k": 0.0275,
+   "a": 0.0204,
+   "p": 0.0183,
+   "n": 0.0153,
    "r": 0.0138,
    "e": 0.0031,
    "o": 0.002
   },
   "w_syllable": {
-   "yi": 0.01933,
-   "shi": 0.01762,
-   "ji": 0.01625,
-   "li": 0.01334,
-   "zhi": 0.01334,
-   "xiao": 0.01317,
-   "wei": 0.01249,
-   "qi": 0.01232,
-   "da": 0.01215,
-   "xin": 0.01163,
-   "yuan": 0.01061,
-   "yu": 0.01044,
-   "jia": 0.01009,
-   "ke": 0.01009,
-   "xiang": 0.01009,
-   "hua": 0.00992,
-   "dian": 0.00941,
-   "xing": 0.00941,
-   "tong": 0.00907,
-   "tian": 0.00873,
-   "bao": 0.00855,
-   "jie": 0.00838,
-   "sheng": 0.00838,
-   "cheng": 0.00804,
-   "you": 0.00787,
-   "fu": 0.0077,
-   "zhong": 0.00753,
-   "jing": 0.00736,
-   "yun": 0.00736,
-   "hui": 0.00719,
-   "jian": 0.00701,
-   "xi": 0.00684,
-   "yin": 0.00667,
-   "wang": 0.00667,
-   "mei": 0.0065,
-   "de": 0.00633,
-   "guo": 0.00633,
-   "tai": 0.00616,
-   "he": 0.00616,
-   "shu": 0.00599,
-   "di": 0.00599,
-   "jin": 0.00599,
-   "ying": 0.00599,
-   "zhang": 0.00599,
-   "tu": 0.00582,
-   "jiu": 0.00582,
-   "ju": 0.00582,
-   "dong": 0.00565,
-   "lian": 0.00565,
-   "si": 0.00565,
-   "yue": 0.00547,
-   "wu": 0.0053,
-   "yan": 0.0053,
-   "gu": 0.0053,
-   "mi": 0.0053,
-   "ling": 0.0053,
-   "chang": 0.0053,
-   "bai": 0.00513,
-   "ma": 0.00513,
-   "tang": 0.00513,
-   "jiao": 0.00513,
-   "hai": 0.00513,
-   "guang": 0.00513,
-   "dou": 0.00496,
-   "qing": 0.00496,
-   "hong": 0.00479,
-   "le": 0.00479,
-   "bei": 0.00479,
-   "ye": 0.00479,
-   "zhou": 0.00479,
-   "dao": 0.00462,
-   "ba": 0.00445,
-   "huo": 0.00445,
-   "an": 0.00445,
-   "ge": 0.00445,
-   "zi": 0.00445,
-   "ya": 0.00445,
-   "fei": 0.00428,
-   "feng": 0.00428,
-   "fang": 0.00428,
-   "gong": 0.00428,
-   "ban": 0.00411,
-   "xue": 0.00411,
-   "hao": 0.00411,
-   "wan": 0.00411,
-   "ren": 0.00411,
-   "mao": 0.00393,
-   "bo": 0.00393,
-   "hu": 0.00393,
-   "man": 0.00393,
-   "lu": 0.00393,
-   "che": 0.00393,
-   "fan": 0.00393,
-   "qian": 0.00393,
-   "xian": 0.00376,
-   "zhu": 0.00376,
-   "shang": 0.00376,
-   "shan": 0.00376,
-   "er": 0.00359,
-   "san": 0.00359,
-   "fen": 0.00359,
-   "quan": 0.00359,
-   "shou": 0.00342,
-   "lai": 0.00342,
-   "yang": 0.00342,
-   "su": 0.00342,
-   "cha": 0.00342,
-   "ri": 0.00342,
-   "mo": 0.00325,
-   "bi": 0.00325,
-   "ai": 0.00308,
-   "xun": 0.00308,
-   "mai": 0.00308,
-   "du": 0.00308,
-   "pai": 0.00308,
-   "lao": 0.00308,
-   "kang": 0.00308,
-   "zhen": 0.00308,
-   "han": 0.00291,
-   "shen": 0.00291,
-   "long": 0.00291,
-   "lou": 0.00291,
-   "pin": 0.00274,
-   "duo": 0.00274,
-   "kuai": 0.00274,
-   "jiang": 0.00274,
-   "gao": 0.00274,
-   "bu": 0.00274,
-   "rui": 0.00274,
-   "heng": 0.00274,
-   "lin": 0.00274,
-   "chuan": 0.00274,
-   "nan": 0.00274,
-   "guan": 0.00274,
-   "pu": 0.00257,
-   "qiu": 0.00257,
-   "mian": 0.00257,
-   "cai": 0.00257,
-   "yao": 0.00257,
-   "lv": 0.00257,
-   "chun": 0.00257,
-   "lan": 0.00257,
-   "kong": 0.00257,
-   "miao": 0.00257,
-   "ping": 0.0024,
-   "rong": 0.0024,
-   "gou": 0.0024,
-   "huang": 0.0024,
-   "zai": 0.0024,
-   "ting": 0.0024
+   "yi": 0.01921,
+   "shi": 0.01751,
+   "ji": 0.01649,
+   "zhi": 0.01343,
+   "li": 0.01326,
+   "xiao": 0.01309,
+   "qi": 0.01258,
+   "wei": 0.01241,
+   "da": 0.01207,
+   "xin": 0.01173,
+   "yuan": 0.01054,
+   "yu": 0.01037,
+   "jia": 0.01003,
+   "ke": 0.01003,
+   "xiang": 0.01003,
+   "hua": 0.00986,
+   "dian": 0.00935,
+   "xing": 0.00935,
+   "tong": 0.00901,
+   "bao": 0.00867,
+   "tian": 0.00867,
+   "jie": 0.00833,
+   "sheng": 0.00833,
+   "cheng": 0.00799,
+   "you": 0.00799,
+   "fu": 0.00782,
+   "zhong": 0.00748,
+   "jing": 0.00731,
+   "yun": 0.00731,
+   "hui": 0.00714,
+   "jian": 0.00697,
+   "xi": 0.0068,
+   "yin": 0.00663,
+   "wang": 0.00663,
+   "mei": 0.00646,
+   "de": 0.00629,
+   "guo": 0.00629,
+   "tai": 0.00612,
+   "he": 0.00612,
+   "shu": 0.00595,
+   "tu": 0.00595,
+   "di": 0.00595,
+   "jin": 0.00595,
+   "ying": 0.00595,
+   "zhang": 0.00595,
+   "jiu": 0.00578,
+   "ju": 0.00578,
+   "dong": 0.00561,
+   "lian": 0.00561,
+   "si": 0.00561,
+   "wu": 0.00544,
+   "mi": 0.00544,
+   "yue": 0.00544,
+   "yan": 0.00527,
+   "gu": 0.00527,
+   "ling": 0.00527,
+   "jiao": 0.00527,
+   "chang": 0.00527,
+   "bai": 0.0051,
+   "ma": 0.0051,
+   "tang": 0.0051,
+   "hai": 0.0051,
+   "guang": 0.0051,
+   "dou": 0.00493,
+   "qing": 0.00493,
+   "ye": 0.00493,
+   "hong": 0.00476,
+   "le": 0.00476,
+   "bei": 0.00476,
+   "dao": 0.00476,
+   "zhou": 0.00476,
+   "an": 0.00459,
+   "zi": 0.00459,
+   "ba": 0.00442,
+   "huo": 0.00442,
+   "ge": 0.00442,
+   "ya": 0.00442,
+   "ban": 0.00425,
+   "fei": 0.00425,
+   "feng": 0.00425,
+   "hao": 0.00425,
+   "fang": 0.00425,
+   "gong": 0.00425,
+   "bo": 0.00408,
+   "xue": 0.00408,
+   "wan": 0.00408,
+   "fan": 0.00408,
+   "ren": 0.00408,
+   "mao": 0.00391,
+   "hu": 0.00391,
+   "zhu": 0.00391,
+   "man": 0.00391,
+   "lu": 0.00391,
+   "che": 0.00391,
+   "qian": 0.00391,
+   "xian": 0.00374,
+   "shang": 0.00374,
+   "shan": 0.00374,
+   "er": 0.00357,
+   "san": 0.00357,
+   "fen": 0.00357,
+   "quan": 0.00357,
+   "shou": 0.0034,
+   "bi": 0.0034,
+   "lai": 0.0034,
+   "yang": 0.0034,
+   "su": 0.0034,
+   "cha": 0.0034,
+   "ri": 0.0034,
+   "mo": 0.00323,
+   "ai": 0.00306,
+   "xun": 0.00306,
+   "mai": 0.00306,
+   "du": 0.00306,
+   "pai": 0.00306,
+   "lao": 0.00306,
+   "kang": 0.00306,
+   "zhen": 0.00306,
+   "han": 0.00289,
+   "shen": 0.00289,
+   "long": 0.00289,
+   "chuan": 0.00289,
+   "lou": 0.00289,
+   "pin": 0.00272,
+   "duo": 0.00272,
+   "kuai": 0.00272,
+   "jiang": 0.00272,
+   "gao": 0.00272,
+   "bu": 0.00272,
+   "rui": 0.00272,
+   "heng": 0.00272,
+   "lin": 0.00272,
+   "nan": 0.00272,
+   "guan": 0.00272,
+   "pu": 0.00255,
+   "qiu": 0.00255,
+   "mian": 0.00255,
+   "cai": 0.00255,
+   "yao": 0.00255,
+   "lv": 0.00255,
+   "chun": 0.00255,
+   "lan": 0.00255,
+   "kong": 0.00255,
+   "miao": 0.00255,
+   "ping": 0.00238,
+   "rong": 0.00238,
+   "gou": 0.00238,
+   "huang": 0.00238,
+   "zai": 0.00238,
+   "ting": 0.00238
   },
   "w_pinyin_style": {
    "creative": 0.6244,
@@ -20084,27 +20122,27 @@
   "morpheme_bank": {
    "天": {
     "count": 46,
-    "freq": 0.0236,
+    "freq": 0.0234,
     "head_ratio": 0.867
+   },
+   "宝": {
+    "count": 37,
+    "freq": 0.0188,
+    "head_ratio": 0.125
    },
    "云": {
     "count": 37,
-    "freq": 0.019,
+    "freq": 0.0188,
     "head_ratio": 0.355
-   },
-   "宝": {
-    "count": 36,
-    "freq": 0.0184,
-    "head_ratio": 0.125
    },
    "通": {
     "count": 34,
-    "freq": 0.0174,
+    "freq": 0.0173,
     "head_ratio": 0.182
    },
    "美": {
     "count": 33,
-    "freq": 0.0169,
+    "freq": 0.0168,
     "head_ratio": 0.81
    },
    "海": {
@@ -20114,57 +20152,62 @@
    },
    "音": {
     "count": 26,
-    "freq": 0.0133,
+    "freq": 0.0132,
     "head_ratio": 0.455
    },
    "书": {
     "count": 25,
-    "freq": 0.0128,
+    "freq": 0.0127,
     "head_ratio": 0.357
    },
    "星": {
     "count": 25,
-    "freq": 0.0128,
+    "freq": 0.0127,
     "head_ratio": 0.692
    },
    "乐": {
     "count": 25,
-    "freq": 0.0128,
+    "freq": 0.0127,
     "head_ratio": 0.471
    },
    "微": {
     "count": 24,
-    "freq": 0.0123,
+    "freq": 0.0122,
     "head_ratio": 0.81
    },
    "信": {
-    "count": 22,
-    "freq": 0.0113,
-    "head_ratio": 0.214
+    "count": 23,
+    "freq": 0.0117,
+    "head_ratio": 0.2
+   },
+   "安": {
+    "count": 23,
+    "freq": 0.0117,
+    "head_ratio": 0.75
    },
    "达": {
     "count": 22,
-    "freq": 0.0113,
+    "freq": 0.0112,
     "head_ratio": 0.067
-   },
-   "安": {
-    "count": 22,
-    "freq": 0.0113,
-    "head_ratio": 0.75
    },
    "易": {
     "count": 21,
-    "freq": 0.0108,
+    "freq": 0.0107,
     "head_ratio": 0.846
    },
    "三": {
     "count": 21,
-    "freq": 0.0108,
+    "freq": 0.0107,
     "head_ratio": 1.0
+   },
+   "业": {
+    "count": 21,
+    "freq": 0.0107,
+    "head_ratio": 0.0
    },
    "光": {
     "count": 21,
-    "freq": 0.0108,
+    "freq": 0.0107,
     "head_ratio": 0.455
    },
    "新": {
@@ -20176,11 +20219,6 @@
     "count": 20,
     "freq": 0.0102,
     "head_ratio": 1.0
-   },
-   "业": {
-    "count": 20,
-    "freq": 0.0102,
-    "head_ratio": 0.0
    },
    "德": {
     "count": 20,
@@ -20217,6 +20255,11 @@
     "freq": 0.0097,
     "head_ratio": 0.438
    },
+   "记": {
+    "count": 18,
+    "freq": 0.0092,
+    "head_ratio": 0.077
+   },
    "康": {
     "count": 18,
     "freq": 0.0092,
@@ -20241,11 +20284,6 @@
     "count": 17,
     "freq": 0.0087,
     "head_ratio": 0.778
-   },
-   "记": {
-    "count": 17,
-    "freq": 0.0087,
-    "head_ratio": 0.083
    },
    "花": {
     "count": 17,
@@ -20299,172 +20337,172 @@
    },
    "爱": {
     "count": 15,
-    "freq": 0.0077,
+    "freq": 0.0076,
     "head_ratio": 1.0
    },
    "百": {
     "count": 15,
-    "freq": 0.0077,
+    "freq": 0.0076,
     "head_ratio": 0.909
    },
    "快": {
     "count": 15,
-    "freq": 0.0077,
+    "freq": 0.0076,
     "head_ratio": 1.0
    },
    "米": {
     "count": 15,
-    "freq": 0.0077,
+    "freq": 0.0076,
     "head_ratio": 0.545
+   },
+   "好": {
+    "count": 15,
+    "freq": 0.0076,
+    "head_ratio": 1.0
    },
    "东": {
     "count": 14,
-    "freq": 0.0072,
+    "freq": 0.0071,
     "head_ratio": 0.818
    },
    "豆": {
     "count": 14,
-    "freq": 0.0072,
+    "freq": 0.0071,
     "head_ratio": 0.625
    },
    "飞": {
     "count": 14,
-    "freq": 0.0072,
+    "freq": 0.0071,
     "head_ratio": 0.75
    },
    "同": {
     "count": 14,
-    "freq": 0.0072,
+    "freq": 0.0071,
     "head_ratio": 1.0
    },
    "图": {
     "count": 14,
-    "freq": 0.0072,
+    "freq": 0.0071,
     "head_ratio": 0.111
    },
-   "好": {
+   "奇": {
     "count": 14,
-    "freq": 0.0072,
-    "head_ratio": 1.0
+    "freq": 0.0071,
+    "head_ratio": 0.6
    },
    "力": {
     "count": 14,
-    "freq": 0.0072,
+    "freq": 0.0071,
     "head_ratio": 0.125
    },
    "城": {
     "count": 14,
-    "freq": 0.0072,
+    "freq": 0.0071,
     "head_ratio": 0.222
    },
    "工": {
     "count": 14,
-    "freq": 0.0072,
+    "freq": 0.0071,
     "head_ratio": 0.333
    },
    "福": {
     "count": 14,
-    "freq": 0.0072,
+    "freq": 0.0071,
     "head_ratio": 0.538
    },
    "龙": {
     "count": 14,
-    "freq": 0.0072,
+    "freq": 0.0071,
     "head_ratio": 0.556
    },
    "园": {
     "count": 14,
-    "freq": 0.0072,
+    "freq": 0.0071,
     "head_ratio": 0.0
    },
    "动": {
     "count": 14,
-    "freq": 0.0072,
+    "freq": 0.0071,
     "head_ratio": 0.333
    },
    "考": {
     "count": 14,
-    "freq": 0.0072,
+    "freq": 0.0071,
     "head_ratio": 0.25
    },
    "讯": {
     "count": 13,
-    "freq": 0.0067,
+    "freq": 0.0066,
     "head_ratio": 0.333
    },
    "球": {
     "count": 13,
-    "freq": 0.0067,
+    "freq": 0.0066,
     "head_ratio": 0.0
    },
    "兴": {
     "count": 13,
-    "freq": 0.0067,
+    "freq": 0.0066,
     "head_ratio": 0.222
    },
    "理": {
     "count": 13,
-    "freq": 0.0067,
+    "freq": 0.0066,
     "head_ratio": 0.364
    },
    "山": {
     "count": 13,
-    "freq": 0.0067,
+    "freq": 0.0066,
     "head_ratio": 0.286
-   },
-   "奇": {
-    "count": 13,
-    "freq": 0.0067,
-    "head_ratio": 0.556
    },
    "联": {
     "count": 13,
-    "freq": 0.0067,
+    "freq": 0.0066,
     "head_ratio": 0.556
    },
    "特": {
     "count": 13,
-    "freq": 0.0067,
+    "freq": 0.0066,
     "head_ratio": 0.1
    },
    "子": {
     "count": 13,
-    "freq": 0.0067,
+    "freq": 0.0066,
     "head_ratio": 0.0
    },
    "春": {
     "count": 13,
-    "freq": 0.0067,
+    "freq": 0.0066,
     "head_ratio": 0.273
    },
    "白": {
     "count": 13,
-    "freq": 0.0067,
+    "freq": 0.0066,
     "head_ratio": 0.5
    },
    "心": {
     "count": 13,
-    "freq": 0.0067,
+    "freq": 0.0066,
     "head_ratio": 0.444
    },
    "影": {
     "count": 13,
-    "freq": 0.0067,
+    "freq": 0.0066,
     "head_ratio": 0.333
    },
    "语": {
     "count": 13,
-    "freq": 0.0067,
+    "freq": 0.0066,
     "head_ratio": 0.1
    },
    "全": {
     "count": 13,
-    "freq": 0.0067,
+    "freq": 0.0066,
     "head_ratio": 0.769
    },
    "剧": {
     "count": 13,
-    "freq": 0.0067,
+    "freq": 0.0066,
     "head_ratio": 0.111
    },
    "鱼": {
@@ -20517,10 +20555,20 @@
     "freq": 0.0061,
     "head_ratio": 1.0
    },
+   "无": {
+    "count": 12,
+    "freq": 0.0061,
+    "head_ratio": 1.0
+   },
    "得": {
     "count": 11,
     "freq": 0.0056,
     "head_ratio": 0.75
+   },
+   "知": {
+    "count": 11,
+    "freq": 0.0056,
+    "head_ratio": 1.0
    },
    "红": {
     "count": 11,
@@ -20531,6 +20579,11 @@
     "count": 11,
     "freq": 0.0056,
     "head_ratio": 0.286
+   },
+   "途": {
+    "count": 11,
+    "freq": 0.0056,
+    "head_ratio": 0.5
    },
    "牛": {
     "count": 11,
@@ -20566,6 +20619,11 @@
     "count": 11,
     "freq": 0.0056,
     "head_ratio": 0.5
+   },
+   "富": {
+    "count": 11,
+    "freq": 0.0056,
+    "head_ratio": 0.714
    },
    "维": {
     "count": 11,
@@ -20607,22 +20665,12 @@
     "freq": 0.0056,
     "head_ratio": 1.0
    },
-   "无": {
-    "count": 11,
-    "freq": 0.0056,
-    "head_ratio": 1.0
-   },
    "看": {
     "count": 11,
     "freq": 0.0056,
     "head_ratio": 0.25
    },
    "阿": {
-    "count": 10,
-    "freq": 0.0051,
-    "head_ratio": 1.0
-   },
-   "知": {
     "count": 10,
     "freq": 0.0051,
     "head_ratio": 1.0
@@ -20636,11 +20684,6 @@
     "count": 10,
     "freq": 0.0051,
     "head_ratio": 0.3
-   },
-   "途": {
-    "count": 10,
-    "freq": 0.0051,
-    "head_ratio": 0.556
    },
    "滴": {
     "count": 10,
@@ -20672,11 +20715,6 @@
     "freq": 0.0051,
     "head_ratio": 0.333
    },
-   "富": {
-    "count": 10,
-    "freq": 0.0051,
-    "head_ratio": 0.667
-   },
    "恒": {
     "count": 10,
     "freq": 0.0051,
@@ -20702,23 +20740,23 @@
    },
    "腾讯": {
     "count": 5,
-    "freq": 0.0026
+    "freq": 0.0025
    },
    "网易": {
     "count": 5,
-    "freq": 0.0026
+    "freq": 0.0025
    },
    "天气": {
     "count": 5,
-    "freq": 0.0026
+    "freq": 0.0025
    },
    "智慧": {
     "count": 5,
-    "freq": 0.0026
+    "freq": 0.0025
    },
    "英语": {
     "count": 5,
-    "freq": 0.0026
+    "freq": 0.0025
    },
    "阿里": {
     "count": 4,
@@ -20791,6 +20829,10 @@
    "澎程": {
     "count": 4,
     "freq": 0.002
+   },
+   "淘宝": {
+    "count": 3,
+    "freq": 0.0015
    },
    "天猫": {
     "count": 3,
@@ -20956,9 +20998,9 @@
     "count": 3,
     "freq": 0.0015
    },
-   "淘宝": {
-    "count": 2,
-    "freq": 0.001
+   "暖暖": {
+    "count": 3,
+    "freq": 0.0015
    },
    "京东": {
     "count": 2,
@@ -20999,29 +21041,25 @@
    "安信": {
     "count": 2,
     "freq": 0.001
-   },
-   "智联": {
-    "count": 2,
-    "freq": 0.001
    }
   },
   "imagery_dist": {
-   "sample_size": 1952,
+   "sample_size": 1963,
    "by_class": {
-    "情感品质": 0.168,
-    "自然": 0.0994,
-    "器物": 0.0912,
-    "方位": 0.0876,
-    "数字": 0.0605,
-    "动物": 0.0538,
-    "植物": 0.0415,
-    "颜色": 0.0405,
-    "人物": 0.0348
+    "情感品质": 0.1676,
+    "自然": 0.0993,
+    "器物": 0.0917,
+    "方位": 0.0871,
+    "数字": 0.0601,
+    "动物": 0.0535,
+    "植物": 0.0413,
+    "颜色": 0.0402,
+    "人物": 0.0346
    },
    "by_class_count": {
-    "情感品质": 328,
-    "自然": 194,
-    "器物": 178,
+    "情感品质": 329,
+    "自然": 195,
+    "器物": 180,
     "方位": 171,
     "数字": 118,
     "动物": 105,
@@ -21043,7 +21081,7 @@
    },
    "note": "一个名字可命中多个意象，by_class 各项之和不等于 1；按品牌名条数计"
   },
-  "lexicon_sample_size": 1952
+  "lexicon_sample_size": 1963
  },
  "provenance": {
   "sources": {
@@ -21053,27 +21091,27 @@
    },
    "eastmoney_ipo": {
     "count": 350,
-    "seconds": 1.8
+    "seconds": 1.7
    },
    "cninfo_all_a": {
     "count": 6187,
-    "seconds": 0.8
+    "seconds": 1.0
    },
    "itunes_apps": {
-    "count": 908,
-    "seconds": 33.4
+    "count": 892,
+    "seconds": 23.5
    },
    "wiki_zh_brand": {
-    "count": 755,
-    "seconds": 668.9
+    "count": 744,
+    "seconds": 724.0
    }
   },
   "raw_snapshots": {
-   "seed": "/Users/mac/workspace/active/NameYouLike/python/naming-pipeline/data/raw/seed_20261110_030000.jsonl",
-   "eastmoney_ipo": "/Users/mac/workspace/active/NameYouLike/python/naming-pipeline/data/raw/eastmoney_ipo_20261110_030002.jsonl",
-   "cninfo_all_a": "/Users/mac/workspace/active/NameYouLike/python/naming-pipeline/data/raw/cninfo_all_a_20261110_030003.jsonl",
-   "itunes_apps": "/Users/mac/workspace/active/NameYouLike/python/naming-pipeline/data/raw/itunes_apps_20261110_030036.jsonl",
-   "wiki_zh_brand": "/Users/mac/workspace/active/NameYouLike/python/naming-pipeline/data/raw/wiki_zh_brand_20261110_031145.jsonl"
+   "seed": "/Users/mac/workspace/active/NameYouLike/python/naming-pipeline/data/raw/seed_20261112_030000.jsonl",
+   "eastmoney_ipo": "/Users/mac/workspace/active/NameYouLike/python/naming-pipeline/data/raw/eastmoney_ipo_20261112_030002.jsonl",
+   "cninfo_all_a": "/Users/mac/workspace/active/NameYouLike/python/naming-pipeline/data/raw/cninfo_all_a_20261112_030003.jsonl",
+   "itunes_apps": "/Users/mac/workspace/active/NameYouLike/python/naming-pipeline/data/raw/itunes_apps_20261112_030027.jsonl",
+   "wiki_zh_brand": "/Users/mac/workspace/active/NameYouLike/python/naming-pipeline/data/raw/wiki_zh_brand_20261112_031231.jsonl"
   },
   "f10": {
    "f10_enriched": 300,
@@ -21083,8 +21121,8 @@
  },
  "quality": {
   "new_records": 13,
-  "duplicates_skipped": 8336,
-  "corpus_before": 7907,
+  "duplicates_skipped": 8309,
+  "corpus_before": 7920,
   "failures": []
  }
 }
