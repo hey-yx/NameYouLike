@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {
-  getPromptEntries,
+  PROMPT_ENTRY,
   type PromptEntry,
   type PromptCaseRow,
 } from "@/lib/prompts-content";
@@ -26,7 +26,7 @@ function CaseRow({ row }: { row: PromptCaseRow }) {
         <span className="pp-case-note-line">
           <span className="pp-case-domains-label">候选域名 </span>
           <span className="pp-case-domains">
-            {row.domains.map((domain) => domain.replace(/·(?:rdap|whois)(?=）)/g, "")).join("  ")}
+            {row.domains.join("  ")}
           </span>
         </span>
       )}
@@ -92,8 +92,6 @@ function PromptEntrySection({ entry }: { entry: PromptEntry }) {
 }
 
 export function PromptsPage() {
-  const promptEntries = getPromptEntries();
-  const [first] = promptEntries;
   return (
     <div className="pp-doc">
       <header className="pp-doc-head">
@@ -111,14 +109,12 @@ export function PromptsPage() {
             </svg>
           </a>
         </div>
-        <h1>{first.title}</h1>
-        {first.description && <p className="pp-doc-lede">{first.description}</p>}
+        <h1>{PROMPT_ENTRY.title}</h1>
+        {PROMPT_ENTRY.description && <p className="pp-doc-lede">{PROMPT_ENTRY.description}</p>}
       </header>
 
       <main>
-        {promptEntries.map((entry) => (
-          <PromptEntrySection key={entry.id} entry={entry} />
-        ))}
+        <PromptEntrySection entry={PROMPT_ENTRY} />
       </main>
 
       <footer className="pp-doc-foot">

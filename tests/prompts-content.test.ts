@@ -3,17 +3,15 @@ import path from "node:path";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
-import { getPromptEntries } from "@/lib/prompts-content";
+import { PROMPT_ENTRY } from "@/lib/prompts-content";
 import { PromptsPage } from "@/web/page";
 
 const promptTxt = fs.readFileSync(path.join(process.cwd(), "prompt.txt"), "utf8");
 
 describe("站点命名提示词", () => {
   it("站点只展示一份可复制全文，与 prompt.txt 逐字一致", () => {
-    const entries = getPromptEntries();
-    expect(entries).toHaveLength(1);
-    expect(entries[0].title).toBe("起名提示词");
-    expect(entries[0].prompt).toBe(promptTxt);
+    expect(PROMPT_ENTRY.title).toBe("起名提示词");
+    expect(PROMPT_ENTRY.prompt).toBe(promptTxt);
   });
 
   it("提示词只出英文名，并写明缺项先问、默认 8 个与补齐", () => {
@@ -52,6 +50,9 @@ describe("站点命名提示词", () => {
     expect(html).toContain("pp-case");
     expect(html).toContain("实测输入");
     expect(html).toContain("实测结果");
+    // 域名只显示结论，核验方式（·rdap / ·whois）不进页面
+    expect(html).not.toContain("·rdap");
+    expect(html).not.toContain("·whois");
   });
 
   it("提示词允许非字典式英文名，并明确包含 try 与 ohmy 路线", () => {

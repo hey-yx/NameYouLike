@@ -8,7 +8,6 @@
 
 :root {
   --paper: #f8fafd;
-  --paper-2: #f1f4f7;
   --hover: #eaedf1;
   --ink: #192029;
   --ink-2: #323841;
@@ -16,7 +15,6 @@
   --faint: #6a6f76;
   --accent: #005fd4;
   --accent-2: #0046b4;
-  --on-accent: #ffffff;
   --selection: #d8eaff;
   --rule: #dde0e3;
   --rule-2: #c8cdd2;
@@ -27,11 +25,6 @@
 
   /* 语义色：只服务域名状态 */
   --ok: #1d783c;
-  --ok-soft: #e5f4e8;
-  --warn: #955e00;
-  --warn-soft: #f7eedf;
-  --info: #275287;
-  --info-soft: #e6eef7;
 
   --font-display: "Space Grotesk", "PingFang SC", "Hiragino Sans GB",
     "Microsoft YaHei", sans-serif;
@@ -46,10 +39,7 @@
   --fs-sm: 13px;
   --fs-md: 15px;
   --fs-base: 16px;
-  --fs-lg: 20px;
-  --fs-xl: 24px;
   --fs-2xl: 32px;
-  --fs-display: clamp(30px, 3.6vw, 44px);
 
   --space-3xs: 2px;
   --space-2xs: 4px;
@@ -59,7 +49,6 @@
   --space-lg: 24px;
   --space-xl: 32px;
   --space-2xl: 48px;
-  --space-3xl: 64px;
   --space-4xl: 96px;
 
   --radius-control: 6px;
@@ -67,38 +56,8 @@
   --radius-pill: 999px;
 
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
   --dur-1: 120ms;
   --dur-2: 200ms;
-  --dur-3: 300ms;
-
-  --z-base: 1;
-}
-
-html.dark {
-  --paper: #0c1016;
-  --paper-2: #14191f;
-  --hover: #1f242c;
-  --ink: #e5e8ec;
-  --ink-2: #c7cbd0;
-  --muted: #979ca2;
-  --faint: #898e95;
-  --accent: #59aaf8;
-  --accent-2: #80c3ff;
-  --on-accent: #0c1016;
-  --selection: #172a41;
-  --rule: #252930;
-  --rule-2: #383e46;
-  --graphite: #10141a;
-  --on-graphite: #dde2e6;
-  --on-graphite-2: #8a9098;
-  --shadow-lift: 0 1px 2px rgba(0, 0, 0, 0.4);
-  --ok: #73c385;
-  --ok-soft: #233226;
-  --warn: #dcaf61;
-  --warn-soft: #362c1c;
-  --info: #83b4e7;
-  --info-soft: #202a35;
 }
 
 * {
@@ -120,10 +79,6 @@ html {
   background: var(--hover);
   border: 3px solid var(--paper);
   border-radius: var(--radius-pill);
-}
-
-html.dark ::-webkit-scrollbar-thumb {
-  background: var(--faint);
 }
 
 ::-webkit-scrollbar-track {
@@ -207,17 +162,6 @@ button:disabled {
   display: none !important;
 }
 
-/* ── 动效 ─────────────────────────────────────────── */
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 /* ── 提示词主页：单栏文档规格书 ───────────────────── */
 
 .pp-doc {
@@ -270,14 +214,6 @@ button:disabled {
   line-height: 1.8;
 }
 
-.pp-doc-sub {
-  max-width: 36em;
-  margin-top: var(--space-xs);
-  color: var(--muted);
-  font-size: var(--fs-sm);
-  line-height: 1.9;
-}
-
 .pp-entry {
   margin-bottom: var(--space-4xl);
   scroll-margin-top: var(--space-lg);
@@ -288,13 +224,6 @@ button:disabled {
   align-items: baseline;
   justify-content: flex-end;
   gap: var(--space-md);
-}
-
-.pp-entry-scene {
-  margin-top: var(--space-2xs);
-  color: var(--muted);
-  font-size: var(--fs-sm);
-  line-height: 1.9;
 }
 
 .pp-copy {
@@ -390,17 +319,6 @@ button:disabled {
   border-bottom: 1px solid var(--rule);
 }
 
-.pp-case-input .pp-case-row strong {
-  font-family: var(--font-mono);
-  font-size: var(--fs-xs);
-  font-weight: 500;
-  color: var(--muted);
-}
-
-.pp-case-input .pp-case-src {
-  color: var(--ink-2);
-}
-
 /* 未展开时只露几行，底部渐隐提示还有内容 */
 .pp-prompt-clamp pre {
   max-height: 11em;
@@ -460,23 +378,6 @@ button:disabled {
   font-size: var(--fs-xs);
 }
 
-.pp-case-verdict {
-  color: var(--faint);
-  font-family: var(--font-mono);
-  font-size: var(--fs-2xs);
-  letter-spacing: 0.04em;
-}
-
-.pp-case-src-label {
-  color: var(--faint);
-  font-size: var(--fs-2xs);
-  letter-spacing: 0.04em;
-}
-
-.pp-case-src {
-  color: var(--muted);
-}
-
 /* 候选域名：mono 小字，逗号分隔 */
 .pp-case-domains {
   color: var(--faint);
@@ -493,13 +394,6 @@ button:disabled {
 /* 评审判词：挂在名字下面一行 */
 .pp-case-note-line {
   padding-left: var(--space-sm);
-  color: var(--faint);
-  font-size: var(--fs-xs);
-  line-height: 1.8;
-}
-
-.pp-case-outcome {
-  margin-top: var(--space-xs);
   color: var(--faint);
   font-size: var(--fs-xs);
   line-height: 1.8;

@@ -61,6 +61,11 @@ function trimNote(reason: string, limit: number): string {
   return `${head.trimEnd()}…`;
 }
 
+/** 案例域名带着核验方式后缀（可注册·rdap），站点只展示结论。 */
+function stripCheckMethod(value: string): string {
+  return value.replace(/·(?:rdap|whois)(?=）)/g, "");
+}
+
 /** 评审输出有两种形态：JSON 的 {"verdicts":[...]}，或 markdown 的「### 名字｜保留/淘汰」小节。 */
 function parseVerdicts(content: string): Record<string, Verdict> {
   const raw = content.trim();
@@ -128,7 +133,7 @@ function loadGenerateEntry(): PromptEntry {
       fact: productFact || undefined,
       note: keep ? undefined : trimNote(verdicts[n.name]?.reason ?? "", 160),
       primaryDomain: n.primaryDomain,
-      domains: Array.isArray(n.domains) ? n.domains : undefined,
+      domains: Array.isArray(n.domains) ? n.domains.map(stripCheckMethod) : undefined,
     };
   });
 
@@ -145,6 +150,4 @@ function loadGenerateEntry(): PromptEntry {
   };
 }
 
-export function getPromptEntries(): PromptEntry[] {
-  return [loadGenerateEntry()];
-}
+export const PROMPT_ENTRY: PromptEntry = loadGenerateEntry();
