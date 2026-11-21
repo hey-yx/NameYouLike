@@ -67,6 +67,20 @@ export function pinyinMatches(latin: string, chinese: string): boolean {
   return positions.has(target.length);
 }
 
+/** latin 是否正好是 chinese 各字拼音首字母的缩写（简拼，允许多音字）。 */
+export function pinyinInitialsMatches(latin: string, chinese: string): boolean {
+  const target = normalizeSyllable(latin);
+  const chars = Array.from(chinese);
+  if (!target || chars.length < 2 || target.length !== chars.length) return false;
+  if (chars.some((char) => !READINGS[char])) return false;
+
+  for (let i = 0; i < chars.length; i += 1) {
+    const options = optionsFor(chars[i]);
+    if (!options || !options.some((opt) => opt[0] === target[i])) return false;
+  }
+  return true;
+}
+
 /** 把拉丁名拆成小写词元（连字符、下划线、空格都算分隔）。 */
 export function latinTokens(value: string): string[] {
   return value
@@ -75,14 +89,14 @@ export function latinTokens(value: string): string[] {
     .filter(Boolean);
 }
 
-/** 中文文本里的连续汉字片段（长度 1 到 4）。 */
-function chineseRuns(text: string): string[] {
+/** 中文文本里的连续汉字片段（长度 1 到 maxLen）。 */
+function chineseRuns(text: string, maxLen = 6): string[] {
   const segments = text.match(/[\u4e00-\u9fa5]+/g) ?? [];
   const runs = new Set<string>();
   for (const segment of segments) {
     const chars = Array.from(segment);
     for (let start = 0; start < chars.length; start += 1) {
-      for (let end = start + 1; end <= Math.min(chars.length, start + 4); end += 1) {
+      for (let end = start + 1; end <= Math.min(chars.length, start + maxLen); end += 1) {
         runs.add(chars.slice(start, end).join(""));
       }
     }
@@ -90,14 +104,21 @@ function chineseRuns(text: string): string[] {
   return Array.from(runs);
 }
 
-/** 拉丁名里哪些词元是文本中某个中文片段的拼音。 */
+/** 拉丁名里哪些词元是文本中某个中文片段的全拼或 3-6 位简拼。 */
 export function pinyinTokensIn(latin: string, chineseText: string): Set<string> {
-  const runs = chineseRuns(chineseText);
+  const runs = chineseRuns(chineseText, 6);
   const hits = new Set<string>();
   if (runs.length === 0) return hits;
   for (const token of latinTokens(latin)) {
     if (token.length < 2) continue;
-    if (runs.some((run) => pinyinMatches(token, run))) hits.add(token);
+    const matchedFull = runs.some(
+      (run) => Array.from(run).length <= 4 && pinyinMatches(token, run),
+    );
+    const matchedInitials =
+      token.length >= 3 &&
+      token.length <= 6 &&
+      runs.some((run) => pinyinInitialsMatches(token, run));
+    if (matchedFull || matchedInitials) hits.add(token);
   }
   return hits;
 }

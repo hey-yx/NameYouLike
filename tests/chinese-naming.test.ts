@@ -147,6 +147,44 @@ describe("中文主体与拼音用途名", () => {
   it("英文路线仍按原套路规则拦", () => {
     expect(detectSlop("DesignAI", "en", "compound").length).toBeGreaterThan(0);
   });
+
+  it("赛事或单据简拼加交付物词可通过审计，无依据缩写被拒", () => {
+    const contestDesc =
+      "山东省优秀传统文化少年传承人大赛证书查询，按身份证号查询并生成荣誉证书。";
+    const contestBrief: ProductBrief = {
+      ...brief,
+      coreAction: "按身份证号查询并生成荣誉证书",
+      productFacts: ["传承人大赛证书查询", "按身份证号查询并生成荣誉证书"],
+    };
+
+    const valid = auditCandidate(
+      {
+        ...latinName("ccrds-cert", "传承人大赛简拼 ccrds"),
+        sourceDetail: "传承人大赛首字母简拼 ccrds 对应证书编号前缀，cert 表示荣誉证书。",
+        productFact: "传承人大赛证书查询，按身份证号查询并生成荣誉证书",
+        rationale: "传承人大赛简拼 ccrds 对应官方编号前缀，cert 对应按身份证号查询并生成荣誉证书。",
+      },
+      contestBrief,
+      contestDesc,
+      "repo",
+      "传承人大赛",
+    );
+    expect(valid.passed, valid.issues.join(";")).toBe(true);
+
+    const bogus = auditCandidate(
+      {
+        ...latinName("zfnkx-cert", "传承人大赛简拼 ccrds"),
+        sourceDetail: "传承人大赛首字母简拼 ccrds，cert 表示荣誉证书。",
+        productFact: "传承人大赛证书查询，按身份证号查询并生成荣誉证书",
+        rationale: "传承人大赛证书查询，按身份证号查询并生成荣誉证书。",
+      },
+      contestBrief,
+      contestDesc,
+      "repo",
+      "传承人大赛",
+    );
+    expect(bogus.passed).toBe(false);
+  });
 });
 
 describe("审查发现的规则不对称", () => {

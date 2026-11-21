@@ -7931,3 +7931,78 @@
 {"record_id": "9872d67437413ed5", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "郑好办", "name_clean": "郑好办"}
 {"record_id": "e2f81898e78627c9", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "恰饭啦 - 好看又有趣的饮食记录App", "name_clean": "恰饭啦"}
 {"record_id": "98dfd7e3b3a37bf1", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "传安知信", "name_clean": "传安知信"}
+{"record_id": "fe665141e9fef97e", "source": "eastmoney_ipo", "source_priority": 3, "kind": "brand_tradename", "name_raw": "傲拓科技", "name_clean": "傲拓", "secucode": "688845.SH", "industry": "机械设备", "industry_raw": "机械设备-通用设备-仪器仪表", "apply_date": "2026-11-23", "listing_date": null, "market": "科创板", "company_full_name": "傲拓科技股份有限公司", "trade_name": "傲拓", "region": null, "clean_ops": ["strip_org:股份有限公司", "strip_tail:科技"], "short_name_alias": "傲拓科技", "domain": "www.atekon.com", "f10": true}
+{"record_id": "4afb6e0628987bc8", "source": "cninfo_all_a", "source_priority": 1, "kind": "baseline", "name_raw": "傲拓科技", "name_clean": "傲拓科技", "secucode": "688845"}
+{"record_id": "23fe3ccd3fca9b85", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "宇视云", "name_clean": "宇视云"}
+{"record_id": "a6ae880a43f809a6", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "物速寻", "name_clean": "物速寻"}
+{"record_id": "3eebe515cb6cebd6", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "健康追踪管家-30秒扫脸健康检测", "name_clean": "健康追踪"}
+{"record_id": "8c3d2de6cdd58539", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "野邮 · 租营地", "name_clean": "野邮"}
+{"record_id": "90459befcd10e30f", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "戏鲸 - 配音交友爱Pia戏", "name_clean": "戏鲸"}
+{"record_id": "12ae82b4ddaeeb3f", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "崽崽ZEPETO", "name_clean": "崽崽"}
+{"record_id": "924dd4286e53e7b8", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "同城交友-约会附近的人同城附近交友约会软件", "name_clean": "同城交友"}
+{"record_id": "94b9adaff5abb384", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "火花Chat - 擦出不一样的小火花", "name_clean": "火花"}
+{"record_id": "57193f23a4714215", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "鸽子台－提词器、AI写作与封面制作", "name_clean": "鸽子台"}
+{"record_id": "dcc3718b8aa3550d", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "予安录", "name_clean": "予安录"}
+{"record_id": "893caad3183018f8", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "彩云小译 - 全能AI 翻译：懂语境神还原，无痛外文阅读", "name_clean": "彩云小译"}
+{"record_id": "28e50b5f402b95a7", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "嗒嗒 AI-懂你的开会搭子", "name_clean": "嗒嗒"}
+{"record_id": "ecad26dd41ac6eda", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "黄油相机 - 拍照修图全能相机", "name_clean": "黄油"}
+{"record_id": "ed97a01c896300b5", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "双摄合拍相机-双摄前后双录前后同拍分屏画中画双景多机位录像", "name_clean": "双摄合拍"}
+{"record_id": "c23248afeb4521a3", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "假装钢琴：手表空气乐器", "name_clean": "假装钢琴"}
+{"record_id": "05c9b32a9140e72c", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "音流 - 连接你的音乐", "name_clean": "音流"}
+{"record_id": "df207078aa31af38", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "板屿", "name_clean": "板屿"}
+{"record_id": "1e697bac2efc1321", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "工奇兵-接单找活平台", "name_clean": "工奇兵"}
+{"record_id": "e568a0324750ad1d", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "智能生活 - 智慧家居", "name_clean": "智能生活"}
+{"record_id": "812fa4dc1352e96f", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "燃动青春", "name_clean": "燃动青春"}
+{"record_id": "f8fc8746a1a564c8", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "给力心理-高性价比心理咨询与倾诉平台", "name_clean": "给力心理"}
+{"record_id": "994b4da3146c0a58", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "黄金天眼-周末有金价", "name_clean": "黄金天眼"}
+{"record_id": "fc2114b7c29fa237", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "她盼", "name_clean": "她盼"}
+{"record_id": "283bab057978a16c", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "天界传奇-高爆二合一", "name_clean": "天界传奇"}
+{"record_id": "722e33ea7b5326b8", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "子供の知育ゲーム｜ごっこランド お店屋さん体験の子供アプリ", "name_clean": "子供"}
+{"record_id": "75baf35097cb415c", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "灯影刻", "name_clean": "灯影刻"}
+{"record_id": "20a4272d82fa3f38", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "识星手札", "name_clean": "识星手札"}
+{"record_id": "4e02d75b8b3d056c", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "牛听听", "name_clean": "牛听听"}
+{"record_id": "0afa08edb97e885e", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "好课在线", "name_clean": "好课在线"}
+{"record_id": "7f11daf177133324", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "拾文阅读", "name_clean": "拾文"}
+{"record_id": "18e8c5f442a3732b", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "京东医生-知医", "name_clean": "京东医生"}
+{"record_id": "570109e5a1e2db65", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "护考帮-医考帮护理版,护资、护师、护理三基、护理考研学习平台", "name_clean": "护考帮"}
+{"record_id": "0494e5b0d2f2e36a", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "喂养日志 - 宝宝生活记录 喂奶 辅食", "name_clean": "喂养日志"}
+{"record_id": "bfc7390c667c19e6", "source": "cninfo_all_a", "source_priority": 1, "kind": "baseline", "name_raw": "天广实", "name_clean": "天广实", "secucode": "920319"}
+{"record_id": "72ee4df364955257", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "室内温度", "name_clean": "室内温度"}
+{"record_id": "db77f5692bdcb63a", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "预警12379", "name_clean": "预警"}
+{"record_id": "1f9cbadf3ca2cc54", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "双拍相机", "name_clean": "双拍"}
+{"record_id": "3b43b1e0d4cf278f", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "思语-一天阅读", "name_clean": "思语"}
+{"record_id": "64a9c963b9b67b14", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "备考通-学校和学生都在用的升学宝典", "name_clean": "备考通"}
+{"record_id": "2175fb15b80fc4d8", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "低价优惠出行", "name_clean": "低价优惠"}
+{"record_id": "c63dffbfd00cce6e", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "韩剧圈 - 一键式韩剧剧集，高分热门韩剧影单推荐", "name_clean": "韩剧圈"}
+{"record_id": "af2caab9b9509989", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "广西成考", "name_clean": "广西成考"}
+{"record_id": "3a6944770a28c57a", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "星辰易狐", "name_clean": "星辰易狐"}
+{"record_id": "20192707fa1974f3", "source": "eastmoney_ipo", "source_priority": 3, "kind": "new_enterprise", "name_raw": "猎奇智能", "name_clean": "猎奇智能", "secucode": "301661.SZ", "industry": "电子设备", "industry_raw": "电子设备-电子设备制造-电子设备制造", "apply_date": "2026-11-26", "listing_date": null, "market": "深交所其他", "company_full_name": "苏州猎奇智能设备股份有限公司", "trade_name": "猎奇智能设备", "region": "苏州", "clean_ops": ["strip_org:股份有限公司", "strip_region:苏州"], "domain": "suzhoulieqi.com", "f10": true}
+{"record_id": "c3839e211affa104", "source": "eastmoney_ipo", "source_priority": 3, "kind": "new_enterprise", "name_raw": "天广实", "name_clean": "天广实", "secucode": "920319.BJ", "industry": "医药生物", "industry_raw": "医药生物-生物医药-生物医药", "apply_date": "2026-11-25", "listing_date": null, "market": "北交所", "company_full_name": "北京天广实生物技术股份有限公司", "trade_name": "天广实生物技术", "region": "北京", "clean_ops": ["strip_org:股份有限公司", "strip_region:北京"], "domain": "www.mab-works.com", "f10": true}
+{"record_id": "59ea95a8f68c0c3f", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "胜利女神：新的希望", "name_clean": "胜利女神"}
+{"record_id": "b9388bb9f2f5f995", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "有好天气", "name_clean": "有好"}
+{"record_id": "e939b319a84f9f61", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "金攒攒", "name_clean": "金攒攒"}
+{"record_id": "06ed7f40537c9d2e", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "微软必应", "name_clean": "微软必应"}
+{"record_id": "a273c26af9a67bc1", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "木间", "name_clean": "木间"}
+{"record_id": "4cc7d67b81a931f9", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "日结侠", "name_clean": "日结侠"}
+{"record_id": "aeb27701af545f9e", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "易出行-您的出行好帮手", "name_clean": "易出行"}
+{"record_id": "059a57296497ca52", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "吉他世界", "name_clean": "吉他世界"}
+{"record_id": "6632c740745f904b", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "搭练 - 减肥健身电子教练", "name_clean": "搭练"}
+{"record_id": "c543edc4b695df6d", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "每日听读-每日英语听读、教材同步、启蒙动画、双语名著精读等", "name_clean": "每日听读"}
+{"record_id": "462178ed7565a832", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "齐鲁e充", "name_clean": "齐鲁"}
+{"record_id": "3b4464d51d4edd58", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "安行实时导航-公交出行天气寻人", "name_clean": "安行实时"}
+{"record_id": "eb06c835d84a2925", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "月城公交", "name_clean": "月城公交"}
+{"record_id": "b51044f1d6bf0433", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "酷安-分享美好科技生活", "name_clean": "酷安"}
+{"record_id": "2c7a338bf5713321", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "阅小二", "name_clean": "阅小二"}
+{"record_id": "9e224fa8e4506ff4", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "句本 - 金句/文字/治愈/成长/学习/智慧", "name_clean": "句本"}
+{"record_id": "3b88c673c5b1e47d", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "健康江阴", "name_clean": "健康江阴"}
+{"record_id": "eaa45bd982f61bb3", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "疯狂兼职-找兼职平台在家赚钱做副业零工日结手机兼职软件", "name_clean": "疯狂兼职"}
+{"record_id": "5df97db2e0754b3c", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "掌上有色", "name_clean": "掌上有色"}
+{"record_id": "e90883a4fc2af086", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "俄罗斯克ּּּּּּ拉ּּ", "name_clean": "俄罗斯克"}
+{"record_id": "81c3f2303633d369", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "美伴-同城附近视频聊天交友平台", "name_clean": "美伴"}
+{"record_id": "19e418a49d7f18e1", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "序桥", "name_clean": "序桥"}
+{"record_id": "b1248f9d953ace17", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "黄金价格-黄金行情查询", "name_clean": "黄金价格"}
+{"record_id": "4e630a0b5b181cf2", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "积存金助手 - 黄金/伦敦金价格查询", "name_clean": "积存金"}
+{"record_id": "c2f2f700a2dc37f0", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "糖迹测点", "name_clean": "糖迹测点"}
+{"record_id": "68dfed6f6a1c440b", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "体育单招", "name_clean": "体育单招"}
+{"record_id": "a0a1ab860925d942", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "出口成章-专注于提升青少年语言素养的智能平台", "name_clean": "出口成章"}
+{"record_id": "9ce6f15e34337a96", "source": "itunes_apps", "source_priority": 2, "kind": "product_app", "name_raw": "慕知悦读", "name_clean": "慕知悦读"}

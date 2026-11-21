@@ -1,42 +1,7 @@
 {
  "schema": 1,
- "version_seq": 36,
+ "version_seq": 41,
  "runs": [
-  {
-   "run_id": "run_20261022_133503",
-   "version": "2026.10.22-007",
-   "new_records": 0,
-   "corpus_total": 6604,
-   "at": "2026-10-22T05:35:06Z"
-  },
-  {
-   "run_id": "run_20261022_134642",
-   "version": "2026.10.22-008",
-   "new_records": 0,
-   "corpus_total": 6604,
-   "at": "2026-10-22T05:46:42Z"
-  },
-  {
-   "run_id": "run_20261022_135039",
-   "version": "2026.10.22-009",
-   "new_records": 0,
-   "corpus_total": 6604,
-   "at": "2026-10-22T05:50:39Z"
-  },
-  {
-   "run_id": "run_20261022_135431",
-   "version": "2026.10.22-010",
-   "new_records": 0,
-   "corpus_total": 6604,
-   "at": "2026-10-22T05:54:31Z"
-  },
-  {
-   "run_id": "run_20261022_140506",
-   "version": "2026.10.22-011",
-   "new_records": 0,
-   "corpus_total": 6604,
-   "at": "2026-10-22T06:05:07Z"
-  },
   {
    "run_id": "run_20261022_140634",
    "version": "2026.10.22-012",
@@ -211,30 +176,65 @@
    "new_records": 13,
    "corpus_total": 7933,
    "at": "2026-11-11T19:14:57Z"
+  },
+  {
+   "run_id": "run_20261116_040001",
+   "version": "2026.11.16-037",
+   "new_records": 35,
+   "corpus_total": 7968,
+   "at": "2026-11-15T20:14:50Z"
+  },
+  {
+   "run_id": "run_20261117_040000",
+   "version": "2026.11.17-038",
+   "new_records": 10,
+   "corpus_total": 7978,
+   "at": "2026-11-16T20:14:51Z"
+  },
+  {
+   "run_id": "run_20261119_040001",
+   "version": "2026.11.19-039",
+   "new_records": 12,
+   "corpus_total": 7990,
+   "at": "2026-11-18T20:14:28Z"
+  },
+  {
+   "run_id": "run_20261120_040001",
+   "version": "2026.11.20-040",
+   "new_records": 7,
+   "corpus_total": 7997,
+   "at": "2026-11-19T20:22:53Z"
+  },
+  {
+   "run_id": "run_20261121_040000",
+   "version": "2026.11.21-041",
+   "new_records": 11,
+   "corpus_total": 8008,
+   "at": "2026-11-20T20:14:13Z"
   }
  ],
  "watermarks": {
   "seed": {
    "last_count": 149,
-   "at": "2026-11-11T19:14:57Z"
+   "at": "2026-11-20T20:14:13Z"
   },
   "eastmoney_ipo": {
-   "last_count": 350,
-   "at": "2026-11-11T19:14:57Z"
+   "last_count": 353,
+   "at": "2026-11-20T20:14:13Z"
   },
   "cninfo_all_a": {
-   "last_count": 6187,
-   "at": "2026-11-11T19:14:57Z"
+   "last_count": 6190,
+   "at": "2026-11-20T20:14:13Z"
   },
   "wiki_zh_brand": {
-   "last_count": 744,
-   "at": "2026-11-11T19:14:57Z"
+   "last_count": 755,
+   "at": "2026-11-20T20:14:13Z"
   },
   "itunes_apps": {
    "last_count": 892,
-   "at": "2026-11-11T19:14:57Z"
+   "at": "2026-11-20T20:14:13Z"
   }
  },
- "last_run_at": "2026-11-11T19:14:57Z",
- "last_version": "2026.11.12-036"
+ "last_run_at": "2026-11-20T20:14:13Z",
+ "last_version": "2026.11.21-041"
 }
