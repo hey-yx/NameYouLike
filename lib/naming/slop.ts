@@ -109,6 +109,22 @@ function detectEnglish(name: string, options: SlopOptions): string[] {
     warnings.push(`两个通用词直接拼接（${genericSplit}）`);
   }
 
+  const configSwitchMatch = lower.match(/^(?:no|non|zero)([a-z]{3,})$/);
+  if (
+    configSwitchMatch &&
+    (GENERIC_STEM_SET.has(configSwitchMatch[1]) || BANNED_SET.has(configSwitchMatch[1]))
+  ) {
+    warnings.push(`“${name}”像配置开关、缓存头或规格标签，不像产品名`);
+  }
+
+  const friendlyStem = stripFriendlyPrefix(lower);
+  if (
+    friendlyStem !== lower &&
+    (GENERIC_STEM_SET.has(friendlyStem) || BANNED_SET.has(friendlyStem))
+  ) {
+    warnings.push(`口语前缀加通用词“${friendlyStem}”，缺乏品牌辨识度`);
+  }
+
   for (const word of ABSTRACT_SET) {
     if (lower === word || lower.includes(word)) {
       warnings.push(`抽象词“${word}”没有具体所指`);

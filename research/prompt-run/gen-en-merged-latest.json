@@ -1,250 +1,271 @@
 {
   "meta": {
-    "date": "2026-11-03",
-    "model": "Hermes 会话内按合并提示词执行",
-    "prompt_source": "research/prompts.md 合并版唯一 text 块",
-    "scenario": "allparse 简报，多批候选合并后按域名可用性筛出 8 个展示",
+    "date": "2026-11-21",
+    "model": "按新版 prompt.txt 实测执行（含 RDAP / npm / GitHub / 多源商标初筛实测）",
+    "prompt_source": "prompt.txt",
+    "scenario": "allparse 简报，按四条命名路线发散筛选并用 domain-check-fast --full 实测后留 8 个",
     "names_count": 8,
-    "candidatePool": 23
+    "candidatePool": 20
   },
   "response": {
     "analysis": {
-      "factsGaps": [],
+      "factsGaps": [
+        "已完成本地 8200+ 中外品牌与上市公司字号库、Wikidata 国际商标/软件实体及 App Store 美/中区在营软件自动化初筛；官方商标库（USPTO tmsearch / CNIPA）需人工登录确权，正式递交注册前需官网复核"
+      ],
+      "factsKnown": [
+        "已知同类产品：yt-dlp、cobalt、snapany、downloader、allparse",
+        "Reeldrop：App Store 美区存在同名在营软件 ReelDrop（trackId 6756616864，Nitin Jaitely），避让淘汰",
+        "Shedink：GitHub 用户名返回 200（已占用），避让淘汰",
+        "Hagu：GitHub 用户名返回 200（已占用）且 .dev/.app 已注册，避让淘汰",
+        "Pare / Haku：.com/.net/.io/.ai/.dev/.app 全后缀已被注册，淘汰",
+        "Unlace：npm 返回 200 且 GitHub 用户名返回 200（已占用），淘汰"
+      ],
       "topUp": {
         "rounds": 2,
-        "added": 7
+        "added": 3
       },
+      "familyCheck": [
+        { "word": "clip", "count": 2 },
+        { "word": "peel", "count": 2 },
+        { "word": "link", "count": 1 },
+        { "word": "bare", "count": 1 },
+        { "word": "trim", "count": 1 },
+        { "word": "reel", "count": 1 },
+        { "word": "un", "count": 1 },
+        { "word": "stamp", "count": 1 },
+        { "word": "parse", "count": 1 },
+        { "word": "zip", "count": 1 },
+        { "word": "unhusk", "count": 1 },
+        { "word": "try", "count": 1 },
+        { "word": "raw", "count": 1 },
+        { "word": "hop", "count": 1 }
+      ],
       "reviewed": {
         "kept": 8,
         "rejected": [
           {
-            "name": "nostore",
-            "reason": "造词成立，但与同批实词组合 no-store 指向同一产品事实（只解析不存储、零带宽），属同一主体变体，重复。",
-            "suggestion": "改从 HTTP 主通道/降级兜底取词，如 linklane 一路。"
+            "name": "No Store",
+            "reason": "未通过「命令行与首屏测试」：no-store 是 HTTP 缓存指令头与配置开关标签，放进 npx no-store 不像独立产品名。",
+            "suggestion": "把「不存储、不中转直出直链」转化为具体动作画面（如 drop / hop），不要直接把 HTTP 头写进名字。"
           },
           {
-            "name": "watermarkless",
-            "reason": "英文非自然拼法，念出来是水印-less 的机械拼接，读起来像功能描述而非名字；12 字符也偏长。",
-            "suggestion": "保留去水印语义但换成动作型造词，如 dewatermark。"
+            "name": "Direct Link",
+            "reason": "两个通用功能词直接拼接（direct + link），且是常见描述短语，缺乏品牌辨识度。",
+            "suggestion": "用更具体的动作隐喻（peel、unhusk）或短促造词替代泛动词加泛对象。"
           },
           {
-            "name": "nineway",
-            "reason": "造词，但读者看不出是解析服务还是九条通道方案，与产品动作无关，违反「名字要落在产品真实关注点上」。",
-            "suggestion": "把九平台折成一套适配层这一事实写进名字，如 ninefold。"
+            "name": "Hey Parse",
+            "reason": "口语前缀 hey- 接裸通用动作词 parse，主体本身不独特，属于前缀搭通用词的平庸组合。",
+            "suggestion": "前缀名必须搭配独特的造词或具象复合词主体，如 try-rawhop。"
           },
           {
-            "name": "http-first",
-            "reason": "两个通用词的规格化标签组合，属于只复述工序/状态的标签名，不是品牌名。",
-            "suggestion": "从通道语义造词，如 linklane。"
+            "name": "One Envelope",
+            "reason": "归属感前缀 one- 接通用词 envelope，放进首屏标题更像功能参数说明而非产品名。",
+            "suggestion": "若取统一封装输出形态，可用压缩咬合的造词（如 Parzip）代替前缀加通用名词。"
           },
           {
-            "name": "parse-nine",
-            "reason": "与 hey-parse、parse-link 同属 parse 词根族，同批挤在一个结构族里。",
-            "suggestion": "换一个动作或输出形态词根，如 directnine。"
+            "name": "Try Direct",
+            "reason": "动作前缀 try- 接通用形容词 direct，主体脱离语境只是一句功能口号。",
+            "suggestion": "保留 try- 前缀时，主体须改为有具体动作画面的复合词或造词。"
           },
           {
-            "name": "json-envelope",
-            "reason": "与 one-envelope 同词，重复使用信封输出形态。",
-            "suggestion": "信封只留一处，另一处改用直链或零带宽语义。"
+            "name": "Direct JSON",
+            "reason": "direct + json 属于两个规格与格式标签拼接，只复述输出格式而不像品牌。",
+            "suggestion": "把「统一 JSON 信封输出」压进紧凑动作或造词，不直接把 json 写进主名。"
           },
           {
-            "name": "ninefold",
-            "reason": "fold 是把九条平台折叠成一体的方向暗示，容易读成汇聚/合并，与已否 manifold 同族；而本产品是每条链接独立解析后套同一层信封",
-            "suggestion": "回到「同一输出信封」或「加平台等于加目录」这两条事实取材"
+            "name": "Poly Stream",
+            "reason": "两个通用词直接拼接（poly + stream），且 stream 易被读成服务器流式转存或音视频推流，与「零带宽只解析」边界冲突。",
+            "suggestion": "避开带传输与流式语感的词，回归剥壳、解出或跳过中转的动作方向。"
           },
           {
-            "name": "omniparse",
-            "reason": "omni 属通用前缀、parse 属最通用的动作词，组合后不指向短视频去水印解析这一具体业务，且 omni 撞名量极高",
-            "suggestion": "改取「同一适配层」「纯 HTTP 主通道」等具体结构词"
+            "name": "Zero Flux",
+            "reason": "zero + flux 像配置/带宽指标标签且 flux 属于高频创业抽象词，无法在首屏与同类产品拉开区分度。",
+            "suggestion": "若表达零存储零中转，改用跨跳（hop）或当场脱壳（drop）等具体动词。"
           },
           {
-            "name": "resolve",
-            "reason": "裸通用短词，且在开发者语境里第一联想是 DNS 解析，读者猜不到是分享链接取直链",
-            "suggestion": "取直链相关的动作+对象组合，而不是通用解析词"
+            "name": "Http First",
+            "reason": "属于复述实现优先级与协议策略的规格标签，不像面向开发者交付的独立产品名。",
+            "suggestion": "实现通道优先级由产品说明句交代，主名聚焦解析剥水印的核心变化。"
           },
           {
-            "name": "unfold",
-            "reason": "与输入已否名单里的 unfurl 属同一主体的同义变体，重复生成",
-            "suggestion": "换用输出形态与边界约束方向"
+            "name": "Watermarkless",
+            "reason": "机械把输入原词 watermark 加上 -less 后缀，13 字母偏长且读起来像功能定语而非产品名。",
+            "suggestion": "将去水印转化为剥壳、脱印、撕皮一类的短动作实词或造词。"
           },
           {
-            "name": "nocopy",
-            "reason": "与已否 no-cache 同族，只是把被否的约束换了后缀，违反「不靠换字仿写补齐」",
-            "suggestion": "取零带宽、不落本地这类更贴近事实的边界词"
+            "name": "Hagu",
+            "reason": "虽满足日语「剥ぐ」两音节短词形态，但实测 GitHub 用户名返回 200（已占用）且 .dev/.app 已注册，直接避让淘汰。",
+            "suggestion": "改用英语利落短实词或全后缀干净的造词补位。"
           },
           {
-            "name": "anyfeed",
-            "reason": "与同批 ninefeed、polystream 同属 feed 族，三条挤在同一结构上，违反同批检查的多样性要求",
-            "suggestion": "从直链、零本地、JSON 信封这些方向各取一个独立主体"
-          },
-          {
-            "name": "watermarklift",
-            "reason": "把产品输入原词水印直接写进名字，属于复述输入而非命名，且偏长不够好打",
-            "suggestion": "用「无水印直链」的结果形态词，如干净直链、原始直链"
+            "name": "Reeldrop",
+            "reason": "运行 domain-check-fast --full 多源初筛时，在 App Store 美区检出同名在营软件 ReelDrop（trackId 6756616864，Nitin Jaitely），避让淘汰。",
+            "suggestion": "从修剪水印与保留卷轴动作换词，改用 Trimreel 补位。"
           }
         ],
-        "candidatePool": 23,
-        "eligibleWithFreeDomain": 9,
-        "pickedRule": "复审保留且至少一个域名实测可注册，前缀名与造词优先"
+        "candidatePool": 20,
+        "eligibleWithFreeDomain": 8,
+        "pickedRule": "四条路线均衡覆盖、npm 404、GitHub 主页 404 且无高星同名、多源商标初筛 clean，且 .dev/.io/.app 有 RDAP 可注册空位"
       }
     },
     "names": [
       {
-        "name": "Hey Parse",
-        "packageName": "hey-parse",
-        "source": "亲切互动前缀 hey- 加产品自己的动作词 parse",
+        "name": "Linkpeel",
+        "packageName": "linkpeel",
+        "source": "紧凑复合词：link（分享链接）+ peel（剥壳去皮）",
         "associations": [
-          "短促的招呼节奏，像喊一声「嘿，帮我解析一下」",
-          "指向把分享链接直接递进来、拿结果走人的用法"
+          "水果剥开外皮直接露出果肉的利落动作",
+          "把短视频站点分享链接层层裹着的跳转壳与水印剥掉",
+          "CLI 或 API 传入链接后立刻脱壳返回干净直链"
         ],
-        "productFact": "解析分享链接返回无水印直链",
-        "rationale": "hey- 只是搭话的招呼，parse 直接对应「解析分享链接」这个核心动作，读者看到就知道是个解析接口。",
-        "pronunciation": "hey parse",
+        "productFact": "给一条分享链接，返回无水印视频或图集直链",
+        "rationale": "将「解析分享链接去水印」具象成对链接做一次剥皮动作，短促有画面且不落入功能标签。",
+        "pronunciation": "LINK-peel",
         "domains": [
-          "hey-parse.dev（可注册·rdap）",
-          "hey-parse.io（可注册·whois）",
-          "hey-parse.app（可注册·rdap）"
+          "linkpeel.dev（可注册·rdap）",
+          "linkpeel.io（可注册·rdap）",
+          "linkpeel.app（可注册·rdap）"
         ],
-        "riskNotes": "hey- 前缀在 npm 上占用较高；域名与商标未联网核验，待核验",
-        "primaryDomain": "hey-parse.dev"
+        "riskNotes": "npm 404 未占用；GitHub 用户名 404 未占用，同名搜索 3 个仓库最高 11★；多源商标初筛未见冲突（本地 8200+ 中外品牌库、Wikidata、App Store 美/中区软件均无同名记录）；官方 USPTO/CNIPA 确权待人工复核",
+        "primaryDomain": "linkpeel.dev"
       },
       {
-        "name": "Hey Rawlink",
-        "packageName": "hey-rawlink",
-        "source": "亲切互动前缀 hey + 主体 rawlink（原始直链）",
+        "name": "Bareclip",
+        "packageName": "bareclip",
+        "source": "紧凑复合词：bare（裸露无包装）+ clip（短视频片段）",
         "associations": [
-          "hey 一声招呼，像朋友递来一条链接",
-          "raw 指不加工的原始直链",
-          "口语节奏，落地感强"
+          "剪辑台里没有任何片头角标和遮罩的原始素材条",
+          "去掉水印和 Referer 约束后直接可下的裸视频直链",
+          "全小写单件连写，读音干净无连字符冗余"
         ],
-        "productFact": "解析分享链接返回无水印直链，客户端不带 Referer 就能下",
-        "rationale": "rawlink 对应返回的原始无水印直链，hey 只做搭话不改含义，名字仍然落在直链这条事实上",
-        "pronunciation": "嘿·罗林克",
+        "productFact": "解析分享链接返回无水印视频或图集直链，客户端不带 Referer 就能下",
+        "rationale": "bare 指向无水印与免 Referer 限制的直出状态，clip 明确指向短视频载体，合起来是一个品牌感强的单件复合词。",
+        "pronunciation": "BAIR-klip",
         "domains": [
-          "hey-rawlink.dev（可注册·rdap）",
-          "hey-rawlink.io（可注册·whois）",
-          "hey-rawlink.app（可注册·rdap）"
+          "bareclip.dev（可注册·rdap）",
+          "bareclip.io（可注册·rdap）",
+          "bareclip.app（可注册·rdap）"
         ],
-        "riskNotes": "raw- 词族有已否的 raw-pick、rawkit，需查重；域名与商标待核验",
-        "primaryDomain": "hey-rawlink.dev"
+        "riskNotes": "npm 404 未占用；GitHub 用户名 404 未占用，同名搜索 2 个仓库最高 2★；多源商标初筛未见冲突（本地 8200+ 中外品牌库、Wikidata、App Store 美/中区软件均无同名记录）；官方 USPTO/CNIPA 确权待人工复核",
+        "primaryDomain": "bareclip.dev"
       },
       {
-        "name": "No Store",
-        "packageName": "no-store",
-        "source": "两个真实词组合：边界约束 no-store，照 HTTP 缓存指令的说法",
+        "name": "Trimreel",
+        "packageName": "trimreel",
+        "source": "紧凑复合词：trim（修剪去壳）+ reel（短视频卷轴）",
         "associations": [
-          "物件：一个不存东西的抽屉",
-          "场景：解析完就丢掉，服务器不留副本",
-          "日常：缓存头里那条 no-store，写代码的人一眼认得"
+          "修剪掉片头角标和多余跳转外壳的干净画面",
+          "对应短视频卷轴（reel），读者一眼认出媒体语域",
+          "全小写单件连写，npm 与 GitHub 同名仓库均为 0"
         ],
-        "productFact": "只做解析不存储不转存任何内容，服务器零带宽",
-        "rationale": "no-store 就是产品不存储的边界约束本身，且是开发者天天见的短语，读写都自然。",
-        "pronunciation": "no store",
+        "productFact": "解析分享链接返回无水印视频或图集直链，纯 HTTP 为主通道",
+        "rationale": "trim 对应解析并剪掉视频水印与跳转封装，reel 指向短视频卷轴，纯 HTTP 通道返回无水印直链。",
+        "pronunciation": "TRIM-reel",
         "domains": [
-          "no-store.dev（可注册·rdap）",
-          "no-store.io（可注册·whois）",
-          "no-store.app（可注册·rdap）"
+          "trimreel.dev（可注册·rdap）",
+          "trimreel.app（可注册·rdap）",
+          "trimreel.io（已注册·rdap）"
         ],
-        "riskNotes": "no-store 是 HTTP 缓存指令用词，可能与缓存中间件项目混淆；域名与商标待核验",
-        "primaryDomain": "no-store.dev"
+        "riskNotes": "npm 404 未占用；GitHub 用户名 404 未占用，同名仓库 0 个；多源商标初筛未见冲突（本地 8200+ 中外品牌库、Wikidata、App Store 美/中区软件均无同名记录）；官方 USPTO/CNIPA 确权待人工复核",
+        "primaryDomain": "trimreel.dev"
       },
       {
-        "name": "One Envelope",
-        "packageName": "one-envelope",
-        "source": "归属感前缀 one- 加产品输出形态 envelope（JSON 信封）",
+        "name": "Unstamp",
+        "packageName": "unstamp",
+        "source": "自然造词（亦作少见词）：un-（剥除）+ stamp（印戳/水印）",
         "associations": [
-          "一次调用只吐出一个信封的干净画面",
-          "九条平台最后归一成同一个外包装"
+          "把压在画面角落上的站点印戳一次性揭掉",
+          "像 unwrap、unzip 一样直觉清晰的动作动词节奏",
+          "不靠长解释就能看出是在抹除标记还原原片"
+        ],
+        "productFact": "短视频去水印解析 API：给一条分享链接，返回无水印视频或图集直链",
+        "rationale": "避开机械复述 watermark，用 stamp 指代视频水印印记，并以 un- 形成解析去水印返回无水印直链的干净动作词。",
+        "pronunciation": "un-STAMP",
+        "domains": [
+          "unstamp.dev（可注册·rdap）",
+          "unstamp.app（可注册·rdap）",
+          "unstamp.io（已注册·doh-ns）"
+        ],
+        "riskNotes": "npm 404 未占用；GitHub 用户名 404 未占用，同名搜索 22 个仓库最高 394★（pdf-unstamper，跨领域 PDF）；多源商标初筛未见冲突（本地 8200+ 中外品牌库、Wikidata、App Store 美/中区软件均无同名记录）；官方 USPTO/CNIPA 确权待人工复核",
+        "primaryDomain": "unstamp.dev"
+      },
+      {
+        "name": "Parzip",
+        "packageName": "parzip",
+        "source": "自然造词：parse（解析）+ zip（利落收包吐出）咬合",
+        "associations": [
+          "两音节清脆爆破音，输入和命令都极短",
+          "把九条不同短视频站点的混乱结构利落收进同一个信封"
         ],
         "productFact": "九条短视频平台统一输出同一种 JSON 信封",
-        "rationale": "one- 点出唯一性，envelope 就是产品统一输出的 JSON 信封，名字直接落在输出形态上。",
-        "pronunciation": "one envelope",
+        "rationale": "将九条短视频平台解析与统一输出 JSON 信封咬合成 6 字母短造词，避开被否的 parselt 拼写并留出全套可注册域名。",
+        "pronunciation": "PAR-zip",
         "domains": [
-          "one-envelope.dev（可注册·rdap）",
-          "one-envelope.io（可注册·whois）",
-          "one-envelope.app（可注册·rdap）"
+          "parzip.dev（可注册·rdap）",
+          "parzip.io（可注册·rdap）",
+          "parzip.app（可注册·rdap）"
         ],
-        "riskNotes": "envelope 一词通用，搜索区分度低；域名与商标待核验",
-        "primaryDomain": "one-envelope.dev"
+        "riskNotes": "npm 404 未占用；GitHub 用户名 404 未占用，同名搜索 2 个仓库最高 31★；多源商标初筛未见冲突（本地 8200+ 中外品牌库、Wikidata、App Store 美/中区软件均无同名记录）；官方 USPTO/CNIPA 确权待人工复核",
+        "primaryDomain": "parzip.dev"
       },
       {
-        "name": "Parsedirect",
-        "packageName": "parsedirect",
-        "source": "造词：parse 与 direct 咬合的自然造词",
+        "name": "Clipel",
+        "packageName": "clipel",
+        "source": "自然造词：clip（短视频片段）+ peel（剥壳去水印）咬合",
         "associations": [
-          "两个词挤在一起的口语重音，读起来干脆",
-          "指向解析完直接给直链、不中转"
+          "双音节元音清晰，口头转述不易拼错",
+          "既有视频片段感又带一层剥壳释放的动作语感"
         ],
-        "productFact": "解析分享链接返回无水印直链",
-        "rationale": "造词把「解析」和「直链」两个产品自己的词合成一词，读音通顺且能猜到业务。",
-        "pronunciation": "parse-direct",
+        "productFact": "解析分享链接返回无水印直链，纯 HTTP 为主通道",
+        "rationale": "把短视频片段 clip 与去水印剥壳 peel 压缩成 6 字母自然造词，用于纯 HTTP 解析分享链接返回无水印直链。",
+        "pronunciation": "KLIP-el",
         "domains": [
-          "parsedirect.dev（可注册·rdap）",
-          "parsedirect.io（可注册·whois）",
-          "parsedirect.app（可注册·rdap）"
+          "clipel.dev（可注册·rdap）",
+          "clipel.io（可注册·rdap）",
+          "clipel.app（可注册·rdap）"
         ],
-        "riskNotes": "非字典词，拼写需在文档里固定；域名与商标待核验",
-        "primaryDomain": "parsedirect.dev"
+        "riskNotes": "npm 404 未占用；GitHub 用户名 404 未占用，同名搜索 5 个仓库最高 0★；多源商标初筛未见冲突（本地 8200+ 中外品牌库、Wikidata、App Store 美/中区软件均无同名记录）；官方 USPTO/CNIPA 确权待人工复核",
+        "primaryDomain": "clipel.dev"
       },
       {
-        "name": "Poly Stream",
-        "packageName": "poly-stream",
-        "source": "前缀 poly（多）+ stream（流），自然造词",
+        "name": "Unhusk",
+        "packageName": "unhusk",
+        "source": "利落短实词：英语动词 unhusk（剥去谷壳/外壳、露出芯子）",
         "associations": [
-          "多路并成一条流",
-          "poly 在开发工具里读作「多实例、多格式」",
-          "读音三音节，节奏偏技术"
+          "剥掉谷物或果实外层的硬壳，直接露出里面的净粒",
+          "扒开短链重定向、页面脚本与风控外壳直取视频芯子",
+          "日常较少在软件撞名里出现，品牌辨识度强"
         ],
-        "productFact": "九条短视频平台统一输出同一种 JSON 信封",
-        "rationale": "poly 对应多平台，stream 对应被统一成一条输出流的内容，指向多平台归一这一核心事实",
-        "pronunciation": "波利·斯追姆",
+        "productFact": "纯 HTTP 为主通道，零浏览器依赖，解析分享链接返回无水印直链",
+        "rationale": "把网页包装与风控外壳喻为 husk，unhusk 两音节直接对应纯 HTTP 解析分享链接返回无水印直链的工作。",
+        "pronunciation": "un-HUSK",
         "domains": [
-          "poly-stream.dev（可注册·rdap）",
-          "poly-stream.io（可注册·whois）",
-          "poly-stream.app（可注册·rdap）"
+          "unhusk.dev（可注册·rdap）",
+          "unhusk.io（可注册·rdap）",
+          "unhusk.app（可注册·rdap）"
         ],
-        "riskNotes": "poly- 前缀在基础设施领域较常见，需查重；域名与商标待核验",
-        "primaryDomain": "poly-stream.dev"
+        "riskNotes": "npm 404 未占用；GitHub 用户名 404 未占用，同名搜索 3 个仓库最高 2★；多源商标初筛未见冲突（本地 8200+ 中外品牌库、Wikidata、App Store 美/中区软件均无同名记录）；官方 USPTO/CNIPA 确权待人工复核",
+        "primaryDomain": "unhusk.dev"
       },
       {
-        "name": "Zero Flux",
-        "packageName": "zero-flux",
-        "source": "zero + flux（流量），自然造词，指零带宽",
+        "name": "Try Rawhop",
+        "packageName": "try-rawhop",
+        "source": "动作前缀 try- + 独特复合主体 rawhop（raw + hop 直跳原始地址）",
         "associations": [
-          "flux 读作流量、流向",
-          "零流量零搬运",
-          "带一点能量场的技术感"
+          "try- 带来直接上手调用一条试一试的命令行邀请感",
+          "rawhop 指向跳过服务端存储与中转，直接一跳拿到原始直链"
         ],
-        "productFact": "只做解析不存储不转存任何内容，服务器零带宽",
-        "rationale": "flux 指经手的字节流量，zero 精确对应服务器零带宽这条事实，名字把「只解析不搬运」说清楚",
-        "pronunciation": "泽罗·弗拉克斯",
+        "productFact": "只做解析不存储不转存任何内容，服务器零带宽，客户端不带 Referer 就能下",
+        "rationale": "try- 仅作招呼入口，核心语义由具备不存储、直接一跳返回无水印直链画面的复合词 rawhop 承担，绝不接通用词。",
+        "pronunciation": "try RAW-hop",
         "domains": [
-          "zero-flux.dev（可注册·rdap）",
-          "zero-flux.io（可注册·whois）",
-          "zero-flux.app（可注册·rdap）"
+          "try-rawhop.dev（可注册·rdap）",
+          "try-rawhop.io（可注册·rdap）",
+          "try-rawhop.app（可注册·rdap）"
         ],
-        "riskNotes": "flux 在物理与数据流语境通用，需查重；域名与商标待核验",
-        "primaryDomain": "zero-flux.dev"
-      },
-      {
-        "name": "Direct Link",
-        "packageName": "direct-link",
-        "source": "两个真实词组合：产品输出物直链",
-        "associations": [
-          "物件：一条不加 Referer 也能直接下载的链接",
-          "场景：客户端拿到就存，不中转",
-          "日常：把链接甩给同事，对方点开就是文件"
-        ],
-        "productFact": "解析分享链接返回无水印直链，客户端不带 Referer 就能下",
-        "rationale": "两个词都是产品自己的词汇：处理对象是链接，输出物是直链，读者看到即知业务。",
-        "pronunciation": "direct link",
-        "domains": [
-          "direct-link.dev（可注册·rdap）",
-          "direct-link.io（已注册·whois）",
-          "direct-link.com（已注册·rdap）"
-        ],
-        "riskNotes": "实词组合易撞名，.dev/.io 大多已被占；域名与商标待核验",
-        "primaryDomain": "direct-link.dev"
+        "riskNotes": "npm 404 未占用；GitHub 用户名 404 未占用，同名仓库 0 个；多源商标初筛未见冲突（本地 8200+ 中外品牌库、Wikidata、App Store 美/中区软件均无同名记录）；官方 USPTO/CNIPA 确权待人工复核",
+        "primaryDomain": "try-rawhop.dev"
       }
     ]
   }

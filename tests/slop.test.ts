@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { auditCandidate } from "@/lib/naming/audit";
+import { auditCandidate, isRealEnglishWord } from "@/lib/naming/audit";
 import { detectSlop } from "@/lib/naming/slop";
+import type { NameCandidate, ProductBrief } from "@/lib/types";
 
 describe("detectSlop", () => {
   it("拦截被用烂的抽象词", () => {
@@ -164,6 +165,69 @@ describe("赛道在营竞品品牌碰撞", () => {
       );
       expect(audit.evidence.join("；"), name).toContain("品牌碰撞：与");
       expect(audit.passed, name).toBe(false);
+    }
+  });
+});
+
+describe("规格标签与泛词功能描述拦截", () => {
+  it("拦截配置开关、HTTP 头与泛功能标签名", () => {
+    for (const name of [
+      "No Store",
+      "Direct Link",
+      "Hey Parse",
+      "One Envelope",
+      "Try Direct",
+      "Direct JSON",
+      "Poly Stream",
+      "Zero Flux",
+    ]) {
+      const warnings = detectSlop(name, "en", "compound", {
+        isRealWord: isRealEnglishWord,
+      });
+      expect(warnings.length, name).toBeGreaterThan(0);
+
+      const brief: ProductBrief = {
+        category: "devtool",
+        audience: "开发者",
+        coreAction: "解析分享链接返回无水印直链",
+        differentiator: "只做解析不存储",
+        productFacts: ["解析分享链接", "无水印直链", "不存储"],
+        competitors: [],
+        avoidWords: [],
+      };
+      const cand: NameCandidate = {
+        name,
+        kind: "compound",
+        lang: "en",
+        strategy: "compound",
+        sourceType: "compound",
+        source: name,
+        sourceDetail: "解析分享链接返回无水印直链，只做解析不存储不转存任何内容。",
+        productFact: "解析分享链接返回无水印直链",
+        meaning: name,
+        rationale: "解析分享链接返回无水印直链，只做解析不存储。",
+        pronunciation: name,
+        slopWarnings: [],
+      };
+      expect(auditCandidate(cand, brief, "解析分享链接返回无水印直链，只做解析不存储").passed, name).toBe(false);
+    }
+  });
+
+  it("不误伤紧凑复合词、咬合造词与独立主体前缀名", () => {
+    for (const name of [
+      "Linkpeel",
+      "Bareclip",
+      "Trimreel",
+      "Unstamp",
+      "Parzip",
+      "Clipel",
+      "Unhusk",
+      "Try Rawhop",
+    ]) {
+      expect(
+        detectSlop(name, "en", "compound", { isRealWord: isRealEnglishWord }),
+        name,
+      ).toEqual([]);
     }
   });
 });

@@ -366,7 +366,7 @@ export function auditCandidate(
       realness = 90;
     } else if (
       candidate.kind === "coined" &&
-      countRealMorphemes(candidate.sourceDetail) >= 2
+      countRealMorphemes(`${candidate.source} ${candidate.sourceDetail}`) >= 2
     ) {
       realness = 70;
     }

@@ -7,11 +7,11 @@
 **描述你的产品，拿到 8 个能用的英文名和推荐域名。**
 
 [![output](https://img.shields.io/badge/output-8%20names%20%2B%20domains-005fd4)][effect]
-[![tests](https://img.shields.io/badge/tests-85%20passing-brightgreen)][quick-start]
+[![tests](https://img.shields.io/badge/tests-92%20passing-brightgreen)][quick-start]
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776ab?logo=python&logoColor=white)](https://www.python.org)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue?logo=apache)](LICENSE)
 
-[在线使用](https://itcox.cn/NameYouLike/) · [快速开始][quick-start] · [实际效果][effect] · [域名核验][domain-check] · [项目结构][structure] · [边界][limits]
+[在线使用](https://hey-yx.com/NameYouLike/) · [快速开始][quick-start] · [实际效果][effect] · [域名与品牌核验][domain-check] · [项目结构][structure] · [边界][limits]
 
 </div>
 
@@ -20,11 +20,10 @@ NameYouLike 是一段起名提示词。把 `prompt.txt` 整段发给任意 AI ag
 > [!NOTE]
 > 只做英文名。域名查到的是当时有没有被注册，保留词和溢价词可能还要另外买。
 
-项目的目标和验收标准见 [`user-input.md`](user-input.md)。
 
 ## 快速开始
 
-打开 [提示词页面](https://itcox.cn/NameYouLike/)，点「复制」，把整段提示词发给能联网的 AI agent。也可以直接打开 [`prompt.txt`](https://raw.githubusercontent.com/hey-yx/NameYouLike/main/prompt.txt) 复制。
+打开 [提示词页面](https://hey-yx.com/NameYouLike/)，点「复制」，把整段提示词发给能联网的 AI agent。也可以直接打开 [`prompt.txt`](https://raw.githubusercontent.com/hey-yx/NameYouLike/main/prompt.txt) 复制。
 
 产品描述还是占位符。直接发也行，agent 会先问你要产品描述。想一次跑完，先把 `{{产品描述}}` 换成你的产品，再发。
 
@@ -40,13 +39,13 @@ pnpm dev      # 打开 http://localhost:5173/NameYouLike/
 改动后可以跑测试和构建：
 
 ```bash
-pnpm test     # 85 个单元测试，不联网
+pnpm test     # 92 个单元测试，不联网
 pnpm build    # 生成静态页面到 web/dist
 ```
 
 ## 实际效果
 
-输入是一段产品描述。下面是 2026-11-03 的一次实测，产品是短视频去水印解析 API：
+输入是一段产品描述。下面是 2026-11-21 的一次实测，产品是短视频去水印解析 API：
 
 > allparse 是一个短视频去水印解析 API：给一条分享链接，返回无水印视频或图集直链；九条短视频平台统一输出同一种 JSON 信封。
 
@@ -54,23 +53,25 @@ pnpm build    # 生成静态页面到 web/dist
 
 | 名字 | 包名 | 推荐域名 | 当时状态 |
 |---|---|---|---|
-| Hey Parse | `hey-parse` | `hey-parse.dev` | 可注册 |
-| No Store | `no-store` | `no-store.dev` | 可注册 |
-| Direct Link | `direct-link` | `direct-link.dev` | 可注册 |
+| Linkpeel | `linkpeel` | `linkpeel.dev` | 可注册 |
+| Bareclip | `bareclip` | `bareclip.dev` | 可注册 |
+| Unhusk | `unhusk` | `unhusk.dev` | 可注册 |
 
 状态是当时查的，现在可能变了。完整名单和评审结论在 `research/prompt-run/`，页面上也展示整份结果。
 
 名字要跟产品有关，看到名字能猜到产品做什么。支持全拼、首字母、破折号写法，比如 `guizang-ppt-skill`。域名优先 `.dev`、`.io`、`.app`。
 
-## 域名核验
+## 域名与品牌核验
 
-提示词要求 agent 交付前把域名查完。仓库里也带了查询脚本，可以单独跑：
+提示词要求 agent 交付前把域名与碰撞查完。仓库里也带了查询脚本，可以单独跑域名，或加 `--full` 一键联查域名、npm、GitHub 及多源品牌/商标公开库初筛（本地 8200+ 中外品牌与上市公司字号库、Wikidata 商标/软件实体、App Store 美/中区在营软件）：
 
 ```bash
-python3 scripts/domain-check-fast.py --variants hey-parse,no-store --json out.json
+python3 scripts/domain-check-fast.py --variants linkpeel,bareclip --json out.json
+python3 scripts/domain-check-fast.py --variants linkpeel,bareclip --full --json out.json
+python3 scripts/domain-check-fast.py --variants stripe,taobao,linkpeel --brand-only --json out.json
 ```
 
-脚本直接查域名注册局，不经过第三方查询站。返回可注册、已注册、保留这些状态，查不清的写未确认，溢价会单独标出。
+脚本直接查域名注册局，不经过第三方查询站。返回可注册、已注册、保留这些状态，查不清的写未确认，溢价会单独标出。`--brand-only` 模式纯离线运行，只核对本地中外品牌库。
 
 > [!WARNING]
 > 查询结果会变。看到「可注册」也请在注册商页面再确认一次。
@@ -99,6 +100,6 @@ tests/         单元测试
 
 [quick-start]: #快速开始
 [effect]: #实际效果
-[domain-check]: #域名核验
+[domain-check]: #域名与品牌核验
 [structure]: #项目结构
 [limits]: #边界

@@ -163,6 +163,9 @@ export const GENERIC_STEMS = [
   "insight", "report", "record", "entry", "item", "list", "table", "log",
   "alert", "monitor", "telemetry", "endpoint", "request", "response",
   "client", "server", "host",
+  "parse", "direct", "resolve", "extract", "convert", "format", "fetch",
+  "cache", "disk", "local", "copy", "envelope", "feed", "json", "http",
+  "poly", "zero", "raw", "url", "clip", "media", "video",
 ];
 
 export const BANNED_SUFFIXES = [
@@ -338,7 +341,7 @@ export const CHINESE_CULTURAL_WORD_SET = new Set(CHINESE_CULTURAL_WORDS);
  */
 const FRIENDLY_PREFIXES = [
   "get", "try", "use", "hey", "hi", "meet", "go", "join", "ask",
-  "pick", "run", "with", "onmy",
+  "pick", "run", "with", "onmy", "one", "ohmy", "hello",
 ];
 
 const FRIENDLY_PREFIX_SET = new Set(FRIENDLY_PREFIXES);

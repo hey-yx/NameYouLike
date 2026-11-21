@@ -10,7 +10,7 @@ import genPromptFilledEn from "@/research/prompt-run/gen-prompt-filled-en.txt?ra
 
 /** 标题下的一句话说明，不放进提示词正文。 */
 const PROMPT_DESCRIPTION =
-  "给开源产品和项目起英文名：npm 包名、GitHub 仓库名、项目名都能用，每个名字附候选域名。注册状态自己去查，查法写在提示词里的「域名核验」段；提示词本身不查，也不声称查过。";
+  "给开源产品和项目起英文名：npm 包名、GitHub 仓库名、项目名都能用，每个名字附候选域名。交付前逐个查域名、npm 包名、GitHub 用户名和同名仓库、商标，撞了就换。";
 
 export type PromptCaseRow = {
   name: string;
@@ -63,7 +63,7 @@ function trimNote(reason: string, limit: number): string {
 
 /** 案例域名带着核验方式后缀（可注册·rdap），站点只展示结论。 */
 function stripCheckMethod(value: string): string {
-  return value.replace(/·(?:rdap|whois)(?=）)/g, "");
+  return value.replace(/·(?:rdap|whois|doh-ns)(?=）)/g, "");
 }
 
 /** 评审输出有两种形态：JSON 的 {"verdicts":[...]}，或 markdown 的「### 名字｜保留/淘汰」小节。 */
@@ -105,7 +105,13 @@ function parseVerdicts(content: string): Record<string, Verdict> {
 /** 实测输入：从填好的提示词里读回整段产品描述，只取产品本身，不带过程统计。 */
 function loadInputText(): string {
   const head = genPromptFilledEn.split("运行时流程", 1)[0];
-  const wanted = new Set(["产品是什么", "三个关键动作（做了什么 + 对什么）", "不做的事"]);
+  const wanted = new Set([
+    "产品描述（一段话，写清产品是什么、关键动作和不做什么）",
+    "产品描述",
+    "产品是什么",
+    "三个关键动作（做了什么 + 对什么）",
+    "不做的事",
+  ]);
   const parts: string[] = [];
   for (const line of head.split("\n")) {
     const trimmed = line.trim();
@@ -146,7 +152,7 @@ function loadGenerateEntry(): PromptEntry {
     inputText: loadInputText(),
     caseRows,
     domainsNote:
-      "域名状态是那次实测（2026-11-03）用 RDAP 与 WHOIS 查的：标「可注册」的是当时查到的空位，注册情况会变，注册前自己再查一遍。",
+      "域名状态是那次实测（2026-11-21）用权威 RDAP 与 DoH NS 查的：标「可注册」的是当时查到的空位，注册情况会变，注册前自己再查一遍。",
   };
 }
 
