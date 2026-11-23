@@ -1,21 +1,7 @@
 {
  "schema": 1,
- "version_seq": 41,
+ "version_seq": 43,
  "runs": [
-  {
-   "run_id": "run_20261022_140634",
-   "version": "2026.10.22-012",
-   "new_records": 0,
-   "corpus_total": 6604,
-   "at": "2026-10-22T06:06:34Z"
-  },
-  {
-   "run_id": "run_20261022_174024",
-   "version": "2026.10.22-013",
-   "new_records": 0,
-   "corpus_total": 6604,
-   "at": "2026-10-22T09:50:28Z"
-  },
   {
    "run_id": "run_20261023_030001",
    "version": "2026.10.23-014",
@@ -211,30 +197,44 @@
    "new_records": 11,
    "corpus_total": 8008,
    "at": "2026-11-20T20:14:13Z"
+  },
+  {
+   "run_id": "run_20261122_040000",
+   "version": "2026.11.22-042",
+   "new_records": 22,
+   "corpus_total": 8030,
+   "at": "2026-11-21T20:14:58Z"
+  },
+  {
+   "run_id": "run_20261123_040001",
+   "version": "2026.11.23-043",
+   "new_records": 16,
+   "corpus_total": 8046,
+   "at": "2026-11-22T20:13:43Z"
   }
  ],
  "watermarks": {
   "seed": {
    "last_count": 149,
-   "at": "2026-11-20T20:14:13Z"
+   "at": "2026-11-22T20:13:43Z"
   },
   "eastmoney_ipo": {
    "last_count": 353,
-   "at": "2026-11-20T20:14:13Z"
+   "at": "2026-11-22T20:13:43Z"
   },
   "cninfo_all_a": {
    "last_count": 6190,
-   "at": "2026-11-20T20:14:13Z"
+   "at": "2026-11-22T20:13:43Z"
   },
   "wiki_zh_brand": {
-   "last_count": 755,
-   "at": "2026-11-20T20:14:13Z"
+   "last_count": 295,
+   "at": "2026-11-22T20:13:43Z"
   },
   "itunes_apps": {
-   "last_count": 892,
-   "at": "2026-11-20T20:14:13Z"
+   "last_count": 915,
+   "at": "2026-11-22T20:13:43Z"
   }
  },
- "last_run_at": "2026-11-20T20:14:13Z",
- "last_version": "2026.11.21-041"
+ "last_run_at": "2026-11-22T20:13:43Z",
+ "last_version": "2026.11.23-043"
 }
